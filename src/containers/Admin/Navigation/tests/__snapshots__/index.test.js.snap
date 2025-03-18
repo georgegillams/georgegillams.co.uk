@@ -560,6 +560,40 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
           </div>
         </div>
       </a>
+      <a
+        aria-label="Webhooks"
+        class="c5 c6 c7"
+        href="/admin/webhooks"
+      >
+        <div
+          class="c8"
+        >
+          <div
+            class="c9"
+          />
+          <div
+            class="c10"
+          >
+            <div
+              aria-hidden="true"
+              class="c11"
+            >
+              <div
+                class="c12 date container"
+              />
+              <div
+                class="c13"
+              >
+                <h1
+                  class="c14"
+                >
+                  Webhooks
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>

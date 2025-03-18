@@ -5,7 +5,7 @@ import authentication from 'server-utils/common/authentication';
 import { UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
 
 export default function createEndpoint(req) {
-  return lockPromise('support', async () => {
+  return lockPromise('webhooks', async () => {
     const user = await authentication(req);
     if (!user || !user.admin) {
       throw UNAUTHORISED_WRITE;

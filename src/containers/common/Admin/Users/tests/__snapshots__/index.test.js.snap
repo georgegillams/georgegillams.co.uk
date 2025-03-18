@@ -163,7 +163,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c19 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -187,18 +187,18 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 {
+.c20 {
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -218,11 +218,11 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -235,24 +235,24 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -263,14 +263,14 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -279,7 +279,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   overflow: scroll;
 }
 
-.c13 {
+.c14 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -287,7 +287,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -301,15 +301,27 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   background-size: cover;
 }
 
-.c15 {
+.c16 {
   height: 100%;
 }
 
-.c16 {
+.c17 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c11 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -319,11 +331,11 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   flex-direction: column;
 }
 
-.c11 > *:not(:first-child) {
+.c12 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -333,11 +345,11 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -356,12 +368,12 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   text-align: left;
 }
 
-.c12:focus-visible {
+.c13:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-visible::after {
+.c13:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -374,12 +386,12 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   pointer-events: none;
 }
 
-.c12:disabled {
+.c13:disabled {
   cursor: not-allowed;
 }
 
-.c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-.c12:not(:disabled):active,.c12:not(:disabled):hover {
+.c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+.c13:not(:disabled):active,.c13:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -402,19 +414,19 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -422,8 +434,8 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -431,21 +443,21 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c10 {
+  .c11 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -454,114 +466,116 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-visible::after {
+  .c13:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-  .c12:not(:disabled):active,.c12:not(:disabled):hover {
+  .c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+  .c13:not(:disabled):active,.c13:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c9"
+    class="c10"
   >
     <div
-      class="c10"
+      class="c11"
     >
       <div
-        class="c11"
+        class="c12"
       >
         <a
-          class="c12"
+          class="c13"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <div
-              class="c14"
+              class="c15"
             />
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <h1
-                    class="c18 c19"
+                    class="c19 c20"
                     id="new-+"
                   >
                     New +
@@ -618,7 +632,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c19 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -642,18 +656,18 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 {
+.c20 {
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -673,11 +687,11 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -690,24 +704,24 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -718,14 +732,14 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -734,7 +748,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   overflow: scroll;
 }
 
-.c13 {
+.c14 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -742,7 +756,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -756,15 +770,27 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   background-size: cover;
 }
 
-.c15 {
+.c16 {
   height: 100%;
 }
 
-.c16 {
+.c17 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c11 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -774,11 +800,11 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   flex-direction: column;
 }
 
-.c11 > *:not(:first-child) {
+.c12 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -788,11 +814,11 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -811,12 +837,12 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   text-align: left;
 }
 
-.c12:focus-visible {
+.c13:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-visible::after {
+.c13:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -829,12 +855,12 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   pointer-events: none;
 }
 
-.c12:disabled {
+.c13:disabled {
   cursor: not-allowed;
 }
 
-.c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-.c12:not(:disabled):active,.c12:not(:disabled):hover {
+.c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+.c13:not(:disabled):active,.c13:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -857,19 +883,19 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -877,8 +903,8 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -886,21 +912,21 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c10 {
+  .c11 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -909,114 +935,116 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-visible::after {
+  .c13:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-  .c12:not(:disabled):active,.c12:not(:disabled):hover {
+  .c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+  .c13:not(:disabled):active,.c13:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c9"
+    class="c10"
   >
     <div
-      class="c10"
+      class="c11"
     >
       <div
-        class="c11"
+        class="c12"
       >
         <a
-          class="c12"
+          class="c13"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <div
-              class="c14"
+              class="c15"
             />
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <h1
-                    class="c18 c19"
+                    class="c19 c20"
                     id="new-+"
                   >
                     New +
@@ -1073,7 +1101,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c19 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1097,18 +1125,18 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 {
+.c20 {
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -1128,11 +1156,11 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1145,24 +1173,24 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1173,14 +1201,14 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -1189,7 +1217,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   overflow: scroll;
 }
 
-.c13 {
+.c14 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1197,7 +1225,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1211,15 +1239,27 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   background-size: cover;
 }
 
-.c15 {
+.c16 {
   height: 100%;
 }
 
-.c16 {
+.c17 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c11 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1229,11 +1269,11 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   flex-direction: column;
 }
 
-.c11 > *:not(:first-child) {
+.c12 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1243,11 +1283,11 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -1266,12 +1306,12 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   text-align: left;
 }
 
-.c12:focus-visible {
+.c13:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-visible::after {
+.c13:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1284,12 +1324,12 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   pointer-events: none;
 }
 
-.c12:disabled {
+.c13:disabled {
   cursor: not-allowed;
 }
 
-.c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-.c12:not(:disabled):active,.c12:not(:disabled):hover {
+.c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+.c13:not(:disabled):active,.c13:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -1312,19 +1352,19 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -1332,8 +1372,8 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -1341,21 +1381,21 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c10 {
+  .c11 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -1364,114 +1404,116 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-visible::after {
+  .c13:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-  .c12:not(:disabled):active,.c12:not(:disabled):hover {
+  .c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+  .c13:not(:disabled):active,.c13:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c9"
+    class="c10"
   >
     <div
-      class="c10"
+      class="c11"
     >
       <div
-        class="c11"
+        class="c12"
       >
         <a
-          class="c12"
+          class="c13"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <div
-              class="c14"
+              class="c15"
             />
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <h1
-                    class="c18 c19"
+                    class="c19 c20"
                     id="new-+"
                   >
                     New +
@@ -1685,7 +1727,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -1705,11 +1747,11 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1722,24 +1764,24 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1796,7 +1838,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c9 {
+.c6 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1804,7 +1846,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   margin-top: 2rem;
 }
 
-.c9:first-of-type {
+.c6:first-of-type {
   margin-top: 0.86rem;
 }
 
@@ -1827,7 +1869,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1837,7 +1879,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
@@ -1912,13 +1954,13 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -1926,8 +1968,8 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -1935,14 +1977,14 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -1990,61 +2032,63 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
-    class="c6"
+    class="c0"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <h1
+      class="c4 c5"
     >
-      <span
-        class="c8"
-      >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
-      >
-        Show filters
-      </span>
-    </button>
+      Admin users
+    </h1>
   </div>
   <span
-    class="c9"
+    class="c6"
+  >
+    <div
+      class="c7"
+    >
+      <button
+        class="c8 outer"
+        type="button"
+      >
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
+      >
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
+  <span
+    class="c6"
   >
     <span
       class="c10"
@@ -2140,7 +2184,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   font-weight: bold;
 }
 
-.c30 {
+.c31 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -2164,18 +2208,18 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c29 {
+.c30 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c31 {
+.c32 {
   margin: 0;
 }
 
-.c10 {
+.c11 {
   position: relative;
   display: inline-block;
   width: 1.125rem;
@@ -2183,7 +2227,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   color: #1e1e1e;
 }
 
-.c11 {
+.c12 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -2204,7 +2248,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   animation-delay: -0.15000000000000002s;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -2225,7 +2269,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   animation-delay: -0.05000000000000002s;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -2246,7 +2290,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   animation-delay: 0.04999999999999999s;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -2267,7 +2311,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   animation-delay: 0.15000000000000002s;
 }
 
-.c15 {
+.c16 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -2288,7 +2332,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   animation-delay: 0.25s;
 }
 
-.c16 {
+.c17 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -2309,7 +2353,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   animation-delay: 0.35s;
 }
 
-.c17 {
+.c18 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -2330,7 +2374,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   animation-delay: 0.45000000000000007s;
 }
 
-.c18 {
+.c19 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -2351,7 +2395,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   animation-delay: 0.55s;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -2372,11 +2416,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   cursor: default;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2389,24 +2433,24 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c19 {
+.c20 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -2426,11 +2470,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   box-shadow: none;
 }
 
-.c19:focus-visible {
+.c20:focus-visible {
   outline: none !important;
 }
 
-.c19:focus-visible::after {
+.c20:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2443,24 +2487,24 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   pointer-events: none;
 }
 
-.c19:focus,
-.c19:hover {
+.c20:focus,
+.c20:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c19:active {
+.c20:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c19:disabled {
+.c20:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2472,7 +2516,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   opacity: 0.1;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2483,7 +2527,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2503,14 +2547,14 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   align-items: center;
 }
 
-.c21 {
+.c22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c22 {
+.c23 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -2519,7 +2563,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   overflow: scroll;
 }
 
-.c25 {
+.c26 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -2527,7 +2571,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   overflow: hidden;
 }
 
-.c26 {
+.c27 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2541,15 +2585,27 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   background-size: cover;
 }
 
-.c27 {
+.c28 {
   height: 100%;
 }
 
-.c28 {
+.c29 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c23 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2559,11 +2615,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   flex-direction: column;
 }
 
-.c23 > *:not(:first-child) {
+.c24 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2573,11 +2629,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c24 {
+.c25 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -2596,12 +2652,12 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   text-align: left;
 }
 
-.c24:focus-visible {
+.c25:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c24:focus-visible::after {
+.c25:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2614,12 +2670,12 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   pointer-events: none;
 }
 
-.c24:disabled {
+.c25:disabled {
   cursor: not-allowed;
 }
 
-.c24:not(:disabled):focus,.c24:not(:disabled):focus-within,
-.c24:not(:disabled):active,.c24:not(:disabled):hover {
+.c25:not(:disabled):focus,.c25:not(:disabled):focus-within,
+.c25:not(:disabled):active,.c25:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -2642,25 +2698,25 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c29 {
+  .c30 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c11 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -2668,8 +2724,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -2677,27 +2733,27 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:focus-visible::after {
+  .c20:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19 {
+  .c20 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -2705,8 +2761,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:focus,
-  .c19:hover {
+  .c20:focus,
+  .c20:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -2714,21 +2770,21 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:active {
+  .c20:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:disabled {
+  .c20:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c22 {
+  .c23 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -2737,148 +2793,150 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c26 {
+  .c27 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c24 {
+  .c25 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c24:focus-visible::after {
+  .c25:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c24:not(:disabled):focus,.c24:not(:disabled):focus-within,
-  .c24:not(:disabled):active,.c24:not(:disabled):hover {
+  .c25:not(:disabled):focus,.c25:not(:disabled):focus-within,
+  .c25:not(:disabled):active,.c25:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      disabled=""
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        disabled=""
+        type="button"
       >
-        Reload users
-      </span>
-      <div
-        aria-hidden="true"
-        class="c9"
-      >
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
         <div
+          aria-hidden="true"
           class="c10"
         >
           <div
             class="c11"
-          />
-          <div
-            class="c12"
-          />
-          <div
-            class="c13"
-          />
-          <div
-            class="c14"
-          />
-          <div
-            class="c15"
-          />
-          <div
-            class="c16"
-          />
-          <div
-            class="c17"
-          />
-          <div
-            class="c18"
-          />
+          >
+            <div
+              class="c12"
+            />
+            <div
+              class="c13"
+            />
+            <div
+              class="c14"
+            />
+            <div
+              class="c15"
+            />
+            <div
+              class="c16"
+            />
+            <div
+              class="c17"
+            />
+            <div
+              class="c18"
+            />
+            <div
+              class="c19"
+            />
+          </div>
         </div>
-      </div>
-    </button>
-    <button
-      class="c19 outer"
-      type="button"
-    >
-      <span
-        class="c20"
+      </button>
+      <button
+        class="c20 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c21"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c21"
+    class="c22"
   >
     <div
-      class="c22"
+      class="c23"
     >
       <div
-        class="c23"
+        class="c24"
       >
         <a
-          class="c24"
+          class="c25"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c25"
+            class="c26"
           >
             <div
-              class="c26"
+              class="c27"
             />
             <div
-              class="c27"
+              class="c28"
             >
               <div
-                class="c28"
+                class="c29"
               >
                 <div
-                  class="c29"
+                  class="c30"
                 >
                   <h1
-                    class="c30 c31"
+                    class="c31 c32"
                     id="new-+"
                   >
                     New +
@@ -2935,7 +2993,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c19 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -2959,18 +3017,18 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 {
+.c20 {
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -2990,11 +3048,11 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3007,24 +3065,24 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3035,14 +3093,14 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -3051,7 +3109,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   overflow: scroll;
 }
 
-.c13 {
+.c14 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -3059,7 +3117,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3073,15 +3131,27 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   background-size: cover;
 }
 
-.c15 {
+.c16 {
   height: 100%;
 }
 
-.c16 {
+.c17 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c11 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3091,11 +3161,11 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   flex-direction: column;
 }
 
-.c11 > *:not(:first-child) {
+.c12 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3105,11 +3175,11 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -3128,12 +3198,12 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   text-align: left;
 }
 
-.c12:focus-visible {
+.c13:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-visible::after {
+.c13:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3146,12 +3216,12 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   pointer-events: none;
 }
 
-.c12:disabled {
+.c13:disabled {
   cursor: not-allowed;
 }
 
-.c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-.c12:not(:disabled):active,.c12:not(:disabled):hover {
+.c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+.c13:not(:disabled):active,.c13:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -3174,19 +3244,19 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -3194,8 +3264,8 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -3203,21 +3273,21 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c10 {
+  .c11 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -3226,114 +3296,116 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-visible::after {
+  .c13:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-  .c12:not(:disabled):active,.c12:not(:disabled):hover {
+  .c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+  .c13:not(:disabled):active,.c13:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c9"
+    class="c10"
   >
     <div
-      class="c10"
+      class="c11"
     >
       <div
-        class="c11"
+        class="c12"
       >
         <a
-          class="c12"
+          class="c13"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <div
-              class="c14"
+              class="c15"
             />
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <h1
-                    class="c18 c19"
+                    class="c19 c20"
                     id="new-+"
                   >
                     New +
@@ -3390,7 +3462,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c19 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -3414,18 +3486,18 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 {
+.c20 {
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -3445,11 +3517,11 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3462,24 +3534,24 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3490,14 +3562,14 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -3506,7 +3578,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   overflow: scroll;
 }
 
-.c13 {
+.c14 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -3514,7 +3586,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3528,15 +3600,27 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   background-size: cover;
 }
 
-.c15 {
+.c16 {
   height: 100%;
 }
 
-.c16 {
+.c17 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c11 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3546,11 +3630,11 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   flex-direction: column;
 }
 
-.c11 > *:not(:first-child) {
+.c12 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3560,11 +3644,11 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -3583,12 +3667,12 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   text-align: left;
 }
 
-.c12:focus-visible {
+.c13:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-visible::after {
+.c13:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3601,12 +3685,12 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   pointer-events: none;
 }
 
-.c12:disabled {
+.c13:disabled {
   cursor: not-allowed;
 }
 
-.c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-.c12:not(:disabled):active,.c12:not(:disabled):hover {
+.c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+.c13:not(:disabled):active,.c13:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -3629,19 +3713,19 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -3649,8 +3733,8 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -3658,21 +3742,21 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c10 {
+  .c11 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -3681,114 +3765,116 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-visible::after {
+  .c13:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-  .c12:not(:disabled):active,.c12:not(:disabled):hover {
+  .c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+  .c13:not(:disabled):active,.c13:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c9"
+    class="c10"
   >
     <div
-      class="c10"
+      class="c11"
     >
       <div
-        class="c11"
+        class="c12"
       >
         <a
-          class="c12"
+          class="c13"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <div
-              class="c14"
+              class="c15"
             />
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <h1
-                    class="c18 c19"
+                    class="c19 c20"
                     id="new-+"
                   >
                     New +
@@ -3845,7 +3931,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c19 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -3869,18 +3955,18 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 {
+.c20 {
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -3900,11 +3986,11 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3917,24 +4003,24 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3945,14 +4031,14 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -3961,7 +4047,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   overflow: scroll;
 }
 
-.c13 {
+.c14 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -3969,7 +4055,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3983,15 +4069,27 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   background-size: cover;
 }
 
-.c15 {
+.c16 {
   height: 100%;
 }
 
-.c16 {
+.c17 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c11 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4001,11 +4099,11 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   flex-direction: column;
 }
 
-.c11 > *:not(:first-child) {
+.c12 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4015,11 +4113,11 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -4038,12 +4136,12 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   text-align: left;
 }
 
-.c12:focus-visible {
+.c13:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-visible::after {
+.c13:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4056,12 +4154,12 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   pointer-events: none;
 }
 
-.c12:disabled {
+.c13:disabled {
   cursor: not-allowed;
 }
 
-.c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-.c12:not(:disabled):active,.c12:not(:disabled):hover {
+.c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+.c13:not(:disabled):active,.c13:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -4084,19 +4182,19 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -4104,8 +4202,8 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -4113,21 +4211,21 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c10 {
+  .c11 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -4136,114 +4234,116 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-visible::after {
+  .c13:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-  .c12:not(:disabled):active,.c12:not(:disabled):hover {
+  .c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+  .c13:not(:disabled):active,.c13:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c9"
+    class="c10"
   >
     <div
-      class="c10"
+      class="c11"
     >
       <div
-        class="c11"
+        class="c12"
       >
         <a
-          class="c12"
+          class="c13"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <div
-              class="c14"
+              class="c15"
             />
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <h1
-                    class="c18 c19"
+                    class="c19 c20"
                     id="new-+"
                   >
                     New +
@@ -4300,7 +4400,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c19 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -4324,18 +4424,18 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 {
+.c20 {
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -4355,11 +4455,11 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4372,24 +4472,24 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4400,14 +4500,14 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -4416,7 +4516,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   overflow: scroll;
 }
 
-.c13 {
+.c14 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -4424,7 +4524,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4438,15 +4538,27 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   background-size: cover;
 }
 
-.c15 {
+.c16 {
   height: 100%;
 }
 
-.c16 {
+.c17 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c11 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4456,11 +4568,11 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   flex-direction: column;
 }
 
-.c11 > *:not(:first-child) {
+.c12 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4470,11 +4582,11 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -4493,12 +4605,12 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   text-align: left;
 }
 
-.c12:focus-visible {
+.c13:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-visible::after {
+.c13:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4511,12 +4623,12 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   pointer-events: none;
 }
 
-.c12:disabled {
+.c13:disabled {
   cursor: not-allowed;
 }
 
-.c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-.c12:not(:disabled):active,.c12:not(:disabled):hover {
+.c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+.c13:not(:disabled):active,.c13:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -4539,19 +4651,19 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -4559,8 +4671,8 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -4568,21 +4680,21 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c10 {
+  .c11 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -4591,114 +4703,116 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-visible::after {
+  .c13:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-  .c12:not(:disabled):active,.c12:not(:disabled):hover {
+  .c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+  .c13:not(:disabled):active,.c13:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c9"
+    class="c10"
   >
     <div
-      class="c10"
+      class="c11"
     >
       <div
-        class="c11"
+        class="c12"
       >
         <a
-          class="c12"
+          class="c13"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <div
-              class="c14"
+              class="c15"
             />
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <h1
-                    class="c18 c19"
+                    class="c19 c20"
                     id="new-+"
                   >
                     New +
@@ -4755,7 +4869,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c19 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -4779,18 +4893,18 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 {
+.c20 {
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -4810,11 +4924,11 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4827,24 +4941,24 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4855,14 +4969,14 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -4871,7 +4985,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   overflow: scroll;
 }
 
-.c13 {
+.c14 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -4879,7 +4993,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4893,15 +5007,27 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   background-size: cover;
 }
 
-.c15 {
+.c16 {
   height: 100%;
 }
 
-.c16 {
+.c17 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c11 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4911,11 +5037,11 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   flex-direction: column;
 }
 
-.c11 > *:not(:first-child) {
+.c12 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4925,11 +5051,11 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -4948,12 +5074,12 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   text-align: left;
 }
 
-.c12:focus-visible {
+.c13:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-visible::after {
+.c13:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4966,12 +5092,12 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   pointer-events: none;
 }
 
-.c12:disabled {
+.c13:disabled {
   cursor: not-allowed;
 }
 
-.c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-.c12:not(:disabled):active,.c12:not(:disabled):hover {
+.c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+.c13:not(:disabled):active,.c13:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -4994,19 +5120,19 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -5014,8 +5140,8 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -5023,21 +5149,21 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c10 {
+  .c11 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -5046,114 +5172,116 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-visible::after {
+  .c13:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-  .c12:not(:disabled):active,.c12:not(:disabled):hover {
+  .c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+  .c13:not(:disabled):active,.c13:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c9"
+    class="c10"
   >
     <div
-      class="c10"
+      class="c11"
     >
       <div
-        class="c11"
+        class="c12"
       >
         <a
-          class="c12"
+          class="c13"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <div
-              class="c14"
+              class="c15"
             />
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <h1
-                    class="c18 c19"
+                    class="c19 c20"
                     id="new-+"
                   >
                     New +
@@ -5210,7 +5338,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c19 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -5234,18 +5362,18 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 {
+.c20 {
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -5265,11 +5393,11 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5282,24 +5410,24 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5310,14 +5438,14 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   min-width: unset;
   max-width: unset;
@@ -5326,7 +5454,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   overflow: scroll;
 }
 
-.c13 {
+.c14 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -5334,7 +5462,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -5348,15 +5476,27 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   background-size: cover;
 }
 
-.c15 {
+.c16 {
   height: 100%;
 }
 
-.c16 {
+.c17 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c11 {
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5366,11 +5506,11 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   flex-direction: column;
 }
 
-.c11 > *:not(:first-child) {
+.c12 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5380,11 +5520,11 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -5403,12 +5543,12 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   text-align: left;
 }
 
-.c12:focus-visible {
+.c13:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-visible::after {
+.c13:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5421,12 +5561,12 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   pointer-events: none;
 }
 
-.c12:disabled {
+.c13:disabled {
   cursor: not-allowed;
 }
 
-.c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-.c12:not(:disabled):active,.c12:not(:disabled):hover {
+.c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+.c13:not(:disabled):active,.c13:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -5449,19 +5589,19 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -5469,8 +5609,8 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -5478,21 +5618,21 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c10 {
+  .c11 {
     width: 30%;
     min-width: 20rem;
     max-width: 40rem;
@@ -5501,114 +5641,116 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-visible::after {
+  .c13:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:not(:disabled):focus,.c12:not(:disabled):focus-within,
-  .c12:not(:disabled):active,.c12:not(:disabled):hover {
+  .c13:not(:disabled):focus,.c13:not(:disabled):focus-within,
+  .c13:not(:disabled):active,.c13:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
+    class="c0"
+  >
+    <h1
+      class="c4 c5"
+    >
+      Admin users
+    </h1>
+  </div>
+  <span
     class="c6"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <div
+      class="c7"
     >
-      <span
-        class="c8"
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
       >
-        Show filters
-      </span>
-    </button>
-  </div>
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
   <div
-    class="c9"
+    class="c10"
   >
     <div
-      class="c10"
+      class="c11"
     >
       <div
-        class="c11"
+        class="c12"
       >
         <a
-          class="c12"
+          class="c13"
           href="/admin/users?highlight=new"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <div
-              class="c14"
+              class="c15"
             />
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <h1
-                    class="c18 c19"
+                    class="c19 c20"
                     id="new-+"
                   >
                     New +
@@ -5822,7 +5964,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   margin: 0;
 }
 
-.c7 {
+.c8 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -5842,11 +5984,11 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-visible {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-visible::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5859,24 +6001,24 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   pointer-events: none;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c7:active {
+.c8:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5933,7 +6075,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
-.c9 {
+.c6 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -5941,7 +6083,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   margin-top: 2rem;
 }
 
-.c9:first-of-type {
+.c6:first-of-type {
   margin-top: 0.86rem;
 }
 
@@ -5959,7 +6101,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   margin-top: 1rem;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5969,7 +6111,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   flex-direction: row;
 }
 
-.c6 > *:not(:first-child) {
+.c7 > *:not(:first-child) {
   margin-left: 1rem;
 }
 
@@ -6049,13 +6191,13 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-visible::after {
+  .c8:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -6063,8 +6205,8 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus,
-  .c7:hover {
+  .c8:focus,
+  .c8:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -6072,14 +6214,14 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:active {
+  .c8:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:disabled {
+  .c8:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -6120,61 +6262,63 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 }
 
 <div>
-  <div>
+  <div
+    class="c0"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
+      <a
+        class="c2"
+        href="/admin"
       >
-        <a
-          class="c2"
-          href="/admin"
+        <span
+          class="c3"
         >
-          <span
-            class="c3"
-          >
-            ⇠ Admin
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="c0"
-    >
-      <h1
-        class="c4 c5"
-      >
-        Admin users
-      </h1>
+          ⇠ Admin
+        </span>
+      </a>
     </div>
   </div>
   <div
-    class="c6"
+    class="c0"
   >
-    <button
-      class="c7 outer"
-      type="button"
+    <h1
+      class="c4 c5"
     >
-      <span
-        class="c8"
-      >
-        Reload users
-      </span>
-    </button>
-    <button
-      class="c7 outer"
-      type="button"
-    >
-      <span
-        class="c8"
-      >
-        Show filters
-      </span>
-    </button>
+      Admin users
+    </h1>
   </div>
   <span
-    class="c9 c10"
+    class="c6"
+  >
+    <div
+      class="c7"
+    >
+      <button
+        class="c8 outer"
+        type="button"
+      >
+        <span
+          class="c9"
+        >
+          Reload users
+        </span>
+      </button>
+      <button
+        class="c8 outer"
+        type="button"
+      >
+        <span
+          class="c9"
+        >
+          Show filters
+        </span>
+      </button>
+    </div>
+  </span>
+  <span
+    class="c6 c10"
   >
     Showing 
     3
@@ -6248,7 +6392,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     name
                   </h1>
                   <span
-                    class="c9"
+                    class="c6"
                   >
                     <br />
                     id: 
@@ -6286,7 +6430,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     another
                   </h1>
                   <span
-                    class="c9"
+                    class="c6"
                   >
                     <br />
                     id: 
@@ -6324,7 +6468,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     a third
                   </h1>
                   <span
-                    class="c9"
+                    class="c6"
                   >
                     <br />
                     id: 

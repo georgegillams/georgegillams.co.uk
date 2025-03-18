@@ -70,6 +70,13 @@ const AdminNavigation = props => {
               href="/admin/users"
               title="Users"
             />
+            <StyledFeatureCard
+              layout={FEATURE_CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              href="/admin/webhooks"
+              title="Webhooks"
+            />
           </CardContainer>
         </PageTitle>
       </AdminOnly>

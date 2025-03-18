@@ -12,6 +12,7 @@ export default async function loadAllEndpoints(req) {
   const webhookEndpoints = await dbLoad({
     redisKey: 'webhooks',
     sortKey: 'lastUpdatedTimestamp',
+    includeDeleted: true,
   });
 
   const annotatedWebhookEndpoints = webhookEndpoints.map(w => ({
