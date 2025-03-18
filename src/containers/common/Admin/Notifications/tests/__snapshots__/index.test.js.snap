@@ -147,7 +147,7 @@ exports[`<AdminNotifications /> should render correctly - index 1`] = `
 `;
 
 exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
-.c11 {
+.c12 {
   width: 1.25rem;
   height: 1.25rem;
 }
@@ -210,7 +210,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c14 {
+.c15 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -230,11 +230,11 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   box-shadow: none;
 }
 
-.c14:focus-visible {
+.c15:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-visible::after {
+.c15:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -247,24 +247,24 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   pointer-events: none;
 }
 
-.c14:focus,
-.c14:hover {
+.c15:focus,
+.c15:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c14:active {
+.c15:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c14:disabled {
+.c15:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c16 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -273,6 +273,18 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c7 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c7:first-of-type {
+  margin-top: 0.86rem;
 }
 
 .c0 {
@@ -287,7 +299,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   padding-left: 1rem;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -301,14 +313,14 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   background-color: #ffffff;
 }
 
-.c8:focus-within,
-.c8:focus-visible {
+.c9:focus-within,
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus-visible::after {
+.c9:focus-within::after,
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -321,22 +333,22 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   pointer-events: none;
 }
 
-.c15 {
+.c16 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-.c9 {
+.c10 {
   margin-bottom: 1rem;
   width: 100%;
   box-sizing: border-box;
 }
 
-.c13 {
+.c14 {
   margin-bottom: 1rem;
 }
 
-.c7 {
+.c8 {
   display: inline-block;
   width: 100%;
   margin: 0 0 0.375rem 0.1rem;
@@ -345,7 +357,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   font-weight: bold;
 }
 
-.c17 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -356,11 +368,11 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   padding-top: 1rem;
 }
 
-.c17 > *:not(:first-child) {
+.c18 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c10 {
+.c11 {
   padding: 0.375rem 0.75rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -373,11 +385,11 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   font-size: 1rem;
 }
 
-.c10:disabled {
+.c11:disabled {
   color: #b2b2bf;
 }
 
-.c12 {
+.c13 {
   margin-right: 0.5rem;
   color: #00a698;
   fill: #00a698;
@@ -402,13 +414,13 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-visible::after {
+  .c15:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -416,8 +428,8 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus,
-  .c14:hover {
+  .c15:focus,
+  .c15:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -425,14 +437,14 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:active {
+  .c15:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:disabled {
+  .c15:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -446,33 +458,33 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus-visible::after {
+  .c9:focus-within::after,
+  .c9:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
+  .c9 {
     border-color: white;
     background-color: #000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c11 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:disabled {
+  .c11:disabled {
     color: #7b7b86;
   }
 }
@@ -482,116 +494,65 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
     class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <div>
-      <div
-        class="c1"
-      >
-        <div
-          class="c2"
-        >
-          <a
-            class="c3"
-            href="/admin"
-          >
-            <span
-              class="c4"
-            >
-              ⇠ Admin
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="c1"
-      >
-        <h1
-          class="c5 c6"
-        >
-          Admin notifications
-        </h1>
-      </div>
-    </div>
-    <form
-      class=""
+    <div
+      class="c1"
     >
       <div
-        aria-hidden="false"
-        class=""
+        class="c2"
       >
-        <label
-          class="c7"
-          for="message_FORM_ID"
+        <a
+          class="c3"
+          href="/admin"
         >
-          Message
-        </label>
-        <div
-          class="c8 c9"
-          placeholder="Message"
-        >
-          <input
-            aria-disabled="false"
-            aria-hidden="false"
-            aria-invalid="false"
-            class="c10"
-            id="message_FORM_ID"
-            name="Message"
-            value=""
-          />
-          <svg
-            class="c11 c12"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            class="c4"
           >
-            <path
-              d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
-            />
-          </svg>
-        </div>
+            ⇠ Admin
+          </span>
+        </a>
       </div>
-      <div
-        aria-hidden="false"
+    </div>
+    <div
+      class="c1"
+    >
+      <h1
+        class="c5 c6"
+      >
+        Admin notifications
+      </h1>
+    </div>
+    <span
+      class="c7"
+      style="width: 100%;"
+    >
+      <form
         class=""
       >
-        <label
-          class="c7"
-          for="type_FORM_ID"
-        >
-          Type
-        </label>
         <div
-          class="c13"
-          placeholder="Type"
+          aria-hidden="false"
+          class=""
         >
-          <div
+          <label
             class="c8"
+            for="message_FORM_ID"
           >
-            <select
+            Message
+          </label>
+          <div
+            class="c9 c10"
+            placeholder="Message"
+          >
+            <input
               aria-disabled="false"
+              aria-hidden="false"
               aria-invalid="false"
-              class="c10"
-              id="type_FORM_ID"
-              name="Type"
-            >
-              <option
-                value="success"
-              >
-                Success (green)
-              </option>
-              <option
-                value="warn"
-              >
-                Warning (orange)
-              </option>
-              <option
-                value="error"
-              >
-                Error (red)
-              </option>
-            </select>
+              class="c11"
+              id="message_FORM_ID"
+              name="Message"
+              value=""
+            />
             <svg
-              class="c11 c12"
+              class="c12 c13"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -603,30 +564,84 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
             </svg>
           </div>
         </div>
-      </div>
+        <div
+          aria-hidden="false"
+          class=""
+        >
+          <label
+            class="c8"
+            for="type_FORM_ID"
+          >
+            Type
+          </label>
+          <div
+            class="c14"
+            placeholder="Type"
+          >
+            <div
+              class="c9"
+            >
+              <select
+                aria-disabled="false"
+                aria-invalid="false"
+                class="c11"
+                id="type_FORM_ID"
+                name="Type"
+              >
+                <option
+                  value="success"
+                >
+                  Success (green)
+                </option>
+                <option
+                  value="warn"
+                >
+                  Warning (orange)
+                </option>
+                <option
+                  value="error"
+                >
+                  Error (red)
+                </option>
+              </select>
+              <svg
+                class="c12 c13"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button
+          class="c15 c16"
+          type="button"
+        >
+          <span
+            class="c17"
+          >
+            Create notification
+          </span>
+        </button>
+      </form>
       <button
-        class="c14 c15"
+        class="c15 outer"
         type="button"
       >
         <span
-          class="c16"
+          class="c17"
         >
-          Create notification
+          Reload notifications
         </span>
       </button>
-    </form>
-    <button
-      class="c14 outer"
-      type="button"
-    >
-      <span
-        class="c16"
-      >
-        Reload notifications
-      </span>
-    </button>
+    </span>
     <div
-      class="c17"
+      class="c18"
     />
   </div>
 </div>
@@ -779,7 +794,7 @@ exports[`<AdminNotifications /> should render correctly with initial state 1`] =
 `;
 
 exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
-.c11 {
+.c12 {
   width: 1.25rem;
   height: 1.25rem;
 }
@@ -842,7 +857,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c14 {
+.c15 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -862,11 +877,11 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   box-shadow: none;
 }
 
-.c14:focus-visible {
+.c15:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-visible::after {
+.c15:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -879,24 +894,24 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   pointer-events: none;
 }
 
-.c14:focus,
-.c14:hover {
+.c15:focus,
+.c15:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c14:active {
+.c15:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c14:disabled {
+.c15:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c16 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -907,7 +922,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   justify-content: center;
 }
 
-.c18 {
+.c7 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -915,7 +930,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   margin-top: 2rem;
 }
 
-.c18:first-of-type {
+.c7:first-of-type {
   margin-top: 0.86rem;
 }
 
@@ -936,7 +951,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   fill: #E02626;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -950,14 +965,14 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   background-color: #ffffff;
 }
 
-.c8:focus-within,
-.c8:focus-visible {
+.c9:focus-within,
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus-visible::after {
+.c9:focus-within::after,
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -970,22 +985,22 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   pointer-events: none;
 }
 
-.c15 {
+.c16 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-.c9 {
+.c10 {
   margin-bottom: 1rem;
   width: 100%;
   box-sizing: border-box;
 }
 
-.c13 {
+.c14 {
   margin-bottom: 1rem;
 }
 
-.c7 {
+.c8 {
   display: inline-block;
   width: 100%;
   margin: 0 0 0.375rem 0.1rem;
@@ -994,7 +1009,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   font-weight: bold;
 }
 
-.c17 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1005,11 +1020,11 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   padding-top: 1rem;
 }
 
-.c17 > *:not(:first-child) {
+.c18 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c10 {
+.c11 {
   padding: 0.375rem 0.75rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1022,11 +1037,11 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   font-size: 1rem;
 }
 
-.c10:disabled {
+.c11:disabled {
   color: #b2b2bf;
 }
 
-.c12 {
+.c13 {
   margin-right: 0.5rem;
   color: #00a698;
   fill: #00a698;
@@ -1051,13 +1066,13 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-visible::after {
+  .c15:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -1065,8 +1080,8 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus,
-  .c14:hover {
+  .c15:focus,
+  .c15:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -1074,14 +1089,14 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:active {
+  .c15:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:disabled {
+  .c15:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -1102,33 +1117,33 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus-visible::after {
+  .c9:focus-within::after,
+  .c9:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
+  .c9 {
     border-color: white;
     background-color: #000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c11 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:disabled {
+  .c11:disabled {
     color: #7b7b86;
   }
 }
@@ -1138,116 +1153,65 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
     class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <div>
-      <div
-        class="c1"
-      >
-        <div
-          class="c2"
-        >
-          <a
-            class="c3"
-            href="/admin"
-          >
-            <span
-              class="c4"
-            >
-              ⇠ Admin
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="c1"
-      >
-        <h1
-          class="c5 c6"
-        >
-          Admin notifications
-        </h1>
-      </div>
-    </div>
-    <form
-      class=""
+    <div
+      class="c1"
     >
       <div
-        aria-hidden="false"
-        class=""
+        class="c2"
       >
-        <label
-          class="c7"
-          for="message_FORM_ID"
+        <a
+          class="c3"
+          href="/admin"
         >
-          Message
-        </label>
-        <div
-          class="c8 c9"
-          placeholder="Message"
-        >
-          <input
-            aria-disabled="false"
-            aria-hidden="false"
-            aria-invalid="false"
-            class="c10"
-            id="message_FORM_ID"
-            name="Message"
-            value=""
-          />
-          <svg
-            class="c11 c12"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            class="c4"
           >
-            <path
-              d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
-            />
-          </svg>
-        </div>
+            ⇠ Admin
+          </span>
+        </a>
       </div>
-      <div
-        aria-hidden="false"
+    </div>
+    <div
+      class="c1"
+    >
+      <h1
+        class="c5 c6"
+      >
+        Admin notifications
+      </h1>
+    </div>
+    <span
+      class="c7"
+      style="width: 100%;"
+    >
+      <form
         class=""
       >
-        <label
-          class="c7"
-          for="type_FORM_ID"
-        >
-          Type
-        </label>
         <div
-          class="c13"
-          placeholder="Type"
+          aria-hidden="false"
+          class=""
         >
-          <div
+          <label
             class="c8"
+            for="message_FORM_ID"
           >
-            <select
+            Message
+          </label>
+          <div
+            class="c9 c10"
+            placeholder="Message"
+          >
+            <input
               aria-disabled="false"
+              aria-hidden="false"
               aria-invalid="false"
-              class="c10"
-              id="type_FORM_ID"
-              name="Type"
-            >
-              <option
-                value="success"
-              >
-                Success (green)
-              </option>
-              <option
-                value="warn"
-              >
-                Warning (orange)
-              </option>
-              <option
-                value="error"
-              >
-                Error (red)
-              </option>
-            </select>
+              class="c11"
+              id="message_FORM_ID"
+              name="Message"
+              value=""
+            />
             <svg
-              class="c11 c12"
+              class="c12 c13"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -1259,33 +1223,87 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
             </svg>
           </div>
         </div>
-      </div>
+        <div
+          aria-hidden="false"
+          class=""
+        >
+          <label
+            class="c8"
+            for="type_FORM_ID"
+          >
+            Type
+          </label>
+          <div
+            class="c14"
+            placeholder="Type"
+          >
+            <div
+              class="c9"
+            >
+              <select
+                aria-disabled="false"
+                aria-invalid="false"
+                class="c11"
+                id="type_FORM_ID"
+                name="Type"
+              >
+                <option
+                  value="success"
+                >
+                  Success (green)
+                </option>
+                <option
+                  value="warn"
+                >
+                  Warning (orange)
+                </option>
+                <option
+                  value="error"
+                >
+                  Error (red)
+                </option>
+              </select>
+              <svg
+                class="c12 c13"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button
+          class="c15 c16"
+          type="button"
+        >
+          <span
+            class="c17"
+          >
+            Create notification
+          </span>
+        </button>
+      </form>
       <button
-        class="c14 c15"
+        class="c15 outer"
         type="button"
       >
         <span
-          class="c16"
+          class="c17"
         >
-          Create notification
+          Reload notifications
         </span>
       </button>
-    </form>
-    <button
-      class="c14 outer"
-      type="button"
-    >
-      <span
-        class="c16"
-      >
-        Reload notifications
-      </span>
-    </button>
+    </span>
     <div
-      class="c17"
+      class="c18"
     >
       <span
-        class="c18"
+        class="c7"
       >
         <span
           class="c19"
@@ -1301,7 +1319,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 `;
 
 exports[`<AdminNotifications /> should render correctly with loading=true 1`] = `
-.c11 {
+.c12 {
   width: 1.25rem;
   height: 1.25rem;
 }
@@ -1364,7 +1382,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c20 {
+.c21 {
   position: relative;
   display: inline-block;
   width: 1.125rem;
@@ -1372,7 +1390,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   color: #1e1e1e;
 }
 
-.c21 {
+.c22 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1393,7 +1411,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation-delay: -0.15000000000000002s;
 }
 
-.c22 {
+.c23 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1414,7 +1432,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation-delay: -0.05000000000000002s;
 }
 
-.c23 {
+.c24 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1435,7 +1453,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation-delay: 0.04999999999999999s;
 }
 
-.c24 {
+.c25 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1456,7 +1474,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation-delay: 0.15000000000000002s;
 }
 
-.c25 {
+.c26 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1477,7 +1495,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation-delay: 0.25s;
 }
 
-.c26 {
+.c27 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1498,7 +1516,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation-delay: 0.35s;
 }
 
-.c27 {
+.c28 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1519,7 +1537,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation-delay: 0.45000000000000007s;
 }
 
-.c28 {
+.c29 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1540,7 +1558,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation-delay: 0.55s;
 }
 
-.c14 {
+.c15 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -1560,11 +1578,11 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   box-shadow: none;
 }
 
-.c14:focus-visible {
+.c15:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-visible::after {
+.c15:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1577,24 +1595,24 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   pointer-events: none;
 }
 
-.c14:focus,
-.c14:hover {
+.c15:focus,
+.c15:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c14:active {
+.c15:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c14:disabled {
+.c15:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c17 {
+.c18 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -1615,11 +1633,11 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   cursor: default;
 }
 
-.c17:focus-visible {
+.c18:focus-visible {
   outline: none !important;
 }
 
-.c17:focus-visible::after {
+.c18:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1632,24 +1650,24 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   pointer-events: none;
 }
 
-.c17:focus,
-.c17:hover {
+.c18:focus,
+.c18:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c17:active {
+.c18:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c17:disabled {
+.c18:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c16 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1660,7 +1678,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   justify-content: center;
 }
 
-.c18 {
+.c19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1672,7 +1690,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   opacity: 0.1;
 }
 
-.c19 {
+.c20 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1692,6 +1710,18 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   align-items: center;
 }
 
+.c7 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c7:first-of-type {
+  margin-top: 0.86rem;
+}
+
 .c0 {
   display: block;
   width: 100%;
@@ -1704,7 +1734,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   padding-left: 1rem;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1718,14 +1748,14 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   background-color: #ffffff;
 }
 
-.c8:focus-within,
-.c8:focus-visible {
+.c9:focus-within,
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus-visible::after {
+.c9:focus-within::after,
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1738,22 +1768,22 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   pointer-events: none;
 }
 
-.c15 {
+.c16 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-.c9 {
+.c10 {
   margin-bottom: 1rem;
   width: 100%;
   box-sizing: border-box;
 }
 
-.c13 {
+.c14 {
   margin-bottom: 1rem;
 }
 
-.c7 {
+.c8 {
   display: inline-block;
   width: 100%;
   margin: 0 0 0.375rem 0.1rem;
@@ -1762,7 +1792,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   font-weight: bold;
 }
 
-.c29 {
+.c30 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1773,11 +1803,11 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   padding-top: 1rem;
 }
 
-.c29 > *:not(:first-child) {
+.c30 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c10 {
+.c11 {
   padding: 0.375rem 0.75rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1790,11 +1820,11 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   font-size: 1rem;
 }
 
-.c10:disabled {
+.c11:disabled {
   color: #b2b2bf;
 }
 
-.c12 {
+.c13 {
   margin-right: 0.5rem;
   color: #00a698;
   fill: #00a698;
@@ -1819,19 +1849,19 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20 {
+  .c21 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-visible::after {
+  .c15:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -1839,8 +1869,8 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus,
-  .c14:hover {
+  .c15:focus,
+  .c15:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -1848,27 +1878,27 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:active {
+  .c15:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:disabled {
+  .c15:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17:focus-visible::after {
+  .c18:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c18 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -1876,8 +1906,8 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17:focus,
-  .c17:hover {
+  .c18:focus,
+  .c18:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -1885,14 +1915,14 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17:active {
+  .c18:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17:disabled {
+  .c18:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -1906,33 +1936,33 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus-visible::after {
+  .c9:focus-within::after,
+  .c9:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
+  .c9 {
     border-color: white;
     background-color: #000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c11 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:disabled {
+  .c11:disabled {
     color: #7b7b86;
   }
 }
@@ -1942,116 +1972,65 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
     class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <div>
-      <div
-        class="c1"
-      >
-        <div
-          class="c2"
-        >
-          <a
-            class="c3"
-            href="/admin"
-          >
-            <span
-              class="c4"
-            >
-              ⇠ Admin
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="c1"
-      >
-        <h1
-          class="c5 c6"
-        >
-          Admin notifications
-        </h1>
-      </div>
-    </div>
-    <form
-      class=""
+    <div
+      class="c1"
     >
       <div
-        aria-hidden="false"
-        class=""
+        class="c2"
       >
-        <label
-          class="c7"
-          for="message_FORM_ID"
+        <a
+          class="c3"
+          href="/admin"
         >
-          Message
-        </label>
-        <div
-          class="c8 c9"
-          placeholder="Message"
-        >
-          <input
-            aria-disabled="false"
-            aria-hidden="false"
-            aria-invalid="false"
-            class="c10"
-            id="message_FORM_ID"
-            name="Message"
-            value=""
-          />
-          <svg
-            class="c11 c12"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            class="c4"
           >
-            <path
-              d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
-            />
-          </svg>
-        </div>
+            ⇠ Admin
+          </span>
+        </a>
       </div>
-      <div
-        aria-hidden="false"
+    </div>
+    <div
+      class="c1"
+    >
+      <h1
+        class="c5 c6"
+      >
+        Admin notifications
+      </h1>
+    </div>
+    <span
+      class="c7"
+      style="width: 100%;"
+    >
+      <form
         class=""
       >
-        <label
-          class="c7"
-          for="type_FORM_ID"
-        >
-          Type
-        </label>
         <div
-          class="c13"
-          placeholder="Type"
+          aria-hidden="false"
+          class=""
         >
-          <div
+          <label
             class="c8"
+            for="message_FORM_ID"
           >
-            <select
+            Message
+          </label>
+          <div
+            class="c9 c10"
+            placeholder="Message"
+          >
+            <input
               aria-disabled="false"
+              aria-hidden="false"
               aria-invalid="false"
-              class="c10"
-              id="type_FORM_ID"
-              name="Type"
-            >
-              <option
-                value="success"
-              >
-                Success (green)
-              </option>
-              <option
-                value="warn"
-              >
-                Warning (orange)
-              </option>
-              <option
-                value="error"
-              >
-                Error (red)
-              </option>
-            </select>
+              class="c11"
+              id="message_FORM_ID"
+              name="Message"
+              value=""
+            />
             <svg
-              class="c11 c12"
+              class="c12 c13"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -2063,71 +2042,125 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
             </svg>
           </div>
         </div>
-      </div>
+        <div
+          aria-hidden="false"
+          class=""
+        >
+          <label
+            class="c8"
+            for="type_FORM_ID"
+          >
+            Type
+          </label>
+          <div
+            class="c14"
+            placeholder="Type"
+          >
+            <div
+              class="c9"
+            >
+              <select
+                aria-disabled="false"
+                aria-invalid="false"
+                class="c11"
+                id="type_FORM_ID"
+                name="Type"
+              >
+                <option
+                  value="success"
+                >
+                  Success (green)
+                </option>
+                <option
+                  value="warn"
+                >
+                  Warning (orange)
+                </option>
+                <option
+                  value="error"
+                >
+                  Error (red)
+                </option>
+              </select>
+              <svg
+                class="c12 c13"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button
+          class="c15 c16"
+          type="button"
+        >
+          <span
+            class="c17"
+          >
+            Create notification
+          </span>
+        </button>
+      </form>
       <button
-        class="c14 c15"
+        class="c18 outer"
+        disabled=""
         type="button"
       >
         <span
-          class="c16"
+          class="c19"
         >
-          Create notification
+          Reload notifications
         </span>
-      </button>
-    </form>
-    <button
-      class="c17 outer"
-      disabled=""
-      type="button"
-    >
-      <span
-        class="c18"
-      >
-        Reload notifications
-      </span>
-      <div
-        aria-hidden="true"
-        class="c19"
-      >
         <div
+          aria-hidden="true"
           class="c20"
         >
           <div
             class="c21"
-          />
-          <div
-            class="c22"
-          />
-          <div
-            class="c23"
-          />
-          <div
-            class="c24"
-          />
-          <div
-            class="c25"
-          />
-          <div
-            class="c26"
-          />
-          <div
-            class="c27"
-          />
-          <div
-            class="c28"
-          />
+          >
+            <div
+              class="c22"
+            />
+            <div
+              class="c23"
+            />
+            <div
+              class="c24"
+            />
+            <div
+              class="c25"
+            />
+            <div
+              class="c26"
+            />
+            <div
+              class="c27"
+            />
+            <div
+              class="c28"
+            />
+            <div
+              class="c29"
+            />
+          </div>
         </div>
-      </div>
-    </button>
+      </button>
+    </span>
     <div
-      class="c29"
+      class="c30"
     />
   </div>
 </div>
 `;
 
 exports[`<AdminNotifications /> should render correctly with notifications 1`] = `
-.c11 {
+.c12 {
   width: 1.25rem;
   height: 1.25rem;
 }
@@ -2190,7 +2223,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   animation: eTsntO 0.4s ease-in-out;
 }
 
-.c14 {
+.c15 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -2210,11 +2243,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   box-shadow: none;
 }
 
-.c14:focus-visible {
+.c15:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-visible::after {
+.c15:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2227,24 +2260,24 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   pointer-events: none;
 }
 
-.c14:focus,
-.c14:hover {
+.c15:focus,
+.c15:hover {
   background-color: #004F8C;
   color: white;
   box-shadow: none;
 }
 
-.c14:active {
+.c15:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c14:disabled {
+.c15:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c19 {
+.c20 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -2264,11 +2297,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   box-shadow: none;
 }
 
-.c19:focus-visible {
+.c20:focus-visible {
   outline: none !important;
 }
 
-.c19:focus-visible::after {
+.c20:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2281,24 +2314,24 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   pointer-events: none;
 }
 
-.c19:focus,
-.c19:hover {
+.c20:focus,
+.c20:hover {
   background-color: #BA2020;
   color: white;
   box-shadow: none;
 }
 
-.c19:active {
+.c20:active {
   background-color: #9F1717;
   color: white;
 }
 
-.c19:disabled {
+.c20:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c16 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2307,6 +2340,18 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c7 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c7:first-of-type {
+  margin-top: 0.86rem;
 }
 
 .c0 {
@@ -2321,7 +2366,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   padding-left: 1rem;
 }
 
-.c18 {
+.c19 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2347,7 +2392,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   background-color: darkgreen;
 }
 
-.c20 {
+.c21 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2373,7 +2418,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   background-color: darkorange;
 }
 
-.c21 {
+.c22 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2399,7 +2444,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   background-color: #e02626;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2413,14 +2458,14 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   background-color: #ffffff;
 }
 
-.c8:focus-within,
-.c8:focus-visible {
+.c9:focus-within,
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus-visible::after {
+.c9:focus-within::after,
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2433,22 +2478,22 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   pointer-events: none;
 }
 
-.c15 {
+.c16 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-.c9 {
+.c10 {
   margin-bottom: 1rem;
   width: 100%;
   box-sizing: border-box;
 }
 
-.c13 {
+.c14 {
   margin-bottom: 1rem;
 }
 
-.c7 {
+.c8 {
   display: inline-block;
   width: 100%;
   margin: 0 0 0.375rem 0.1rem;
@@ -2457,7 +2502,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   font-weight: bold;
 }
 
-.c17 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2468,11 +2513,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   padding-top: 1rem;
 }
 
-.c17 > *:not(:first-child) {
+.c18 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
-.c10 {
+.c11 {
   padding: 0.375rem 0.75rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -2485,11 +2530,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   font-size: 1rem;
 }
 
-.c10:disabled {
+.c11:disabled {
   color: #b2b2bf;
 }
 
-.c12 {
+.c13 {
   margin-right: 0.5rem;
   color: #00a698;
   fill: #00a698;
@@ -2514,13 +2559,13 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-visible::after {
+  .c15:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c15 {
     background-color: #025CA2;
     color: white;
     box-shadow: none;
@@ -2528,8 +2573,8 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus,
-  .c14:hover {
+  .c15:focus,
+  .c15:hover {
     background-color: #004479;
     color: white;
     box-shadow: none;
@@ -2537,27 +2582,27 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:active {
+  .c15:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:disabled {
+  .c15:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:focus-visible::after {
+  .c20:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19 {
+  .c20 {
     background-color: #CA2020;
     color: white;
     box-shadow: none;
@@ -2565,8 +2610,8 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:focus,
-  .c19:hover {
+  .c20:focus,
+  .c20:hover {
     background-color: #891111;
     color: white;
     box-shadow: none;
@@ -2574,14 +2619,14 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:active {
+  .c20:active {
     background-color: #730D0D;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:disabled {
+  .c20:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -2595,33 +2640,33 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus-visible::after {
+  .c9:focus-within::after,
+  .c9:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
+  .c9 {
     border-color: white;
     background-color: #000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c8 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c11 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:disabled {
+  .c11:disabled {
     color: #7b7b86;
   }
 }
@@ -2631,116 +2676,65 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
     class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <div>
-      <div
-        class="c1"
-      >
-        <div
-          class="c2"
-        >
-          <a
-            class="c3"
-            href="/admin"
-          >
-            <span
-              class="c4"
-            >
-              ⇠ Admin
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="c1"
-      >
-        <h1
-          class="c5 c6"
-        >
-          Admin notifications
-        </h1>
-      </div>
-    </div>
-    <form
-      class=""
+    <div
+      class="c1"
     >
       <div
-        aria-hidden="false"
-        class=""
+        class="c2"
       >
-        <label
-          class="c7"
-          for="message_FORM_ID"
+        <a
+          class="c3"
+          href="/admin"
         >
-          Message
-        </label>
-        <div
-          class="c8 c9"
-          placeholder="Message"
-        >
-          <input
-            aria-disabled="false"
-            aria-hidden="false"
-            aria-invalid="false"
-            class="c10"
-            id="message_FORM_ID"
-            name="Message"
-            value=""
-          />
-          <svg
-            class="c11 c12"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            class="c4"
           >
-            <path
-              d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
-            />
-          </svg>
-        </div>
+            ⇠ Admin
+          </span>
+        </a>
       </div>
-      <div
-        aria-hidden="false"
+    </div>
+    <div
+      class="c1"
+    >
+      <h1
+        class="c5 c6"
+      >
+        Admin notifications
+      </h1>
+    </div>
+    <span
+      class="c7"
+      style="width: 100%;"
+    >
+      <form
         class=""
       >
-        <label
-          class="c7"
-          for="type_FORM_ID"
-        >
-          Type
-        </label>
         <div
-          class="c13"
-          placeholder="Type"
+          aria-hidden="false"
+          class=""
         >
-          <div
+          <label
             class="c8"
+            for="message_FORM_ID"
           >
-            <select
+            Message
+          </label>
+          <div
+            class="c9 c10"
+            placeholder="Message"
+          >
+            <input
               aria-disabled="false"
+              aria-hidden="false"
               aria-invalid="false"
-              class="c10"
-              id="type_FORM_ID"
-              name="Type"
-            >
-              <option
-                value="success"
-              >
-                Success (green)
-              </option>
-              <option
-                value="warn"
-              >
-                Warning (orange)
-              </option>
-              <option
-                value="error"
-              >
-                Error (red)
-              </option>
-            </select>
+              class="c11"
+              id="message_FORM_ID"
+              name="Message"
+              value=""
+            />
             <svg
-              class="c11 c12"
+              class="c12 c13"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -2752,62 +2746,98 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
             </svg>
           </div>
         </div>
-      </div>
+        <div
+          aria-hidden="false"
+          class=""
+        >
+          <label
+            class="c8"
+            for="type_FORM_ID"
+          >
+            Type
+          </label>
+          <div
+            class="c14"
+            placeholder="Type"
+          >
+            <div
+              class="c9"
+            >
+              <select
+                aria-disabled="false"
+                aria-invalid="false"
+                class="c11"
+                id="type_FORM_ID"
+                name="Type"
+              >
+                <option
+                  value="success"
+                >
+                  Success (green)
+                </option>
+                <option
+                  value="warn"
+                >
+                  Warning (orange)
+                </option>
+                <option
+                  value="error"
+                >
+                  Error (red)
+                </option>
+              </select>
+              <svg
+                class="c12 c13"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button
+          class="c15 c16"
+          type="button"
+        >
+          <span
+            class="c17"
+          >
+            Create notification
+          </span>
+        </button>
+      </form>
       <button
-        class="c14 c15"
+        class="c15 outer"
         type="button"
       >
         <span
-          class="c16"
+          class="c17"
         >
-          Create notification
+          Reload notifications
         </span>
       </button>
-    </form>
-    <button
-      class="c14 outer"
-      type="button"
-    >
-      <span
-        class="c16"
-      >
-        Reload notifications
-      </span>
-    </button>
+    </span>
     <div
-      class="c17"
+      class="c18"
     >
       <div>
         <div
-          class="c18"
+          class="c19"
           type="success"
         >
           message1
         </div>
         <button
-          class="c19 outer"
+          class="c20 outer"
           type="button"
         >
           <span
-            class="c16"
-          >
-            Remove
-          </span>
-        </button>
-      </div>
-      <div>
-        <div
-          class="c20"
-          type="warn"
-        >
-          message2
-        </div>
-        <button
-          class="c19 outer"
-          type="button"
-        >
-          <span
-            class="c16"
+            class="c17"
           >
             Remove
           </span>
@@ -2816,16 +2846,34 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       <div>
         <div
           class="c21"
+          type="warn"
+        >
+          message2
+        </div>
+        <button
+          class="c20 outer"
+          type="button"
+        >
+          <span
+            class="c17"
+          >
+            Remove
+          </span>
+        </button>
+      </div>
+      <div>
+        <div
+          class="c22"
           type="error"
         >
           message3
         </div>
         <button
-          class="c19 outer"
+          class="c20 outer"
           type="button"
         >
           <span
-            class="c16"
+            class="c17"
           >
             Remove
           </span>

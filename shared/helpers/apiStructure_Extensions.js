@@ -39,6 +39,10 @@ const apiStructureExtensions = {
     method: POST,
     path: '/webhooks/create',
   },
+  updateWebhookEndpoint: {
+    method: POST,
+    path: '/webhooks/update',
+  },
   deleteWebhookEndpoint: {
     method: POST,
     path: '/webhooks/delete',
@@ -50,6 +54,10 @@ const apiStructureExtensions = {
   loadWebhookNotifications: {
     method: GET,
     path: '/webhooks/notifications/load-all/:id',
+  },
+  deleteWebhookNotification: {
+    method: POST,
+    path: '/webhooks/notifications/delete',
   },
 
   // Webhook notifications

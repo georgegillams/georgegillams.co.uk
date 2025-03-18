@@ -22,9 +22,11 @@ const apiStructureWithActionsExtensions = apiStructure => {
 
   // Webhooks
   apiStructure.createWebhookEndpoint.action = require('./webhooks/createEndpoint');
+  apiStructure.updateWebhookEndpoint.action = require('./webhooks/updateEndpoint');
   apiStructure.deleteWebhookEndpoint.action = require('./webhooks/deleteEndpoint');
   apiStructure.loadWebhookEndpoints.action = require('./webhooks/loadAllEndpoints');
   apiStructure.loadWebhookNotifications.action = require('./webhooks/loadAllNotifications');
+  apiStructure.deleteWebhookNotification.action = require('./webhooks/deleteNotification');
 
   // Webhook notifications
   apiStructure.createWebhookNotification.action = require('./webhooks/receiveNotification');
