@@ -11,7 +11,7 @@ const SplitDetailView = props => {
     <Outer {...rest}>
       <ListView>{listView}</ListView>
       {detailView && (
-        <DetailView>
+        <DetailView id="split-detail-view">
           <CloseButtonContainer>
             <Button href={closeLink}>Close</Button>
           </CloseButtonContainer>

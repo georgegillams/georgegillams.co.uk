@@ -25,15 +25,15 @@ export const ListView = styled.div`
 export const DetailView = styled.div`
   justify-content: center;
   overflow: scroll;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: unset;
-  z-index: 4;
+  z-index: 1000;
   width: 100%;
   min-width: unset;
   max-width: unset;
-  height: calc(100vh - ${spacingLg});
+  height: 100vh;
   padding: 4 * ${spacingLg} ${spacingBase} ${spacingBase} ${spacingBase};
   background: ${backgroundColor};
 
