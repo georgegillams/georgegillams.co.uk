@@ -99,7 +99,9 @@ const WebhookEndpointEntity = props => {
                   window.scrollTo(0, document.body.scrollHeight);
                   const mobileSplitDetailView = document.getElementById('split-detail-view');
                   if (mobileSplitDetailView) {
-                    mobileSplitDetailView.scrollTo(0, mobileSplitDetailView.scrollHeight);
+                    mobileSplitDetailView.scrollTo(0, mobileSplitDetailView.scrollHeight, {
+                      behavior: 'smooth',
+                    });
                   }
                 }}>
                 Scroll to bottom

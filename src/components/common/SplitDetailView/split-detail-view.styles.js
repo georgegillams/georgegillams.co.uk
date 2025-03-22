@@ -33,7 +33,7 @@ export const DetailView = styled.div`
   width: 100%;
   min-width: unset;
   max-width: unset;
-  height: 100vh;
+  height: 100dvh;
   padding: 4 * ${spacingLg} ${spacingBase} ${spacingBase} ${spacingBase};
   background: ${backgroundColor};
 
