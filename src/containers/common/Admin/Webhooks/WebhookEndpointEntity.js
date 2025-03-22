@@ -10,8 +10,17 @@ import ObjectAsList from '@george-gillams/components/object-as-list';
 import { BUTTON_TYPES } from '@george-gillams/components/button';
 
 const WebhookEndpointEntity = props => {
-  const { compact, entity, children, webhooksState, updateEndpoint, notifications, removeNotification, ...rest } =
-    props;
+  const {
+    compact,
+    entity,
+    children,
+    webhooksState,
+    updateEndpoint,
+    notifications,
+    removeNotification,
+    loadNotifications,
+    ...rest
+  } = props;
   const [updatedWebhookEndpoint, setUpdatedWebhookEndpoint] = React.useState(entity);
   const [editing, setEditing] = React.useState(false);
 
@@ -21,7 +30,6 @@ const WebhookEndpointEntity = props => {
 
   const content = (
     <Subsection anchor={false} padding={!compact} name={entity.name || `Webhook ${entity.id}`}>
-      {/* TODO: Remove this */}
       <Paragraph>
         id: {entity.id}
         {!compact && (
@@ -34,6 +42,8 @@ const WebhookEndpointEntity = props => {
             )}
             <br />
             Retention limit: {entity.retentionLimit}
+            <br />
+            Display order: {entity.displayInReverse ? 'Old–new' : 'New–old'}
             <br />
             <br />
             Receive URL: {entity.receiveUrl}
@@ -61,7 +71,13 @@ const WebhookEndpointEntity = props => {
           webhookEndpoint={updatedWebhookEndpoint}
           onDataChanged={setUpdatedWebhookEndpoint}
           onSubmit={() => {
-            updateEndpoint(updatedWebhookEndpoint);
+            updateEndpoint({
+              webhookEndpointToUpdate: updatedWebhookEndpoint,
+              onUpdateSuccessCb: () => {
+                setEditing(false);
+                loadNotifications(entity.id);
+              },
+            });
           }}
           loading={webhooksState.updating}
           submitLabel="Update webhook endpoint"
@@ -70,7 +86,15 @@ const WebhookEndpointEntity = props => {
       {children}
       {notifications && notifications.length > 0 && (
         <Subsection name="Notifications">
-          {(entity.displayInReverse ? notifications.reverse() : notifications).map(notification => {
+          <Paragraph>
+            <Button
+              onClick={() => {
+                loadNotifications(entity.id);
+              }}>
+              Reload notifications
+            </Button>
+          </Paragraph>
+          {notifications.map(notification => {
             const { htmlLogs, logs, data } = notification.payload;
 
             const showHtmlLogs = htmlLogs && htmlLogs.length > 0;
@@ -117,6 +141,7 @@ WebhookEndpointEntity.propTypes = {
   updateEndpoint: PropTypes.func,
   notifications: PropTypes.array,
   removeNotification: PropTypes.func,
+  loadNotifications: PropTypes.func,
 };
 
 WebhookEndpointEntity.defaultProps = {
@@ -127,6 +152,7 @@ WebhookEndpointEntity.defaultProps = {
   updateEndpoint: () => null,
   notifications: null,
   removeNotification: () => null,
+  loadNotifications: () => null,
 };
 
 export default WebhookEndpointEntity;
