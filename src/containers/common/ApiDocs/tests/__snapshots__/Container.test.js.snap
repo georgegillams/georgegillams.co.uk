@@ -55,7 +55,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 

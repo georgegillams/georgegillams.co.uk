@@ -4,7 +4,14 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { loadEndpoints, createEndpoint, removeEndpoint, updateEndpoint } from './actions';
+import {
+  loadEndpoints,
+  createEndpoint,
+  removeEndpoint,
+  updateEndpoint,
+  loadNotifications,
+  removeNotification,
+} from './actions';
 import { selectState } from './selectors';
 import { selectState as selectAuthenticatorState } from 'containers/common/Authenticator/selectors';
 import AdminWebhooks from './Container';
@@ -26,6 +33,8 @@ export function mapDispatchToProps(dispatch) {
     createEndpoint: payload => dispatch(createEndpoint(payload)),
     updateEndpoint: payload => dispatch(updateEndpoint(payload)),
     removeEndpoint: payload => dispatch(removeEndpoint(payload)),
+    loadNotifications: payload => dispatch(loadNotifications(payload)),
+    removeNotification: payload => dispatch(removeNotification(payload)),
   };
 }
 

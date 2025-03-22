@@ -66,7 +66,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1651,7 +1651,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -3213,7 +3213,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -4726,7 +4726,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -6310,7 +6310,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 

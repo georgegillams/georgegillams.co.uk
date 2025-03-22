@@ -26,7 +26,7 @@ exports[`<AdminAnalytics /> should render correctly - index 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -148,7 +148,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -214,7 +214,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -407,7 +407,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -473,7 +473,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -666,7 +666,7 @@ exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -948,7 +948,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1191,7 +1191,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1245,7 +1245,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1547,7 +1547,7 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 

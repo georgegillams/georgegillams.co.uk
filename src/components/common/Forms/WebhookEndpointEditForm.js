@@ -5,9 +5,16 @@ import FormBuilder, { FORM_FIELD_VISIBILITY } from '@george-gillams/components/f
 const WebhookEndpointEditForm = props => {
   const { isNew, webhookEndpoint, onDataChanged, ...rest } = props;
 
+  const customOnDataChange = newValue => {
+    onDataChanged({
+      ...newValue,
+      retentionLimit: newValue?.retentionLimit ? parseInt(newValue?.retentionLimit, 10) : undefined,
+    });
+  };
+
   return (
     <FormBuilder
-      onDataChanged={onDataChanged}
+      onDataChanged={customOnDataChange}
       entity={webhookEndpoint}
       submitLabel="Update"
       formFields={[
@@ -28,6 +35,11 @@ const WebhookEndpointEditForm = props => {
           id: 'accessKey',
           name: 'Access key',
           visibility: isNew ? FORM_FIELD_VISIBILITY.OFF : FORM_FIELD_VISIBILITY.VISIBLE,
+        },
+        {
+          id: 'displayInReverse',
+          name: 'Display in reverse',
+          type: 'CHECKBOX',
         },
       ]}
       test={process.env.NODE_ENV === 'test'}

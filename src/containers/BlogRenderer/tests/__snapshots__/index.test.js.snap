@@ -41,7 +41,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -345,7 +345,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -710,7 +710,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1080,7 +1080,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1403,7 +1403,7 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1707,7 +1707,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 

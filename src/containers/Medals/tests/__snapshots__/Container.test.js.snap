@@ -60,7 +60,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #C50722 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -94,7 +94,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #11388E 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -128,7 +128,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #549C00 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -162,7 +162,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -196,7 +196,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -230,7 +230,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -264,7 +264,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #FFF200 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -298,7 +298,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #FFE342 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -332,7 +332,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #F80F11 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -366,7 +366,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #088544 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -400,7 +400,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid white 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -434,7 +434,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #ffed00 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -468,7 +468,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #1e1e1e 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -502,7 +502,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #CE9708 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -536,7 +536,7 @@ exports[`<Medals /> should render correctly 1`] = `
   content: '';
   display: block;
   border: solid #E66000 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -602,7 +602,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #1e1e1e;
   color: #FFF200;
@@ -627,7 +627,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #636363;
   color: #FFE342;
@@ -652,7 +652,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #1e1e1e;
   color: #F80F11;
@@ -677,7 +677,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #FFFFFF;
   color: #088544;
@@ -702,7 +702,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #1e1e1e;
   color: white;
@@ -727,7 +727,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #000000;
   color: #ffed00;
@@ -752,7 +752,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #93D50A;
   color: #1e1e1e;
@@ -777,7 +777,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #F04400;
   color: white;
@@ -802,7 +802,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #8358B9;
   color: white;
@@ -827,7 +827,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #0D313D;
   color: #CE9708;
@@ -852,7 +852,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #0D492C;
   color: white;
@@ -877,7 +877,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: rgb(255,120,26);
   color: #1e1e1e;
@@ -902,7 +902,7 @@ exports[`<Medals /> should render correctly 1`] = `
   width: fit-content;
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: white;
   color: #E66000;

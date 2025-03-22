@@ -177,7 +177,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -243,7 +243,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -309,7 +309,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border: 1px #b2b2bf solid;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   background-color: #ffffff;
 }
 
@@ -329,7 +329,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -824,7 +824,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -890,7 +890,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -961,7 +961,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border: 1px #b2b2bf solid;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   background-color: #ffffff;
 }
 
@@ -981,7 +981,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1349,7 +1349,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1591,7 +1591,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1646,7 +1646,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1744,7 +1744,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   -ms-flex-align: center;
   align-items: center;
   border: 1px #b2b2bf solid;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   background-color: #ffffff;
 }
 
@@ -1764,7 +1764,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2190,7 +2190,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2256,7 +2256,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2310,7 +2310,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2454,7 +2454,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   -ms-flex-align: center;
   align-items: center;
   border: 1px #b2b2bf solid;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   background-color: #ffffff;
 }
 
@@ -2474,7 +2474,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2910,7 +2910,7 @@ exports[`<AdminNotifications /> should render correctly with user 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
