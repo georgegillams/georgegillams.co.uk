@@ -6,9 +6,12 @@ import Paragraph from '@george-gillams/components/paragraph';
 import WebhookEndpointEditForm from 'components/common/Forms/WebhookEndpointEditForm';
 import Button from 'components/common/Button';
 import { spacingBase } from '@george-gillams/components/constants/layout';
+import ObjectAsList from '@george-gillams/components/object-as-list';
+import { BUTTON_TYPES } from '@george-gillams/components/button';
 
 const WebhookEndpointEntity = props => {
-  const { compact, entity, children, webhooksState, updateEndpoint, ...rest } = props;
+  const { compact, entity, children, webhooksState, updateEndpoint, notifications, removeNotification, ...rest } =
+    props;
   const [updatedWebhookEndpoint, setUpdatedWebhookEndpoint] = React.useState(entity);
   const [editing, setEditing] = React.useState(false);
 
@@ -65,6 +68,36 @@ const WebhookEndpointEntity = props => {
         />
       )}
       {children}
+      {notifications && notifications.length > 0 && (
+        <Subsection name="Notifications">
+          {(entity.displayInReverse ? notifications.reverse() : notifications).map(notification => {
+            const { htmlLogs, logs, data } = notification.payload;
+
+            const showHtmlLogs = htmlLogs && htmlLogs.length > 0;
+            const showLogs = !showHtmlLogs && logs && logs.length > 0;
+            const showData = !!data;
+
+            return (
+              <div key={notification.id}>
+                <Paragraph style={{ marginBottom: showLogs || showHtmlLogs ? '10rem' : 0 }}>
+                  {showHtmlLogs && <div dangerouslySetInnerHTML={{ __html: htmlLogs }} />}
+                  {showLogs && <span>{logs}</span>}
+                  {showData && <Paragraph>{data}</Paragraph>}
+                  <ObjectAsList value={notification.payload} />
+                  <Button
+                    buttonType={BUTTON_TYPES.destructive}
+                    onClick={() => {
+                      removeNotification(notification);
+                    }}
+                    disabled={notification.deleted}>
+                    Delete
+                  </Button>
+                </Paragraph>
+              </div>
+            );
+          })}
+        </Subsection>
+      )}
     </Subsection>
   );
 
@@ -82,6 +115,8 @@ WebhookEndpointEntity.propTypes = {
   compact: PropTypes.bool,
   webhooksState: PropTypes.object,
   updateEndpoint: PropTypes.func,
+  notifications: PropTypes.array,
+  removeNotification: PropTypes.func,
 };
 
 WebhookEndpointEntity.defaultProps = {
@@ -90,6 +125,8 @@ WebhookEndpointEntity.defaultProps = {
   compact: false,
   webhooksState: {},
   updateEndpoint: () => null,
+  notifications: null,
+  removeNotification: () => null,
 };
 
 export default WebhookEndpointEntity;

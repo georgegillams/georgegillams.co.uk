@@ -169,7 +169,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -223,7 +223,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -457,7 +457,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -511,7 +511,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -745,7 +745,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -799,7 +799,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1033,7 +1033,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1087,7 +1087,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1497,7 +1497,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1552,7 +1552,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1966,7 +1966,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2020,7 +2020,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2254,7 +2254,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2308,7 +2308,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2719,7 +2719,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -2773,7 +2773,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -3079,7 +3079,7 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
   content: '';
   display: block;
   border: solid #44aeff 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 

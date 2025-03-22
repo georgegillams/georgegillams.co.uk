@@ -1,6 +1,13 @@
 import produce from 'immer';
 
-import { loadEndpoints, createEndpoint, removeEndpoint, updateEndpoint } from './actions';
+import {
+  loadEndpoints,
+  createEndpoint,
+  removeEndpoint,
+  updateEndpoint,
+  loadNotifications,
+  removeNotification,
+} from './actions';
 
 export const initialState = {
   webhookEndpoints: null,
@@ -18,6 +25,10 @@ export const initialState = {
   webhookEndpointToRemove: null,
   removing: false,
   removeError: null,
+
+  notifications: null,
+  notificationsLoading: false,
+  notificationsLoadError: null,
 };
 
 const reducer = (state = initialState, { type, payload }) =>
@@ -91,6 +102,45 @@ const reducer = (state = initialState, { type, payload }) =>
         draft.removing = false;
         draft.removeError = payload;
         break;
+
+      case loadNotifications.TRIGGER:
+        draft.webhookIdToLoadNotifications = payload;
+        break;
+
+      case loadNotifications.REQUEST:
+        draft.notificationsLoading = true;
+        draft.notificationsLoadError = null;
+        break;
+
+      case loadNotifications.SUCCESS:
+        draft.notificationsLoading = false;
+        draft.notifications = {
+          ...draft.notifications,
+          [draft.webhookIdToLoadNotifications]: payload.webhookNotifications,
+        };
+        break;
+
+      case loadNotifications.FAILURE:
+        draft.notificationsLoading = false;
+        draft.notificationsLoadError = payload;
+        break;
+
+      case removeNotification.TRIGGER:
+        draft.webhookIdToRemoveNotification = payload;
+        break;
+
+      case removeNotification.REQUEST:
+        draft.removingNotification = true;
+        draft.removeNotificationError = null;
+        break;
+
+      case removeNotification.SUCCESS:
+        draft.removingNotification = false;
+        break;
+
+      case removeNotification.FAILURE:
+        draft.removingNotification = false;
+        draft.removeNotificationError = payload;
     }
   });
 

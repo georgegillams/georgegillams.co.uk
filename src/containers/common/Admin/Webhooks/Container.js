@@ -28,6 +28,9 @@ const AdminWebhooks = props => {
     createEndpoint,
     updateEndpoint,
 
+    loadNotifications,
+    removeNotification,
+
     webhooksState,
     authenticatorState,
 
@@ -80,6 +83,10 @@ const AdminWebhooks = props => {
     scrollToHighlightedId();
   });
 
+  useEffect(() => {
+    loadNotifications(highlightId);
+  }, [loadNotifications, highlightId]);
+
   const showWebhookEndpoints = !!webhookEndpoints && !!webhookEndpoints.map && webhookEndpoints.length > 0;
 
   const listView = (
@@ -129,7 +136,9 @@ const AdminWebhooks = props => {
         entity={detailWebhookEndpoint}
         compact={false}
         webhooksState={webhooksState}
-        updateEndpoint={updateEndpoint}>
+        updateEndpoint={updateEndpoint}
+        notifications={webhooksState.notifications?.[detailWebhookEndpoint.id]}
+        removeNotification={removeNotification}>
         <div style={{ width: '100%' }}>
           <br />
           <Button
@@ -190,6 +199,7 @@ AdminWebhooks.propTypes = {
     creating: PropTypes.bool,
     loadError: PropTypes.object,
     webhookEndpoints: PropTypes.arrayOf(PropTypes.object),
+    notifications: PropTypes.object,
   }).isRequired,
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
@@ -200,6 +210,8 @@ AdminWebhooks.propTypes = {
       highlight: PropTypes.string,
     }).isRequired,
   }),
+  loadNotifications: PropTypes.func.isRequired,
+  removeNotification: PropTypes.func.isRequired,
 };
 
 AdminWebhooks.defaultProps = {
