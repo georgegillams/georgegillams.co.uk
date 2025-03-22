@@ -138,6 +138,7 @@ const AdminWebhooks = props => {
         webhooksState={webhooksState}
         updateEndpoint={updateEndpoint}
         notifications={webhooksState.notifications?.[detailWebhookEndpoint.id]}
+        loadNotifications={loadNotifications}
         removeNotification={removeNotification}>
         <div style={{ width: '100%' }}>
           <br />

@@ -64,7 +64,7 @@ export function* doCreateEndpoint() {
 
 export function* doUpdateEndpoint() {
   const currentState = yield select(selectState());
-  const { webhookEndpointToUpdate } = currentState;
+  const { webhookEndpointToUpdate, onUpdateSuccessCb } = currentState;
   const requestURL = apiStructure.updateWebhookEndpoint.fullPath;
 
   try {
@@ -83,6 +83,9 @@ export function* doUpdateEndpoint() {
     } else {
       yield put(updateEndpoint.success(result));
       yield put(loadEndpoints.trigger());
+      if (onUpdateSuccessCb) {
+        onUpdateSuccessCb();
+      }
     }
   } catch (err) {
     yield put(updateEndpoint.failure(err));

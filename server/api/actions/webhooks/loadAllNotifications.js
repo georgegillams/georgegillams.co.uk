@@ -1,6 +1,7 @@
 import authentication from 'server-utils/common/authentication';
 import { dbLoad } from 'server-utils/common/database';
-import { UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
+import { RESOURCE_NOT_FOUND, UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
+import { find } from 'server-utils/common/find';
 
 export default async function loadAllNotifications(req, params) {
   const user = await authentication(req);
@@ -8,12 +9,33 @@ export default async function loadAllNotifications(req, params) {
     throw UNAUTHORISED_READ;
   }
 
+  let matchingWebhook;
+
+  if (params.id !== '*') {
+    const webhooks = await dbLoad({
+      redisKey: 'webhooks',
+      sortKey: 'lastUpdatedTimestamp',
+    });
+
+    matchingWebhook = find(webhooks, params.id).existingValue;
+
+    if (!matchingWebhook) {
+      throw RESOURCE_NOT_FOUND;
+    }
+  }
+
   const webhookNotifications = await dbLoad({
     redisKey: 'webhook-notifications',
     sortKey: 'lastUpdatedTimestamp',
   });
 
+  const matchingWebhookNotifications = webhookNotifications.filter(w => params.id === '*' || w.webhookId === params.id);
+
+  const sortedMatchingWebhookNotifications = matchingWebhook?.displayInReverse
+    ? matchingWebhookNotifications.reverse()
+    : matchingWebhookNotifications;
+
   return {
-    webhookNotifications: webhookNotifications.filter(w => params.id === '*' || w.webhookId === params.id),
+    webhookNotifications: sortedMatchingWebhookNotifications,
   };
 }

@@ -21,6 +21,7 @@ export const initialState = {
   webhookEndpointToUpdate: null,
   updating: false,
   updateError: null,
+  onUpdateSuccessCb: null,
 
   webhookEndpointToRemove: null,
   removing: false,
@@ -68,7 +69,8 @@ const reducer = (state = initialState, { type, payload }) =>
         break;
 
       case updateEndpoint.TRIGGER:
-        draft.webhookEndpointToUpdate = payload;
+        draft.webhookEndpointToUpdate = payload.webhookEndpointToUpdate;
+        draft.onUpdateSuccessCb = payload.onUpdateSuccessCb;
         break;
 
       case updateEndpoint.REQUEST:
@@ -83,6 +85,11 @@ const reducer = (state = initialState, { type, payload }) =>
       case updateEndpoint.FAILURE:
         draft.updating = false;
         draft.updateError = payload;
+        break;
+
+      case updateEndpoint.FULFILL:
+        draft.webhookEndpointToUpdate = null;
+        draft.onUpdateSuccessCb = null;
         break;
 
       case removeEndpoint.TRIGGER:
@@ -101,6 +108,10 @@ const reducer = (state = initialState, { type, payload }) =>
       case removeEndpoint.FAILURE:
         draft.removing = false;
         draft.removeError = payload;
+        break;
+
+      case removeEndpoint.FULFILL:
+        draft.webhookEndpointToRemove = null;
         break;
 
       case loadNotifications.TRIGGER:
