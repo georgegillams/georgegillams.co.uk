@@ -86,13 +86,25 @@ const WebhookEndpointEntity = props => {
       {children}
       {notifications && notifications.length > 0 && (
         <Subsection name="Notifications">
-          <Paragraph>
+          <Paragraph style={{ display: 'flex', gap: spacingBase }}>
             <Button
               onClick={() => {
                 loadNotifications(entity.id);
               }}>
               Reload notifications
             </Button>
+            {entity.displayInReverse && (
+              <Button
+                onClick={() => {
+                  window.scrollTo(0, document.body.scrollHeight);
+                  const mobileSplitDetailView = document.getElementById('split-detail-view');
+                  if (mobileSplitDetailView) {
+                    mobileSplitDetailView.scrollTo(0, mobileSplitDetailView.scrollHeight);
+                  }
+                }}>
+                Scroll to bottom
+              </Button>
+            )}
           </Paragraph>
           {notifications.map(notification => {
             const { htmlLogs, logs, data } = notification.payload;
@@ -103,7 +115,7 @@ const WebhookEndpointEntity = props => {
 
             return (
               <div key={notification.id}>
-                <Paragraph style={{ marginBottom: showLogs || showHtmlLogs ? '10rem' : 0 }}>
+                <Paragraph>
                   {showHtmlLogs && <div dangerouslySetInnerHTML={{ __html: htmlLogs }} />}
                   {showLogs && <span>{logs}</span>}
                   {showData && <Paragraph>{data}</Paragraph>}
