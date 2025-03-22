@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Webhooks from 'containers/common/Admin/Webhooks';
-import CommonLayout from 'components/common/CommonLayout';
+import FlexLayout from 'components/common/FlexLayout';
 
 const Page = props => {
   return (
-    <CommonLayout>
+    <FlexLayout>
       <Webhooks {...props} />
-    </CommonLayout>
+    </FlexLayout>
   );
 };
 
