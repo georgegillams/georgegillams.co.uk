@@ -27,6 +27,7 @@ apiStructure.backupAllData.action = require('./dataManagement/backup');
 apiStructure.deleteEntity.action = require('./dataManagement/deleteEntity');
 apiStructure.deleteSet.action = require('./dataManagement/deleteSet');
 apiStructure.restoreBackup.action = require('./dataManagement/restore');
+apiStructure.cleanUp.action = require('./dataManagement/cleanUp');
 
 // Notifications
 apiStructure.createNotification.action = require('./notifications/create');

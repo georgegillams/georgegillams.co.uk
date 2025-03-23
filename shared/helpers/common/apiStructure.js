@@ -33,6 +33,7 @@ const apiStructure = {
   deleteEntity: { method: POST, path: '/data-management/delete-entity', isSensitive: true },
   deleteSet: { method: POST, path: '/data-management/delete-set', isSensitive: true },
   restoreBackup: { method: POST, path: '/data-management/restore', isSensitive: true },
+  cleanUp: { method: POST, path: '/data-management/clean-up', isSensitive: true },
 
   // Notifications
   createNotification: { method: POST, path: '/notifications/create' },
