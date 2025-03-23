@@ -14,6 +14,7 @@ export default async function dbRemove(settings, req) {
 
   const value = JSON.parse(JSON.stringify(existingValue));
   value.deleted = true;
+  value.lastUpdatedTimestamp = new Date().toISOString();
 
   return await dbUpdate(settings, { body: value });
 }

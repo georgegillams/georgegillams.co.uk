@@ -57,12 +57,17 @@ test('remove deleted entity non-admin - throws auth error', () => {
         redisKey: 'users',
         filter: x => x.id === 'user5',
         includeDeleted: true,
-      }).then(dbResult => {
-        expect(dbResult).toBeTruthy();
-        expect(dbResult.id).toBe('user5');
-        expect(dbResult.name).toBe('User Five');
-        return true;
       })
+        .then(dbResult => {
+          expect(dbResult).toBeTruthy();
+          expect(dbResult.id).toBe('user5');
+          expect(dbResult.name).toBe('User Five');
+          return true;
+        })
+        .catch(err => {
+          console.error(err);
+          throw err;
+        })
     );
 });
 
