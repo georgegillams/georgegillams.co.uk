@@ -119,7 +119,7 @@ const WebhookEndpointEntity = props => {
               <div key={notification.id}>
                 <Paragraph>
                   {showHtmlLogs && <div dangerouslySetInnerHTML={{ __html: htmlLogs }} />}
-                  {showLogs && <span>{logs}</span>}
+                  {showLogs && <div dangerouslySetInnerHTML={{ __html: logs.replaceAll('\n', '<br />') }} />}
                   {showData && <Paragraph>{data}</Paragraph>}
                   <ObjectAsList value={notification.payload} />
                   <Button
