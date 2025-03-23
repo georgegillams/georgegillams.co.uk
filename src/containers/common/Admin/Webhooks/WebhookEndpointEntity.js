@@ -134,6 +134,16 @@ const WebhookEndpointEntity = props => {
               </div>
             );
           })}
+          {entity.displayInReverse && (
+            <Paragraph>
+              <Button
+                onClick={() => {
+                  loadNotifications(entity.id);
+                }}>
+                Reload notifications
+              </Button>
+            </Paragraph>
+          )}
         </Subsection>
       )}
     </Subsection>
