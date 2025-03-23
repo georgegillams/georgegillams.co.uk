@@ -8,6 +8,8 @@ export default async function cleanUpDeletedItems() {
   const deleteCounts = {};
 
   for (let store of REDIS_STORES) {
+    deleteCounts[store] = 0;
+
     const redisKey = `${appConfig.projectName}_${store}`;
     const data = await new Promise((resolve, reject) => {
       redis.lrange(redisKey, 0, -1, (err, reply) => {
@@ -17,8 +19,6 @@ export default async function cleanUpDeletedItems() {
         resolve(reply);
       });
     });
-
-    console.log(`data`, data);
 
     for (let dataItem of data) {
       const item = JSON.parse(dataItem);
@@ -31,9 +31,6 @@ export default async function cleanUpDeletedItems() {
         : itemIsDeleted && itemIsMoreThanThirtyDaysOld;
 
       if (shouldDelete) {
-        if (!deleteCounts[store]) {
-          deleteCounts[store] = 0;
-        }
         deleteCounts[store] += 1;
         await redis.lrem(redisKey, 1, dataItem);
       }
