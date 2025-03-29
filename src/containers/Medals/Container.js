@@ -176,6 +176,22 @@ const Medals = () => {
               stravaLink="https://www.strava.com/activities/11765215916"
               showDarkModeOutline
             />
+            <EventPatch
+              background={notBlack}
+              foreground="#F80F11"
+              title="Tartan Warrior 3km"
+              year="2025"
+              stravaLink="https://www.strava.com/activities/14019004561"
+              showDarkModeOutline
+            />
+            <EventPatch
+              background={notBlack}
+              foreground="#F80F11"
+              title="Tartan Warrior 8km"
+              year="2025"
+              stravaLink="https://www.strava.com/activities/TODO"
+              showDarkModeOutline
+            />
           </StyledMedalShelf>
         </Subsection>
       </SectionWithScroll>
