@@ -30,7 +30,7 @@ const apiStructureWithActionsExtensions = apiStructure => {
   apiStructure.createWebhookNotification.action = require('./webhooks/receiveNotification');
   apiStructure.loadWebhookNotifications.action = require('./webhooks/loadAllNotifications');
   apiStructure.deleteWebhookNotification.action = require('./webhooks/deleteNotification');
-  apiStructure.readSingleNotification = require('./webhooks/readSingleNotification');
+  apiStructure.readSingleNotification.action = require('./webhooks/readSingleNotification');
 
   return apiStructure;
 };
