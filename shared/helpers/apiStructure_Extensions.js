@@ -51,6 +51,16 @@ const apiStructureExtensions = {
     method: GET,
     path: '/webhooks/load-all',
   },
+
+  // Webhook notifications
+  createWebhookNotification: {
+    method: POST,
+    path: '/v1/webhook/:id/notification',
+  },
+  readSingleNotification: {
+    method: GET,
+    path: '/v1/webhooks/notifications/read/:id',
+  },
   loadWebhookNotifications: {
     method: GET,
     path: '/webhooks/notifications/load-all/:id',
@@ -58,12 +68,6 @@ const apiStructureExtensions = {
   deleteWebhookNotification: {
     method: POST,
     path: '/webhooks/notifications/delete',
-  },
-
-  // Webhook notifications
-  createWebhookNotification: {
-    method: POST,
-    path: '/v1/webhook/:id/notification',
   },
 };
 

@@ -118,7 +118,14 @@ const WebhookEndpointEntity = props => {
             return (
               <div key={notification.id}>
                 <Paragraph>
-                  <Paragraph>Uploaded: {new Date(notification.timestamp).toLocaleString()}</Paragraph>
+                  <Paragraph style={{ color: 'cornflowerblue' }}>
+                    Uploaded: {new Date(notification.timestamp).toLocaleString()}
+                  </Paragraph>
+                  {notification.read ? (
+                    <Paragraph>Read</Paragraph>
+                  ) : (
+                    <Paragraph style={{ fontWeight: 'bold' }}>Unread</Paragraph>
+                  )}
                   {showHtmlLogs && <div dangerouslySetInnerHTML={{ __html: htmlLogs }} />}
                   {showLogs && <div dangerouslySetInnerHTML={{ __html: logs.replaceAll('\n', '<br />') }} />}
                   {showData && <Paragraph>{data}</Paragraph>}
