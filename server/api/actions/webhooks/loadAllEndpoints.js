@@ -1,7 +1,7 @@
 import authentication from 'server-utils/common/authentication';
 import { dbLoad } from 'server-utils/common/database';
 import { UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
-import { getWebhookEndpointReceiveUrl } from './utils';
+import { getWebhookEndpointReadUrl, getWebhookEndpointReceiveUrl } from './utils';
 
 export default async function loadAllEndpoints(req) {
   const user = await authentication(req);
@@ -18,6 +18,7 @@ export default async function loadAllEndpoints(req) {
   const annotatedWebhookEndpoints = webhookEndpoints.map(w => ({
     ...w,
     receiveUrl: getWebhookEndpointReceiveUrl(w),
+    readUrl: getWebhookEndpointReadUrl(w),
   }));
 
   for (const webhookEndpoint of annotatedWebhookEndpoints) {
