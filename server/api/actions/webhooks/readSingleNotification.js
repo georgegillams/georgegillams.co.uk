@@ -21,10 +21,10 @@ export default async function readSingle(req, params) {
     sortKey: 'lastUpdatedTimestamp',
   });
 
-  const unreadNotifications = notifications.filter(n => !n.read);
+  const unreadMatchingNotifications = notifications.filter(n => n.webhookId === matchingWebhook.id && !n.read);
 
-  if (unreadNotifications.length > 0) {
-    const unreadNotification = unreadNotifications[0];
+  if (unreadMatchingNotifications.length > 0) {
+    const unreadNotification = unreadMatchingNotifications[0];
     dbUpdate(
       { redisKey: 'webhook-notifications' },
       {

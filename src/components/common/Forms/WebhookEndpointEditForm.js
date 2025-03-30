@@ -41,6 +41,11 @@ const WebhookEndpointEditForm = props => {
           name: 'Display in reverse',
           type: 'CHECKBOX',
         },
+        {
+          id: 'showReadUnread',
+          name: 'Show read and unread',
+          type: 'CHECKBOX',
+        },
       ]}
       test={process.env.NODE_ENV === 'test'}
       {...rest}

@@ -49,6 +49,9 @@ const WebhookEndpointEntity = props => {
             Receive URL: {entity.receiveUrl}
             <br />
             <br />
+            Read URL: {entity.readUrl}
+            <br />
+            <br />
             Headers:
             <br />
             access-key: {entity.accessKey}
@@ -121,11 +124,12 @@ const WebhookEndpointEntity = props => {
                   <Paragraph style={{ color: 'cornflowerblue' }}>
                     Uploaded: {new Date(notification.timestamp).toLocaleString()}
                   </Paragraph>
-                  {notification.read ? (
-                    <Paragraph>Read</Paragraph>
-                  ) : (
-                    <Paragraph style={{ fontWeight: 'bold' }}>Unread</Paragraph>
-                  )}
+                  {entity.showReadUnread &&
+                    (notification.read ? (
+                      <Paragraph>Read</Paragraph>
+                    ) : (
+                      <Paragraph style={{ fontWeight: 'bold' }}>Unread</Paragraph>
+                    ))}
                   {showHtmlLogs && <div dangerouslySetInnerHTML={{ __html: htmlLogs }} />}
                   {showLogs && <div dangerouslySetInnerHTML={{ __html: logs.replaceAll('\n', '<br />') }} />}
                   {showData && <Paragraph>{data}</Paragraph>}
