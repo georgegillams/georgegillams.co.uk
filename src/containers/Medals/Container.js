@@ -184,6 +184,14 @@ const Medals = () => {
               stravaLink="https://www.strava.com/activities/14019004561"
               showDarkModeOutline
             />
+            <EventPatch
+              background={notBlack}
+              foreground="#FFF200"
+              title="Nuclear OCR British Championships"
+              year="2025"
+              stravaLink="https://www.strava.com/activities/14433973136"
+              showDarkModeOutline
+            />
           </StyledMedalShelf>
         </Subsection>
       </SectionWithScroll>
