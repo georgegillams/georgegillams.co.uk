@@ -19,6 +19,7 @@ const WebhookEndpointEntity = props => {
     notifications,
     removeNotification,
     loadNotifications,
+    loadEndpoints,
     ...rest
   } = props;
   const [updatedWebhookEndpoint, setUpdatedWebhookEndpoint] = React.useState(entity);
@@ -42,6 +43,10 @@ const WebhookEndpointEntity = props => {
             )}
             <br />
             Retention limit: {entity.retentionLimit}
+            <br />
+            Count: {entity.notificationCount}
+            <br />
+            Deleted count: {entity.deletedNotificationCount}
             <br />
             Display order: {entity.displayInReverse ? 'Old–new' : 'New–old'}
             <br />
@@ -93,6 +98,7 @@ const WebhookEndpointEntity = props => {
             <Button
               onClick={() => {
                 loadNotifications(entity.id);
+                loadEndpoints();
               }}>
               Reload notifications
             </Button>
@@ -151,6 +157,7 @@ const WebhookEndpointEntity = props => {
               <Button
                 onClick={() => {
                   loadNotifications(entity.id);
+                  loadEndpoints();
                 }}>
                 Reload notifications
               </Button>
@@ -178,6 +185,7 @@ WebhookEndpointEntity.propTypes = {
   notifications: PropTypes.array,
   removeNotification: PropTypes.func,
   loadNotifications: PropTypes.func,
+  loadEndpoints: PropTypes.func,
 };
 
 WebhookEndpointEntity.defaultProps = {
@@ -189,6 +197,7 @@ WebhookEndpointEntity.defaultProps = {
   notifications: null,
   removeNotification: () => null,
   loadNotifications: () => null,
+  loadEndpoints: () => null,
 };
 
 export default WebhookEndpointEntity;

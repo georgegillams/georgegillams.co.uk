@@ -166,6 +166,7 @@ export function* doRemoveNotification() {
     } else {
       yield put(removeNotification.success(result));
       yield put(loadNotifications.trigger(webhookIdToRemoveNotification.webhookId));
+      yield put(loadEndpoints.trigger());
     }
   } catch (err) {
     yield put(removeNotification.failure(err));
