@@ -25,9 +25,12 @@ export default async function loadAllEndpoints(req) {
     const webhookNotifications = await dbLoad({
       redisKey: 'webhook-notifications',
       sortKey: 'lastUpdatedTimestamp',
+      includeDeleted: true,
+      filter: w => w.webhookId === webhookEndpoint.id,
     });
 
-    webhookEndpoint.notificationCount = webhookNotifications.filter(w => w.webhookId === webhookEndpoint.id).length;
+    webhookEndpoint.notificationCount = webhookNotifications.filter(w => !w.deleted).length;
+    webhookEndpoint.deletedNotificationCount = webhookNotifications.filter(w => !!w.deleted).length;
   }
 
   return { webhookEndpoints: annotatedWebhookEndpoints };
