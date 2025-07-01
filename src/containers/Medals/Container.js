@@ -1,15 +1,15 @@
-import React from 'react';
 import Section from '@george-gillams/components/section';
 import Subsection from '@george-gillams/components/subsection';
 import PageTitle from 'components/common/PageTitle';
+import React from 'react';
 
-import PageContainer from 'components/common/PageContainer';
-import EventPatch from '@george-gillams/components/event-patch';
-import ToughMudderPatch, { PATCH_TYPE as TM_PATCH_TYPE } from '@george-gillams/components/tough-mudder-patch';
-import SpartanMedal, { EVENT_TYPE as SPARTAN_EVENT_TYPE } from '@george-gillams/components/spartan-medal';
-import { StyledMedalShelf } from './container.styles';
 import { notBlack } from '@george-gillams/components/constants/colors';
 import { withScrollAnimation } from '@george-gillams/components/effects';
+import EventPatch from '@george-gillams/components/event-patch';
+import SpartanMedal, { EVENT_TYPE as SPARTAN_EVENT_TYPE } from '@george-gillams/components/spartan-medal';
+import ToughMudderPatch, { PATCH_TYPE as TM_PATCH_TYPE } from '@george-gillams/components/tough-mudder-patch';
+import PageContainer from 'components/common/PageContainer';
+import { StyledMedalShelf } from './container.styles';
 const SectionWithScroll = withScrollAnimation(Section);
 const HYROX_YELLOW = '#ffed00';
 
@@ -196,6 +196,20 @@ const Medals = () => {
               year="2025"
               stravaLink="https://www.strava.com/activities/14433973136"
               showDarkModeOutline
+            />
+            <EventPatch
+              background="#FFFFFF"
+              foreground="#088544"
+              title="OCREC Short Course"
+              year="2025"
+              stravaLink="https://www.strava.com/activities/14932741308"
+            />
+            <EventPatch
+              background="#FFFFFF"
+              foreground="#088544"
+              title="OCREC Standard Course"
+              year="2025"
+              stravaLink="https://www.strava.com/activities/14942993521"
             />
           </StyledMedalShelf>
         </Subsection>

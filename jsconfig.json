@@ -1,19 +1,12 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
+    "jsx": "react",
     "paths": {
-      "helpers/*": [
-        "../shared/helpers/*"
-      ],
-      "server-utils/*": [
-        "../server/utils/*"
-      ],
-      "client-utils/*": [
-        "./utils/*"
-      ]
+      "helpers/*": ["../shared/helpers/*"],
+      "server-utils/*": ["../server/utils/*"],
+      "client-utils/*": ["./utils/*"]
     }
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
