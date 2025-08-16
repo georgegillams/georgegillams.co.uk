@@ -19,9 +19,13 @@ const SectionWithScroll = withScrollAnimation(Section);
 
 const UK_TRAINING_EXPIRY = '8 March 2028';
 const EASA_TRAINING_EXPIRY = '8 March 2028';
-const UK_OPERATOR_ID_EXPIRY = '8 March 2025';
-const EASA_OPERATOR_ID_EXPIRY = '28 March 2025';
+const UK_OPERATOR_ID_EXPIRY = '8 March 2026';
+const EASA_OPERATOR_ID_EXPIRY = '16 August 2026';
 const INSURANCE_EXPIRY = '8 March 2026';
+const UK_FLYER_ID = 'GBR-RP-B88RNYQSNJ62';
+const EASA_FLYER_ID = 'NOR-RP-4zb7de1751cj';
+const UK_OPERATOR_ID = 'GBR-OP-267ZQHMWPYGR';
+const EASA_OPERATOR_ID = 'NOR5p8cfumh4phal';
 
 const Drone = () => {
   return (
@@ -73,7 +77,9 @@ const Drone = () => {
         <SectionWithScroll name="Proof of completion of online training">
           <Subsection name="UK">
             <StyledImage lightSrc={ukCaaFlyerId.src} darkSrc={ukCaaFlyerId.src} aspectX={1916} aspectY={1354} />
-            <Paragraph>GBR-RP-B88RNYQSNJ62 — expires {UK_TRAINING_EXPIRY}</Paragraph>
+            <Paragraph>
+              {UK_FLYER_ID} — expires {UK_TRAINING_EXPIRY}
+            </Paragraph>
           </Subsection>
           <Subsection name="Norway and EASA member states">
             <StyledImage
@@ -82,14 +88,20 @@ const Drone = () => {
               aspectX={2098}
               aspectY={1384}
             />
-            <Paragraph>NOR-RP-4zb7de1751cj — expires {EASA_TRAINING_EXPIRY}</Paragraph>
+            <Paragraph>
+              {EASA_FLYER_ID} — expires {EASA_TRAINING_EXPIRY}
+            </Paragraph>
           </Subsection>
         </SectionWithScroll>
         <SectionWithScroll name="Operator ID">
           <Subsection name="UK"></Subsection>
-          <Paragraph>GBR-OP-267ZQHMWPYGR — expires {UK_OPERATOR_ID_EXPIRY}</Paragraph>
+          <Paragraph>
+            {UK_OPERATOR_ID} — expires {UK_OPERATOR_ID_EXPIRY}
+          </Paragraph>
           <Subsection name="Norway and EASA member states">
-            <Paragraph>NOR5p8cfumh4phal — expires {EASA_OPERATOR_ID_EXPIRY}</Paragraph>
+            <Paragraph>
+              {EASA_OPERATOR_ID} — expires {EASA_OPERATOR_ID_EXPIRY}
+            </Paragraph>
           </Subsection>
         </SectionWithScroll>
         <SectionWithScroll name="Public Liability Insurance">
