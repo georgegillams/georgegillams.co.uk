@@ -100,30 +100,18 @@ const Medals = () => {
               year="2025"
               stravaLink="https://www.strava.com/activities/14516103526"
             />
+            <SpartanMedal
+              type={SPARTAN_EVENT_TYPE.beast}
+              year="2024"
+              stravaLink="https://www.strava.com/activities/15487773958"
+            />
+            <SpartanMedal
+              type={SPARTAN_EVENT_TYPE.sprint}
+              year="2025"
+              stravaLink="https://www.strava.com/activities/15490608121"
+            />
           </StyledMedalShelf>
         </Subsection>
-        {/* <Subsection anchor={false} name="Trifectas">
-          <StyledMedalShelf>
-            <SpartanTrifectaDisplay
-              wedges={[SPARTAN_EVENT_TYPE.sprint, SPARTAN_EVENT_TYPE.super, SPARTAN_EVENT_TYPE.beast]}
-              year="2022"
-            />
-            <SpartanTrifectaDisplay
-              wedges={[SPARTAN_EVENT_TYPE.sprint, SPARTAN_EVENT_TYPE.super, SPARTAN_EVENT_TYPE.beast]}
-              year="2023"
-            />
-            <SpartanTrifectaDisplay
-              wedges={[SPARTAN_EVENT_TYPE.sprint, SPARTAN_EVENT_TYPE.super, SPARTAN_EVENT_TYPE.beast]}
-              year="2023"
-            />
-            <SpartanTrifectaDisplay wedges={[SPARTAN_EVENT_TYPE.sprint, null, SPARTAN_EVENT_TYPE.beast]} year="2023" />
-          </StyledMedalShelf>
-        </Subsection>
-        <Subsection anchor={false} name="Other wedges">
-          <StyledMedalShelf>
-            <SpartanTrifectaDisplay wedges={[SPARTAN_EVENT_TYPE.obstacleSpecialistWorkshop, null, null]} />
-          </StyledMedalShelf>
-        </Subsection> */}
       </SectionWithScroll>
       <SectionWithScroll name="Other OCR">
         <Subsection>
@@ -176,7 +164,7 @@ const Medals = () => {
             <EventPatch
               background={notBlack}
               foreground="white"
-              title="British Championships"
+              title="British Championships at Spartan"
               year="2024"
               stravaLink="https://www.strava.com/activities/11765215916"
               showDarkModeOutline
@@ -336,13 +324,6 @@ const Medals = () => {
             />
           </StyledMedalShelf>
         </Subsection>
-        {/* <Subsection anchor={false} name="Legionaire">
-          <StyledMedalShelf>
-            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire2} />
-            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire3} />
-            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire456} />
-          </StyledMedalShelf>
-        </Subsection> */}
       </SectionWithScroll>
     </PageContainer>
   );
