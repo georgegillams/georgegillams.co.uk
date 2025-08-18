@@ -102,7 +102,7 @@ const Medals = () => {
             />
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.beast}
-              year="2024"
+              year="2025"
               stravaLink="https://www.strava.com/activities/15487773958"
             />
             <SpartanMedal
