@@ -1,7 +1,7 @@
 import Section from '@george-gillams/components/section';
 import Subsection from '@george-gillams/components/subsection';
 import PageTitle from 'components/common/PageTitle';
-import React, { ComponentProps } from 'react';
+import React from 'react';
 
 import { notBlack } from '@george-gillams/components/constants/colors';
 import { withScrollAnimation } from '@george-gillams/components/effects';
@@ -13,34 +13,34 @@ import { StyledMedalShelf } from './container.styles';
 const SectionWithScroll = withScrollAnimation(Section);
 const HYROX_YELLOW = '#ffed00';
 
-type TSpartanMedal = {
-  type: ComponentProps<typeof SpartanMedal>['type'];
-  year: string;
-  stravaId?: string;
-};
+// type TSpartanMedal = {
+//   type: ComponentProps<typeof SpartanMedal>['type'];
+//   year: string;
+//   stravaId?: string;
+// };
 
-type TEventMedal = {
-  background: string;
-  foreground: string;
-  title: string;
-  year: string;
-  stravaId?: string;
-  showDarkModeOutline?: boolean;
-};
+// type TEventMedal = {
+//   background: string;
+//   foreground: string;
+//   title: string;
+//   year: string;
+//   stravaId?: string;
+//   showDarkModeOutline?: boolean;
+// };
 
-type THyroxMedal = {
-  location: string;
-  year: string;
-  stravaId?: string;
-};
+// type THyroxMedal = {
+//   location: string;
+//   year: string;
+//   stravaId?: string;
+// };
 
-type TToughMudderMedal = {
-  type: ComponentProps<typeof ToughMudderPatch>['type'];
-  year: ComponentProps<typeof ToughMudderPatch>['year'];
-  stravaId?: string;
-};
+// type TToughMudderMedal = {
+//   type: ComponentProps<typeof ToughMudderPatch>['type'];
+//   year: ComponentProps<typeof ToughMudderPatch>['year'];
+//   stravaId?: string;
+// };
 
-const SpartanMedals: TSpartanMedal[] = [
+const SpartanMedals = [
   {
     type: SPARTAN_EVENT_TYPE.sprint,
     year: '2022',
@@ -138,7 +138,7 @@ const SpartanMedals: TSpartanMedal[] = [
   // },
 ];
 
-const OtherOcrMedals: TEventMedal[] = [
+const OtherOcrMedals = [
   {
     background: notBlack,
     foreground: '#FFF200',
@@ -224,7 +224,7 @@ const OtherOcrMedals: TEventMedal[] = [
   },
 ];
 
-const HyroxMedals: THyroxMedal[] = [
+const HyroxMedals = [
   {
     location: 'London',
     year: '2023',
@@ -247,7 +247,7 @@ const HyroxMedals: THyroxMedal[] = [
   },
 ];
 
-const RunningMedals: TEventMedal[] = [
+const RunningMedals = [
   {
     background: '#93D50A',
     foreground: notBlack,
@@ -278,7 +278,7 @@ const RunningMedals: TEventMedal[] = [
   },
 ];
 
-const TrekMedals: TEventMedal[] = [
+const TrekMedals = [
   {
     background: '#0D313D',
     foreground: '#CE9708',
@@ -295,7 +295,7 @@ const TrekMedals: TEventMedal[] = [
   },
 ];
 
-const ToughMudderMedals: TToughMudderMedal[] = [
+const ToughMudderMedals = [
   {
     type: TM_PATCH_TYPE.eventFull,
     year: '2016',
