@@ -222,6 +222,27 @@ const OtherOcrMedals = [
     year: '2025',
     stravaId: '14942993521',
   },
+  // {
+  //   background: '#636363',
+  //   foreground: '#FFE342',
+  //   title: 'Bestial T-Rex 12km',
+  //   year: '2025',
+  //   // TODO: stravaId: 'TODO',
+  // },
+  // {
+  //   background: '#162F4B',
+  //   foreground: '#FFCA05',
+  //   title: 'OCRWC Short Course',
+  //   year: '2025',
+  //   // TODO: stravaId: 'TODO',
+  // },
+  // {
+  //   background: '#162F4B',
+  //   foreground: '#FFCA05',
+  //   title: 'OCRWC Standard Course',
+  //   year: '2025',
+  //   // TODO: stravaId: 'TODO',
+  // },
 ];
 
 const HyroxMedals = [
