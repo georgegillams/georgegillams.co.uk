@@ -222,13 +222,13 @@ const OtherOcrMedals = [
     year: '2025',
     stravaId: '14942993521',
   },
-  // {
-  //   background: '#636363',
-  //   foreground: '#FFE342',
-  //   title: 'Bestial T-Rex 12km',
-  //   year: '2025',
-  //   // TODO: stravaId: 'TODO',
-  // },
+  {
+    background: '#636363',
+    foreground: '#FFE342',
+    title: 'Bestial T-Rex 12km',
+    year: '2025',
+    stravaId: '15715686188',
+  },
   // {
   //   background: '#162F4B',
   //   foreground: '#FFCA05',
