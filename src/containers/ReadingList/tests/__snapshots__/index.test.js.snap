@@ -483,6 +483,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   background-color: transparent;
   color: #1e1e1e;
   font-size: 1rem;
+  border-radius: 0.4375rem;
 }
 
 .c16:disabled {

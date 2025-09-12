@@ -212,6 +212,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
   background-color: transparent;
   color: #1e1e1e;
   font-size: 1rem;
+  border-radius: 0.4375rem;
 }
 
 .c3:disabled {
@@ -915,6 +916,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
   background-color: transparent;
   color: #1e1e1e;
   font-size: 1rem;
+  border-radius: 0.4375rem;
 }
 
 .c3:disabled {

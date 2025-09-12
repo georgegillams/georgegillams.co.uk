@@ -229,13 +229,13 @@ const OtherOcrMedals = [
     year: '2025',
     stravaId: '15715686188',
   },
-  // {
-  //   background: '#162F4B',
-  //   foreground: '#FFCA05',
-  //   title: 'OCRWC Short Course',
-  //   year: '2025',
-  //   // TODO: stravaId: 'TODO',
-  // },
+  {
+    background: '#162F4B',
+    foreground: '#FFCA05',
+    title: 'OCRWC Short Course',
+    year: '2025',
+    stravaId: '15787124939',
+  },
   // {
   //   background: '#162F4B',
   //   foreground: '#FFCA05',
