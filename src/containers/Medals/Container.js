@@ -131,11 +131,11 @@ const SpartanMedals = [
     year: '2025',
     stravaId: '15490608121',
   },
-  // {
-  //   type: SPARTAN_EVENT_TYPE.ultra,
-  //   year: '2025',
-  //   // TODO: stravaId: 'TODO',
-  // },
+  {
+    type: SPARTAN_EVENT_TYPE.ultra,
+    year: '2025',
+    stravaId: '16032950353',
+  },
 ];
 
 const OtherOcrMedals = [
