@@ -34,6 +34,13 @@ const apiStructureExtensions = {
   // Photo showcase
   loadShowcaseImages: { method: GET, path: '/photo-showcase/load-all' },
 
+  // Images
+  createImage: { method: POST, path: '/images/create' },
+  deleteImage: { method: POST, path: '/images/delete' },
+  loadImages: { method: GET, path: '/images/load-all' },
+  loadImage: { method: GET, path: '/images/load/:id' },
+  downloadImagesZip: { method: GET, path: '/images/download-zip' },
+
   // Webhooks
   createWebhookEndpoint: {
     method: POST,

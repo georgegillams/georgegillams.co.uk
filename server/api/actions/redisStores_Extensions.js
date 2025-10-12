@@ -2,13 +2,14 @@ const REDIS_STORE_EXTENSIONS = [
   'blogs',
   'books',
   'comments',
+  'images',
   'payments',
   'profiles',
   'stripepayments',
   'support',
   'userDetails',
-  'webhooks',
   'webhook-notifications',
+  'webhooks',
 ];
 
 export default { REDIS_STORE_EXTENSIONS };

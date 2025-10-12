@@ -6,6 +6,7 @@ import Paragraph from '@george-gillams/components/paragraph';
 import WebhookEndpointEditForm from 'components/common/Forms/WebhookEndpointEditForm';
 import Button from 'components/common/Button';
 import { spacingBase } from '@george-gillams/components/constants/layout';
+import CopyButton from '@george-gillams/components/copy-button';
 import ObjectAsList from '@george-gillams/components/object-as-list';
 import { BUTTON_TYPES } from '@george-gillams/components/button';
 
@@ -51,10 +52,10 @@ const WebhookEndpointEntity = props => {
             Display order: {entity.displayInReverse ? 'Old–new' : 'New–old'}
             <br />
             <br />
-            Receive URL: {entity.receiveUrl}
+            Receive URL: {entity.receiveUrl} <CopyButton text={entity.receiveUrl} />
             <br />
             <br />
-            Read URL: {entity.readUrl}
+            Read URL: {entity.readUrl} <CopyButton text={entity.readUrl} />
             <br />
             <br />
             Headers:
