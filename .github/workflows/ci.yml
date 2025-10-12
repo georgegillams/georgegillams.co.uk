@@ -16,6 +16,15 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
+      - name: Setup asdf
+        uses: asdf-vm/actions/install@v4
+
+      - name: Get node version
+        run: |
+          NODE_VERSION=$(node -v)
+          echo "NODE_VERSION=$NODE_VERSION" >> $GITHUB_ENV
+          echo "Node version: $NODE_VERSION"
+
       - name: print job details
         run: |
           echo "github_ref ${{ github.ref }}"
@@ -25,7 +34,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-node-${{ env.NODE_VERSION }}-${{ hashFiles('**/package.json') }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: yarn install
         run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
@@ -44,6 +53,9 @@ jobs:
   #     - uses: actions/checkout@v3
   #       with:
   #         ref: ${{ github.head_ref }}
+
+  #     - name: Setup asdf
+  #       uses: asdf-vm/actions/install@v4
 
   #     - name: run snapshot tests
   #       run: |
@@ -68,6 +80,14 @@ jobs:
       - uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
+
+      - name: Setup asdf
+        uses: asdf-vm/actions/install@v4
+
+      - name: Get node version
+        run: |
+          NODE_VERSION=$(asdf current nodejs | awk '{print $2}')
+          echo "Node version: $NODE_VERSION"
 
       - name: generate hash
         run: |
