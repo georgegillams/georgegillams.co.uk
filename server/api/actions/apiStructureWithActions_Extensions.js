@@ -26,6 +26,7 @@ const apiStructureWithActionsExtensions = apiStructure => {
   apiStructure.loadImages.action = require('./images/loadAll');
   apiStructure.loadImage.action = require('./images/loadSingle');
   apiStructure.downloadImagesZip.action = require('./images/downloadZip');
+  apiStructure.uploadImagesZip.action = require('./images/uploadZip');
 
   // Webhooks
   apiStructure.createWebhookEndpoint.action = require('./webhooks/createEndpoint');

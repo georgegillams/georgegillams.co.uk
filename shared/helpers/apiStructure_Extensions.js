@@ -40,6 +40,7 @@ const apiStructureExtensions = {
   loadImages: { method: GET, path: '/images/load-all' },
   loadImage: { method: GET, path: '/images/load/:id' },
   downloadImagesZip: { method: GET, path: '/images/download-zip' },
+  uploadImagesZip: { method: POST, path: '/images/upload-zip' },
 
   // Webhooks
   createWebhookEndpoint: {
