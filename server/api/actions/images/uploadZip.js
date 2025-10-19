@@ -96,7 +96,7 @@ export default async function uploadZip(req) {
         const targetPath = path.join(imagesDir, file);
         fs.renameSync(filePath, targetPath);
         extractedFiles.push(file);
-        logger.info(`Extracted: ${file}`);
+        logger.log(`Extracted: ${file}`);
       }
     };
 
@@ -106,7 +106,7 @@ export default async function uploadZip(req) {
     fs.rmSync(tempExtractDir, { recursive: true, force: true });
     fs.unlinkSync(tempZipPath);
 
-    logger.info(`Zip extraction completed. Extracted ${extractedFiles.length} files.`);
+    logger.log(`Zip extraction completed. Extracted ${extractedFiles.length} files.`);
 
     return {
       success: true,
