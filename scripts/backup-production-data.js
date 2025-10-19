@@ -22,6 +22,12 @@ const schema = {
       pattern: /.*/,
       message: '',
     },
+    backupImages: {
+      description: 'Do you want to backup image assets too? (Y/N)',
+      default: 'No',
+      pattern: /^(y|Y|yes|Yes|YEs|yeS|n|N|no|No)?$/, // allow Y/Yes/N/No (case-insensitive)
+      message: 'Please answer Y/Yes or N/No',
+    },
     apiKey: {
       description: 'Enter the admin API key to use for this backup',
       default: cliApiKey,
@@ -33,7 +39,7 @@ const schema = {
   },
 };
 
-const performBackup = async (err, { backupsLocation, backupName, apiKey }) => {
+const performBackup = async (err, { backupsLocation, backupName, backupImages, apiKey }) => {
   if (err) {
     console.error(err);
     return;
@@ -44,6 +50,13 @@ const performBackup = async (err, { backupsLocation, backupName, apiKey }) => {
   execSync(
     `wget https://www.georgegillams.co.uk/api/data-management/backup --header "apiKey: ${apiKey}" -O "${backupsLocation}/${backupName}/data.json"`
   );
+
+  const shouldBackupImages = typeof backupImages === 'string' && backupImages.trim().toLowerCase().startsWith('y');
+  if (shouldBackupImages) {
+    execSync(
+      `wget https://www.georgegillams.co.uk/api/images/download-zip --header "apiKey: ${apiKey}" -O "${backupsLocation}/${backupName}/images.zip"`
+    );
+  }
 };
 
 prompt.start();
