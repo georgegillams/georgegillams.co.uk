@@ -20,7 +20,7 @@ export default async function loadSingle(req, params) {
   }
 
   // Construct file path
-  const filePath = path.join(process.cwd(), 'server', 'server_content', 'images', imageData.filename);
+  const filePath = path.join(process.cwd(), 'server', 'persisted_server_content', 'images', imageData.filename);
 
   // Check if file exists
   if (!fs.existsSync(filePath)) {

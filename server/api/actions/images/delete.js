@@ -32,7 +32,7 @@ export default async function remove(req) {
 
   // Remove file from disk if it exists
   if (imageData.filename) {
-    const filePath = path.join(process.cwd(), 'server', 'server_content', 'images', imageData.filename);
+    const filePath = path.join(process.cwd(), 'server', 'persisted_server_content', 'images', imageData.filename);
     try {
       if (fs.existsSync(filePath)) {
         fs.unlinkSync(filePath);

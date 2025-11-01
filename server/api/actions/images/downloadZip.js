@@ -11,7 +11,7 @@ export default async function downloadZip(req) {
     throw UNAUTHORISED_READ;
   }
 
-  const imagesDir = path.join(process.cwd(), 'server', 'server_content', 'images');
+  const imagesDir = path.join(process.cwd(), 'server', 'persisted_server_content', 'images');
 
   // Check if images directory exists
   if (!fs.existsSync(imagesDir)) {

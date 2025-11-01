@@ -13,7 +13,7 @@
     "prebuild": "yarn build:clean",
     "build:clean": "rimraf ./build",
     "link-helpers:clean": "rm -f $(pwd)/src/helpers $(pwd)/server/helpers",
-    "dev": "redis-server & cross-env NODE_ENV=development SECRET_API_KEY=asdfghjkl STARTED_AT=$( date -u +%s ) BUILT_AT=$( date -u +%s ) ENABLE_SOFT_LINKS=true nodemon --ignore 'server/server_content/*' --ignore 'src/*' --ignore 'build/*' --exec babel-node ./server/app.js src",
+    "dev": "redis-server & cross-env NODE_ENV=development SECRET_API_KEY=asdfghjkl STARTED_AT=$( date -u +%s ) BUILT_AT=$( date -u +%s ) ENABLE_SOFT_LINKS=true nodemon --ignore 'server/server_content/*' --ignore 'server/persisted_server_content/*' --ignore 'src/*' --ignore 'build/*' --exec babel-node ./server/app.js src",
     "build:client": "next build",
     "build:server:copy-assets": "cp next.config.js ./build/ && cp -R ./public ./build/ && cp package.json ./build/ && cp yarn.lock ./build/",
     "build:shared": "cross-env babel -d ./build/shared ./shared -s --copy-files",
