@@ -19,7 +19,7 @@ test('downloadZip as admin - returns function for zip download', () => {
     headers: {},
   };
 
-  mkdirSync('server/server_content/images', {
+  mkdirSync('server/persisted_server_content/images', {
     recursive: true,
   });
 

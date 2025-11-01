@@ -46,7 +46,7 @@ export default function create(req) {
     // Generate filename with ID and original extension
     const fileExtension = path.extname(imageFile.name);
     const filename = `${createdImage.id}${fileExtension}`;
-    const imagesDir = path.join(process.cwd(), 'server', 'server_content', 'images');
+    const imagesDir = path.join(process.cwd(), 'server', 'persisted_server_content', 'images');
     const filePath = path.join(imagesDir, filename);
 
     // Ensure the images directory exists
@@ -71,7 +71,7 @@ export default function create(req) {
     // Update the database entry with the file path
     const updatedImageData = {
       ...createdImage,
-      filePath: `/server_content/images/${filename}`,
+      filePath: `/persisted_server_content/images/${filename}`,
       filename: filename,
       originalName: imageFile.name,
       mimeType: imageFile.mimetype,

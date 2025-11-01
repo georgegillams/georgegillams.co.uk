@@ -60,7 +60,7 @@ describe('uploadZip', () => {
   });
 
   it('should create images directory if it does not exist', async () => {
-    const imagesDir = path.join(process.cwd(), 'server', 'server_content', 'images');
+    const imagesDir = path.join(process.cwd(), 'server', 'persisted_server_content', 'images');
 
     // Mock fs.existsSync to return false initially
     const originalExistsSync = fs.existsSync;

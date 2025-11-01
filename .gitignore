@@ -18,6 +18,7 @@ server/helpers
 
 # runtime stuff
 server/server_content
+server/persisted_server_content
 
 # backstop stuff
 backstop_data/html_report

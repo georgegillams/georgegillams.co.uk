@@ -7,7 +7,7 @@ import extractZip from 'extract-zip';
 import logger from 'server-utils/common/logger';
 
 /**
- * Upload and extract a ZIP file containing images to the server_content/images directory.
+ * Upload and extract a ZIP file containing images to the persisted_server_content/images directory.
  *
  * @param {Object} req - Express request object
  * @param {Object} req.files - Uploaded files
@@ -18,7 +18,7 @@ import logger from 'server-utils/common/logger';
  * - User must be authenticated and have admin privileges
  * - ZIP file must be provided in req.files.zipFile
  * - Only image files (jpg, jpeg, png, gif, bmp, webp) are extracted
- * - Files are extracted to server_content/images directory
+ * - Files are extracted to persisted_server_content/images directory
  * - Existing files with the same name will be overwritten
  * - Only files in the root of the ZIP are processed (no subdirectories)
  */
@@ -40,7 +40,7 @@ export default async function uploadZip(req) {
     throw new InvalidInputError('Only ZIP files are allowed');
   }
 
-  const imagesDir = path.join(process.cwd(), 'server', 'server_content', 'images');
+  const imagesDir = path.join(process.cwd(), 'server', 'persisted_server_content', 'images');
 
   // Ensure the images directory exists
   try {
