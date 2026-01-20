@@ -22,8 +22,10 @@ const applySecurityPractises = server => {
     frameAncestors: ["'self'"],
     imgSrc: ["'self'", 'https:', 'data:'],
     objectSrc: ["'none'"],
-    scriptSrc: ["'self'", "'unsafe-inline'"],
+    scriptSrc: ["'self'", "'unsafe-inline'", 'challenges.cloudflare.com'],
     styleSrc: ["'self'", 'https:', "'unsafe-inline'"],
+    frameSrc: ["'self'", 'challenges.cloudflare.com'],
+    connectSrc: ["'self'", 'challenges.cloudflare.com'],
   };
 
   if (applyProductionSecurity) {

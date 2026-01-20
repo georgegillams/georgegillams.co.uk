@@ -110,6 +110,8 @@ jobs:
           REDIS_URL: ${{ secrets.REDIS_URL }}
           SECRET_API_KEY: ${{ secrets.SECRET_API_KEY }}
           SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
+          NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${{ secrets.NEXT_PUBLIC_TURNSTILE_SITE_KEY }}
+          TURNSTILE_SECRET_KEY: ${{ secrets.TURNSTILE_SECRET_KEY }}
         run: |
           echo "zipFileName ${{ env.ZIP_FILE_NAME }}"
           zipFileName=${{ env.ZIP_FILE_NAME }}

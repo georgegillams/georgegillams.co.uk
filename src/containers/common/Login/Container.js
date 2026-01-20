@@ -40,6 +40,7 @@ const Login = props => {
               login(credentials);
             }}
             preSubmitText={preSubmitText}
+            turnstileSiteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
           />
           <StyledTextLink href="/sign-up">Not yet got an account? Sign up here.</StyledTextLink>
         </PageTitle>
