@@ -41,6 +41,7 @@ const SignUp = props => {
               signUp(credentials);
             }}
             preSubmitText={preSubmitText}
+            turnstileSiteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
           />
           <VStack>
             <StyledTextLink href="/login">Already got an account? Login here.</StyledTextLink>

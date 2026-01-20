@@ -32,6 +32,8 @@ docker buildx build \
   --build-arg REDIS_URL="$REDIS_URL" \
   --build-arg SECRET_API_KEY="$SECRET_API_KEY" \
   --build-arg SESSION_SECRET="$SESSION_SECRET" \
+  --build-arg NEXT_PUBLIC_TURNSTILE_SITE_KEY="$NEXT_PUBLIC_TURNSTILE_SITE_KEY" \
+  --build-arg TURNSTILE_SECRET_KEY="$TURNSTILE_SECRET_KEY" \
   --platform linux/arm64 -t $image_name -f DockerfileProd .
 
 # export image

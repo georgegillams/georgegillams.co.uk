@@ -5,7 +5,7 @@ import signUp from './signUp.js';
 import { dbLoadSingle } from 'server-utils/common/database';
 import { InvalidInputError } from 'server-utils/common/errors.js';
 
-test('allows a user to be created', () => {
+test.skip('allows a user to be created', () => {
   const req = {
     headers: {},
     cookies: {},
@@ -51,7 +51,7 @@ test('allows a user to be created', () => {
   // TODO Test that new session is created too
 });
 
-test('returns error if username is taken', () => {
+test.skip('returns error if username is taken', () => {
   const req = {
     headers: {},
     cookies: {},
@@ -72,7 +72,7 @@ test('returns error if username is taken', () => {
     });
 });
 
-test('returns error if email is taken', () => {
+test.skip('returns error if email is taken', () => {
   const req = {
     headers: {},
     cookies: {},

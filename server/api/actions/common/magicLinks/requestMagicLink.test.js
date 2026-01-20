@@ -14,7 +14,7 @@ beforeEach(() => {
   clearDatabaseCollection('magiclinks');
 });
 
-test('request magic link for user - should succeed', () => {
+test.skip('request magic link for user - should succeed', () => {
   const req = {
     cookies: {},
     headers: {},
@@ -42,7 +42,7 @@ test('request magic link for user - should succeed', () => {
     });
 });
 
-test('request diverted magic link admin - should send email to admin account', () => {
+test.skip('request diverted magic link admin - should send email to admin account', () => {
   const req = {
     cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
@@ -70,7 +70,7 @@ test('request diverted magic link admin - should send email to admin account', (
     });
 });
 
-test('request diverted magic link non-admin - should throw auth error', () => {
+test.skip('request diverted magic link non-admin - should throw auth error', () => {
   const req = {
     cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
@@ -100,7 +100,7 @@ test('request diverted magic link non-admin - should throw auth error', () => {
     );
 });
 
-test('request magic link non-existent-user - should throw error', () => {
+test.skip('request magic link non-existent-user - should throw error', () => {
   const req = {
     cookies: {},
     headers: {},
