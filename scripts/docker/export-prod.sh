@@ -7,7 +7,7 @@ if ! [ $image_name ]; then
   exit 1
 fi
 
-declare -a expected_args=("GSUITE_APP_PASSWORD" "GSUITE_EMAIL" "FLICKR_API_KEY" "REDIS_URL" "SECRET_API_KEY" "SESSION_SECRET")
+declare -a expected_args=("GSUITE_APP_PASSWORD" "GSUITE_EMAIL" "FLICKR_API_KEY" "REDIS_URL" "SECRET_API_KEY" "SESSION_SECRET" "NEXT_PUBLIC_TURNSTILE_SITE_KEY" "TURNSTILE_SECRET_KEY")
 for i in "${expected_args[@]}"
 do
   arg_value="$(printenv $i)"
