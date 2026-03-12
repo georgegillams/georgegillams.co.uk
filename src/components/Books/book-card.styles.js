@@ -7,6 +7,7 @@ import {
   breakpointSm,
   spacingBase,
   spacingSm,
+  spacingXs,
 } from '@george-gillams/components/constants/layout';
 
 const HEIGHT_MOBILE = '4rem';
@@ -100,4 +101,19 @@ export const LinkWrapper = styled.div.attrs()`
     grid-row: 1;
     grid-column: 3;
   }
+`;
+
+// TODO: Adopt ggc badge when available
+export const TransformativeBadge = styled.span`
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: ${spacingXs} ${spacingSm};
+  border-radius: ${borderRadiusSm};
+  background: var(--badge-background, rgba(128, 90, 213, 0.15));
+  color: var(--badge-color, rgb(128, 90, 213));
+  margin-left: ${spacingSm};
+  vertical-align: middle;
 `;

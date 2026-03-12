@@ -6,7 +6,7 @@ import CloudflareTurnstile from 'components/common/CloudflareTurnstile';
 import { EMAIL_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const LoginForm = props => {
-  const { credentials, onDataChanged, turnstileSiteKey, ...rest } = props;
+  const { credentials, onDataChanged, turnstileSiteKey, disabled, ...rest } = props;
   const [turnstileToken, setTurnstileToken] = useState(null);
 
   const onDataChangedCustom = newValue => {
@@ -33,13 +33,16 @@ const LoginForm = props => {
     onDataChanged({ ...credentials, turnstileToken: null });
   };
 
+  const turnstileEnabled = !!turnstileSiteKey && process.env.NODE_ENV !== 'test';
+  const formDisabled = disabled || (turnstileEnabled && !turnstileToken);
+
   return (
     <>
       <FormBuilder
         onDataChanged={onDataChangedCustom}
         entity={credentials}
         submitLabel={credentials.useMagicLink ? 'Request magic link' : 'Login'}
-        disabled={!turnstileToken}
+        disabled={formDisabled}
         // eslint-disable-next-line max-len
         preSubmitText="An email containing a login link will be sent to you. To access your account, follow the link in the email."
         formFields={[
@@ -88,10 +91,12 @@ LoginForm.propTypes = {
   credentials: PropTypes.object.isRequired,
   onDataChanged: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  disabled: PropTypes.bool,
   turnstileSiteKey: PropTypes.string,
 };
 
 LoginForm.defaultProps = {
+  disabled: false,
   turnstileSiteKey: null,
 };
 
