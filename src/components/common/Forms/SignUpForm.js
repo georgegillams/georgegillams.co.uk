@@ -6,7 +6,7 @@ import CloudflareTurnstile from 'components/common/CloudflareTurnstile';
 import { USERNAME_REGEX, EMAIL_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const SignUpForm = props => {
-  const { onDataChanged, credentials, submitLabel, turnstileSiteKey, ...rest } = props;
+  const { onDataChanged, credentials, submitLabel, turnstileSiteKey, disabled, ...rest } = props;
   const [turnstileToken, setTurnstileToken] = useState(null);
 
   const onDataChangedCustom = newValue => {
@@ -33,13 +33,16 @@ const SignUpForm = props => {
     onDataChanged({ ...credentials, turnstileToken: null });
   };
 
+  const turnstileEnabled = !!turnstileSiteKey && process.env.NODE_ENV !== 'test';
+  const formDisabled = disabled || !credentials.consent || (turnstileEnabled && !turnstileToken);
+
   return (
     <>
       <FormBuilder
         onDataChanged={onDataChangedCustom}
         entity={credentials}
         submitLabel={submitLabel || 'Sign up'}
-        disabled={!credentials.consent || !turnstileToken}
+        disabled={formDisabled}
         formFields={[
           {
             id: 'uname',
@@ -88,11 +91,13 @@ SignUpForm.propTypes = {
   credentials: PropTypes.object.isRequired,
   onDataChanged: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  disabled: PropTypes.bool,
   submitLabel: PropTypes.string,
   turnstileSiteKey: PropTypes.string,
 };
 
 SignUpForm.defaultProps = {
+  disabled: false,
   submitLabel: null,
   turnstileSiteKey: null,
 };

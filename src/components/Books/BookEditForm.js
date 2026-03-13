@@ -25,6 +25,11 @@ const BookEditForm = props => {
           name: 'Author',
         },
         {
+          id: 'description',
+          name: 'Description',
+          long: true,
+        },
+        {
           id: 'bookImage',
           name: 'Book image',
         },
@@ -48,6 +53,15 @@ const BookEditForm = props => {
             { value: 'toRead', name: 'Want to read' },
             { value: 'currentlyReading', name: 'Currently reading' },
             { value: 'using', name: 'Using' },
+          ],
+        },
+        {
+          id: 'transformative',
+          name: 'Transformative',
+          type: 'SELECT',
+          options: [
+            { value: 'notTransformative', name: 'No' },
+            { value: 'transformative', name: 'Yes' },
           ],
         },
       ]}

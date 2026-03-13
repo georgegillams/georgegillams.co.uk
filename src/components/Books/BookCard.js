@@ -3,7 +3,16 @@ import PropTypes from 'prop-types';
 
 import { bpkColorMonteverde } from '@george-gillams/components/constants/colors';
 
-import { Author, CoverImage, LinkWrapper, Recommendation, Status, Title, Wrapper } from './book-card.styles';
+import {
+  Author,
+  CoverImage,
+  LinkWrapper,
+  Recommendation,
+  Status,
+  Title,
+  TransformativeBadge,
+  Wrapper,
+} from './book-card.styles';
 import TextLink from 'components/common/TextLink';
 
 const STATUS_READABLE_MAPPING = {
@@ -30,7 +39,8 @@ const colorForStatus = status => {
 
 const BookCard = props => {
   const { book, ...rest } = props;
-  const { title: bookTitle, author, bookImage, status, recommendation, amazonLink, audibleLink } = book;
+  const { title: bookTitle, author, bookImage, status, recommendation, amazonLink, audibleLink, transformative } = book;
+  const isTransformative = transformative === 'transformative';
 
   let title = bookTitle || 'Untitled book';
   if (book.deleted) {
@@ -46,7 +56,10 @@ const BookCard = props => {
 
   return (
     <Wrapper notRead={!status || status === 'toRead'} {...rest}>
-      <Title>{title}</Title>
+      <Title>
+        {title}
+        {isTransformative && <TransformativeBadge>Transformative</TransformativeBadge>}
+      </Title>
       {author && <Author>By {author}</Author>}
       {bookImage && <CoverImage lightSrc={bookImage} darkSrc={bookImage} imgProps={{ alt: imageAltText }} />}
       <Status color={colorForStatus(status)}>{formatStatus(status)}</Status>

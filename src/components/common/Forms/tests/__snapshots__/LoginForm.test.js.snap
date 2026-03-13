@@ -19,7 +19,6 @@ exports[`<LoginForm /> Should render correctly 1`] = `
   background-color: #0067B7;
   color: white;
   box-shadow: none;
-  cursor: default;
 }
 
 .c8:focus-visible {
@@ -329,7 +328,6 @@ exports[`<LoginForm /> Should render correctly 1`] = `
     </div>
     <button
       class="c8 c9"
-      disabled=""
       type="button"
     >
       <span
