@@ -725,8 +725,10 @@ exports[`<Home /> should render correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-.c31:not(:disabled):active,.c31:not(:disabled):hover {
+.c31:not(:disabled):focus,
+.c31:not(:disabled):focus-within,
+.c31:not(:disabled):active,
+.c31:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -987,8 +989,10 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-  .c31:not(:disabled):active,.c31:not(:disabled):hover {
+  .c31:not(:disabled):focus,
+  .c31:not(:disabled):focus-within,
+  .c31:not(:disabled):active,
+  .c31:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -3375,8 +3379,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   cursor: not-allowed;
 }
 
-.c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-.c31:not(:disabled):active,.c31:not(:disabled):hover {
+.c31:not(:disabled):focus,
+.c31:not(:disabled):focus-within,
+.c31:not(:disabled):active,
+.c31:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -3637,8 +3643,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-  .c31:not(:disabled):active,.c31:not(:disabled):hover {
+  .c31:not(:disabled):focus,
+  .c31:not(:disabled):focus-within,
+  .c31:not(:disabled):active,
+  .c31:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -6025,8 +6033,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
   cursor: not-allowed;
 }
 
-.c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-.c31:not(:disabled):active,.c31:not(:disabled):hover {
+.c31:not(:disabled):focus,
+.c31:not(:disabled):focus-within,
+.c31:not(:disabled):active,
+.c31:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -6287,8 +6297,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-  .c31:not(:disabled):active,.c31:not(:disabled):hover {
+  .c31:not(:disabled):focus,
+  .c31:not(:disabled):focus-within,
+  .c31:not(:disabled):active,
+  .c31:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -8675,8 +8687,10 @@ exports[`<Home /> should render correctly with user 1`] = `
   cursor: not-allowed;
 }
 
-.c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-.c31:not(:disabled):active,.c31:not(:disabled):hover {
+.c31:not(:disabled):focus,
+.c31:not(:disabled):focus-within,
+.c31:not(:disabled):active,
+.c31:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -8937,8 +8951,10 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-  .c31:not(:disabled):active,.c31:not(:disabled):hover {
+  .c31:not(:disabled):focus,
+  .c31:not(:disabled):focus-within,
+  .c31:not(:disabled):active,
+  .c31:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }

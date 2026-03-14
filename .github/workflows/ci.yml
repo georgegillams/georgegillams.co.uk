@@ -30,14 +30,19 @@ jobs:
           echo "github_ref ${{ github.ref }}"
           echo "github_event_name ${{ github.event_name }}"
 
-      - name: Cache npm dependencies
+      - name: Cache Yarn dependencies
         uses: actions/cache@v3
         with:
-          path: ~/.npm
+          path: |
+            ~/.cache/yarn
+            **/node_modules
           key: ${{ runner.os }}-node-${{ env.NODE_VERSION }}-${{ hashFiles('**/package.json') }}-${{ hashFiles('**/yarn.lock') }}
 
+      - name: Install build tools for native modules
+        run: sudo apt-get update && sudo apt-get install -y build-essential python3
+
       - name: yarn install
-        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
+        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile --network-timeout 1800000 # 30 minutes
 
       - name: lint
         run: yarn lint

@@ -936,8 +936,10 @@ exports[`<HomePage /> should render correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c33:not(:disabled):focus,.c33:not(:disabled):focus-within,
-.c33:not(:disabled):active,.c33:not(:disabled):hover {
+.c33:not(:disabled):focus,
+.c33:not(:disabled):focus-within,
+.c33:not(:disabled):active,
+.c33:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -1258,8 +1260,10 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c33:not(:disabled):focus,.c33:not(:disabled):focus-within,
-  .c33:not(:disabled):active,.c33:not(:disabled):hover {
+  .c33:not(:disabled):focus,
+  .c33:not(:disabled):focus-within,
+  .c33:not(:disabled):active,
+  .c33:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }

@@ -178,8 +178,10 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   cursor: not-allowed;
 }
 
-.c5:not(:disabled):focus,.c5:not(:disabled):focus-within,
-.c5:not(:disabled):active,.c5:not(:disabled):hover {
+.c5:not(:disabled):focus,
+.c5:not(:disabled):focus-within,
+.c5:not(:disabled):active,
+.c5:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -322,8 +324,10 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:not(:disabled):focus,.c5:not(:disabled):focus-within,
-  .c5:not(:disabled):active,.c5:not(:disabled):hover {
+  .c5:not(:disabled):focus,
+  .c5:not(:disabled):focus-within,
+  .c5:not(:disabled):active,
+  .c5:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
