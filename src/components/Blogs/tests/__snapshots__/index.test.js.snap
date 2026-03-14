@@ -42,8 +42,10 @@ exports[`<BlogCard /> Should render correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
+.c0:not(:disabled):focus,
+.c0:not(:disabled):focus-within,
+.c0:not(:disabled):active,
+.c0:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -171,8 +173,10 @@ exports[`<BlogCard /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
+  .c0:not(:disabled):focus,
+  .c0:not(:disabled):focus-within,
+  .c0:not(:disabled):active,
+  .c0:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -347,8 +351,10 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
   cursor: not-allowed;
 }
 
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
+.c0:not(:disabled):focus,
+.c0:not(:disabled):focus-within,
+.c0:not(:disabled):active,
+.c0:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -641,8 +647,10 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
+  .c0:not(:disabled):focus,
+  .c0:not(:disabled):focus-within,
+  .c0:not(:disabled):active,
+  .c0:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -926,8 +934,10 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
   cursor: not-allowed;
 }
 
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
+.c0:not(:disabled):focus,
+.c0:not(:disabled):focus-within,
+.c0:not(:disabled):active,
+.c0:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -1220,8 +1230,10 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
+  .c0:not(:disabled):focus,
+  .c0:not(:disabled):focus-within,
+  .c0:not(:disabled):active,
+  .c0:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -1505,8 +1517,10 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
   cursor: not-allowed;
 }
 
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
+.c0:not(:disabled):focus,
+.c0:not(:disabled):focus-within,
+.c0:not(:disabled):active,
+.c0:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -1634,8 +1648,10 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
+  .c0:not(:disabled):focus,
+  .c0:not(:disabled):focus-within,
+  .c0:not(:disabled):active,
+  .c0:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -1810,8 +1826,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
+.c0:not(:disabled):focus,
+.c0:not(:disabled):focus-within,
+.c0:not(:disabled):active,
+.c0:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -2111,8 +2129,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
+  .c0:not(:disabled):focus,
+  .c0:not(:disabled):focus-within,
+  .c0:not(:disabled):active,
+  .c0:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -2601,8 +2621,10 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   cursor: not-allowed;
 }
 
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
+.c0:not(:disabled):focus,
+.c0:not(:disabled):focus-within,
+.c0:not(:disabled):active,
+.c0:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -2902,8 +2924,10 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
+  .c0:not(:disabled):focus,
+  .c0:not(:disabled):focus-within,
+  .c0:not(:disabled):active,
+  .c0:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -3514,8 +3538,10 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   cursor: not-allowed;
 }
 
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
+.c0:not(:disabled):focus,
+.c0:not(:disabled):focus-within,
+.c0:not(:disabled):active,
+.c0:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
@@ -3895,8 +3921,10 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
+  .c0:not(:disabled):focus,
+  .c0:not(:disabled):focus-within,
+  .c0:not(:disabled):active,
+  .c0:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
