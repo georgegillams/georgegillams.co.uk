@@ -9,6 +9,9 @@ import reqSecure from 'server-utils/common/reqSecure';
 
 const verifyTurnstileToken = async (token, remoteip) => {
   const secretKey = process.env.TURNSTILE_SECRET_KEY;
+  console.log(`*** secretKey: ${secretKey}`);
+  console.log(`*** token: ${token}`);
+  console.log(`*** remoteip: ${remoteip}`);
 
   if (!secretKey) {
     // If no secret key is configured, skip verification (for development)
@@ -27,6 +30,7 @@ const verifyTurnstileToken = async (token, remoteip) => {
       formData.append('remoteip', remoteip);
     }
 
+    console.log(`*** formData: ${JSON.stringify(formData)}`);
     const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
       method: 'POST',
       body: formData,
@@ -34,8 +38,10 @@ const verifyTurnstileToken = async (token, remoteip) => {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
     });
+    console.log(`*** response: ${JSON.stringify(response)}`);
 
     const result = await response.json();
+    console.log(`*** result: ${JSON.stringify(result)}`);
     return result;
   } catch (error) {
     console.error('Turnstile verification error:', error);
