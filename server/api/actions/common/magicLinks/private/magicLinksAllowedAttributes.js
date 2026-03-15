@@ -17,6 +17,7 @@ const usersAllowedAttributes = [
   { attribute: 'password', pattern: PASSWORD_REGEX },
   { attribute: 'ticketType', pattern: PASSWORD_REGEX },
   { attribute: 'loginRedirect', pattern: REDIRECT_REGEX },
+  { attribute: 'turnstileToken', pattern: STRING_REGEX },
 ];
 
 export default usersAllowedAttributes;

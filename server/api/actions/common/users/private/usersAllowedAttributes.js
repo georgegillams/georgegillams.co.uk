@@ -11,6 +11,7 @@ const usersAllowedAttributes = [
   { attribute: 'email', pattern: EMAIL_REGEX },
   { attribute: 'admin', pattern: 'BOOL' },
   { attribute: 'password', pattern: PASSWORD_REGEX },
+  { attribute: 'turnstileToken', pattern: STRING_REGEX },
 ];
 
 export default usersAllowedAttributes;
