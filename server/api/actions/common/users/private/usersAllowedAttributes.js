@@ -3,6 +3,7 @@ import {
   EMAIL_REGEX,
   PASSWORD_REGEX,
   STRING_REGEX,
+  ANYTHING_REGEX,
 } from '@george-gillams/webapp/helpers/regexConstants';
 
 const usersAllowedAttributes = [
@@ -11,6 +12,7 @@ const usersAllowedAttributes = [
   { attribute: 'email', pattern: EMAIL_REGEX },
   { attribute: 'admin', pattern: 'BOOL' },
   { attribute: 'password', pattern: PASSWORD_REGEX },
+  { attribute: 'turnstileToken', pattern: ANYTHING_REGEX },
 ];
 
 export default usersAllowedAttributes;

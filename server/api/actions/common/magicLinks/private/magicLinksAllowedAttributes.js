@@ -5,6 +5,7 @@ import {
   STRING_REGEX,
   ID_REGEX,
   REDIRECT_REGEX,
+  ANYTHING_REGEX,
 } from '@george-gillams/webapp/helpers/regexConstants';
 
 const usersAllowedAttributes = [
@@ -17,6 +18,7 @@ const usersAllowedAttributes = [
   { attribute: 'password', pattern: PASSWORD_REGEX },
   { attribute: 'ticketType', pattern: PASSWORD_REGEX },
   { attribute: 'loginRedirect', pattern: REDIRECT_REGEX },
+  { attribute: 'turnstileToken', pattern: ANYTHING_REGEX },
 ];
 
 export default usersAllowedAttributes;
