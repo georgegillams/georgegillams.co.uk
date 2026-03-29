@@ -15,6 +15,12 @@ const apiStructureExtensions = {
   loadBooks: { method: GET, path: '/books/load-all' },
   updateBook: { method: POST, path: '/books/update' },
 
+  // Medals
+  createMedal: { method: POST, path: '/medals/create' },
+  deleteMedal: { method: POST, path: '/medals/delete' },
+  loadMedals: { method: GET, path: '/medals/load-all' },
+  updateMedal: { method: POST, path: '/medals/update' },
+
   // Make payment
   loadPayment: { method: POST, path: '/make-payment/load' },
   createPaymentIntent: { method: POST, path: '/make-payment/create-intent' },
