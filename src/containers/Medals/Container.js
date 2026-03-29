@@ -243,6 +243,22 @@ const OtherOcrMedals = [
     year: '2025',
     stravaId: '15797792972',
   },
+  {
+    background: notBlack,
+    foreground: '#F80F11',
+    title: 'Tartan Warrior 3km',
+    year: '2026',
+    stravaId: '17885977022',
+    showDarkModeOutline: true,
+  },
+  {
+    background: notBlack,
+    foreground: '#F80F11',
+    title: 'Tartan Warrior 8km',
+    year: '2026',
+    stravaId: '17898805315',
+    showDarkModeOutline: true,
+  },
 ];
 
 const HyroxMedals = [
