@@ -3,6 +3,7 @@ const REDIS_STORE_EXTENSIONS = [
   'books',
   'comments',
   'images',
+  'medals',
   'payments',
   'profiles',
   'stripepayments',

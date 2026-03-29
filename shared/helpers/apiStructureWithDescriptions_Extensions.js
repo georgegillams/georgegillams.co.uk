@@ -22,6 +22,16 @@ const apiStructureWithDescriptionsExtensions = apiStructure => {
   apiStructure.updateBook.description = 'Update a book';
   apiStructure.updateBook.authorisation = 'Admin only';
 
+  // Medals
+  apiStructure.createMedal.description = 'Create a new medal';
+  apiStructure.createMedal.authorisation = 'Admin only';
+  apiStructure.deleteMedal.description = 'Remove a medal';
+  apiStructure.deleteMedal.authorisation = 'Admin only';
+  apiStructure.loadMedals.description = 'Load all medals. If not admin, only non-deleted medals will be loaded.';
+  apiStructure.loadMedals.authorisation = 'None';
+  apiStructure.updateMedal.description = 'Update a medal';
+  apiStructure.updateMedal.authorisation = 'Admin only';
+
   // Make payment
   apiStructure.loadPayment.description = 'TODO';
   apiStructure.loadPayment.authorisation = 'TODO';

@@ -12,6 +12,12 @@ const apiStructureWithActionsExtensions = apiStructure => {
   apiStructure.loadBooks.action = require('./books/loadAll');
   apiStructure.updateBook.action = require('./books/update');
 
+  // Medals
+  apiStructure.createMedal.action = require('./medals/create');
+  apiStructure.deleteMedal.action = require('./medals/delete');
+  apiStructure.loadMedals.action = require('./medals/loadAll');
+  apiStructure.updateMedal.action = require('./medals/update');
+
   // Support
   apiStructure.createSupport.action = require('./support/create');
   apiStructure.deleteSupport.action = require('./support/delete');
