@@ -259,6 +259,14 @@ const OtherOcrMedals = [
     stravaId: '17898805315',
     showDarkModeOutline: true,
   },
+  {
+    background: notBlack,
+    foreground: '#4EAC30',
+    title: 'Rumble 3km series',
+    year: '2026',
+    stravaId: '18169431929',
+    showDarkModeOutline: true,
+  },
 ];
 
 const HyroxMedals = [
