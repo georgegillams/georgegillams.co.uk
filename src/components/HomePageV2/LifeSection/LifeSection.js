@@ -6,8 +6,6 @@ import Section from '@george-gillams/components/section';
 import {
   CardWrapper,
   StyledBlogCard,
-  StyledMedalCard,
-  StyledMedals,
   StyledParagraph,
   StyledPhotoGallery,
   StyledPhotographyCard,
@@ -47,14 +45,14 @@ const LifeSection = props => {
               layout={HP_CARD_LAYOUT.COLUMN}>
               <StyledPhotoGallery />
             </StyledPhotographyCard>
-            <StyledMedalCard
+            {/* <StyledMedalCard
               title="Racing"
               blurb="See the races I've completed."
               linkText="Races →"
               href="/races"
               layout={HP_CARD_LAYOUT.AUTO}>
               <StyledMedals />
-            </StyledMedalCard>
+            </StyledMedalCard> */}
           </CardWrapper>
         </ScrollAnimationWrapper>
       </Section>

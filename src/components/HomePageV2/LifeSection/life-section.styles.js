@@ -16,12 +16,14 @@ export const CardWrapper = styled.div`
   margin-top: ${spacingLg};
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 3fr 2fr;
+  /* grid-template-rows: 1fr 1fr 3fr 2fr; */
+  grid-template-rows: 1fr 1fr 3fr;
   grid-gap: ${spacingLg};
 
   @media (min-width: ${breakpointMd}) {
     grid-template-columns: 3fr 5fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr;
     margin-top: calc(2 * ${spacingLg});
   }
 `;
