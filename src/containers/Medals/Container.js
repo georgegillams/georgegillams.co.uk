@@ -290,6 +290,11 @@ const HyroxMedals = [
     year: '2024',
     stravaId: '13063999212',
   },
+  {
+    location: 'Cardiff',
+    year: '2026',
+    stravaId: '18303521512',
+  },
 ];
 
 const RunningMedals = [
