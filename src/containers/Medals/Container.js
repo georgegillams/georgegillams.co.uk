@@ -297,6 +297,16 @@ const HyroxMedals = [
   },
 ];
 
+const OtherFunctionalFitnessMedals = [
+  {
+    background: '#036AFF',
+    foreground: '#FFF200',
+    title: 'Nuclear Fit',
+    year: '2026',
+    stravaId: '18448273099',
+  },
+];
+
 const RunningMedals = [
   {
     background: '#93D50A',
@@ -422,6 +432,23 @@ const Medals = () => {
                 year={medal.year}
                 stravaLink={medal.stravaId ? `https://www.strava.com/activities/${medal.stravaId}` : undefined}
                 showDarkModeOutline
+              />
+            ))}
+          </StyledMedalShelf>
+        </Subsection>
+      </SectionWithScroll>
+      <SectionWithScroll name="Other Functional Fitness">
+        <Subsection>
+          <StyledMedalShelf>
+            {OtherFunctionalFitnessMedals.map((medal, index) => (
+              <EventPatch
+                key={`${index}-${medal.title}-${medal.year}`}
+                background={medal.background}
+                foreground={medal.foreground}
+                title={medal.title}
+                year={medal.year}
+                stravaLink={medal.stravaId ? `https://www.strava.com/activities/${medal.stravaId}` : undefined}
+                showDarkModeOutline={medal.showDarkModeOutline}
               />
             ))}
           </StyledMedalShelf>
