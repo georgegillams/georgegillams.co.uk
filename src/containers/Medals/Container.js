@@ -136,6 +136,11 @@ const SpartanMedals = [
     year: '2025',
     stravaId: '16032950353',
   },
+  {
+    type: SPARTAN_EVENT_TYPE.beast,
+    year: '2026',
+    stravaId: '18527422291',
+  },
 ];
 
 const OtherOcrMedals = [
