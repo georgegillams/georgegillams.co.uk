@@ -272,6 +272,22 @@ const OtherOcrMedals = [
     stravaId: '18169431929',
     showDarkModeOutline: true,
   },
+  {
+    background: notBlack,
+    foreground: '#f0ca55',
+    title: 'OCREC Short Course',
+    year: '2026',
+    stravaId: '18702082157',
+    showDarkModeOutline: true,
+  },
+  {
+    background: notBlack,
+    foreground: '#f0ca55',
+    title: 'OCREC Standard Course',
+    year: '2026',
+    stravaId: '18716870842',
+    showDarkModeOutline: true,
+  },
 ];
 
 const HyroxMedals = [
