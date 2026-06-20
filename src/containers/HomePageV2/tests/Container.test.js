@@ -3,6 +3,10 @@ import { render } from '@testing-library/react';
 
 import Home from '../Container';
 
+jest.mock('next/router', () => ({
+  useRouter: () => ({ query: {} }),
+}));
+
 describe('<Home />', () => {
   beforeEach(() => {
     jest.clearAllMocks();

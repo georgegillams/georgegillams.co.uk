@@ -6,6 +6,10 @@ import configureStore from 'client-utils/common/redux/configure-store';
 
 import IndexPage from '../pages/index';
 
+jest.mock('next/router', () => ({
+  useRouter: () => ({ query: {} }),
+}));
+
 describe('<HomePage />', () => {
   let store;
 
