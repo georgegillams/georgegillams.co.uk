@@ -1,17 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useRouter } from 'next/router';
 
 import withScroll, { cleanRestScrollProps } from '@george-gillams/components/scroll-container';
 import TextLink from 'components/common/TextLink';
+import { isNewJob } from 'utils/isNewJob';
 import { AnimatedWrapperInner, AnimatedWrapperOuter, Content, StyledParagraph, Wrapper } from './work-section.styles';
 import { breakpointSm } from '@george-gillams/components/constants/layout';
 import { JS_CLASSNAME } from '@george-gillams/components/js-feature-detector';
 import FakeTypeform from './fake-typeform';
+import SignalGraph from './signal-graph';
 
 const HIDE_CLASS_NAME = `home-page-work-seciton__typeform--hide`;
 
 const WorkSection = props => {
   const { hasBeenMostlyInView, hasBeenFullyInView, ...rest } = props;
+  const router = useRouter();
+  const showNewJob = isNewJob(router.query);
 
   cleanRestScrollProps(rest);
 
@@ -34,26 +39,36 @@ const WorkSection = props => {
       </style>
       <Content>
         <StyledParagraph>
-          I&#39;m an Expert Software Engineer at{' '}
-          <TextLink hrefExternal href="https://typeform.com/">
-            Typeform
-          </TextLink>
-          .
-          <br />
-          I’m also an accessibility champion and design system enthusiast.
+          {showNewJob ? (
+            <>I&#39;m a Senior Software Engineer, accessibility champion and design system enthusiast.</>
+          ) : (
+            <>
+              I&#39;m an Expert Software Engineer at{' '}
+              <TextLink hrefExternal href="https://typeform.com/">
+                Typeform
+              </TextLink>
+              .
+              <br />
+              I’m also an accessibility champion and design system enthusiast.
+            </>
+          )}
           <br />
           <TextLink href="/work">Learn more about my work</TextLink>
         </StyledParagraph>
       </Content>
       <AnimatedWrapperOuter>
         <AnimatedWrapperInner className={hasBeenMostlyInView || hasBeenFullyInView ? '' : HIDE_CLASS_NAME}>
-          <FakeTypeform
-            questionTitle="Where to next?"
-            links={[
-              { text: 'My work', href: '/work' },
-              { text: 'Typeform', href: 'https://typeform.com' },
-            ]}
-          />
+          {showNewJob ? (
+            <SignalGraph />
+          ) : (
+            <FakeTypeform
+              questionTitle="Where to next?"
+              links={[
+                { text: 'My work', href: '/work' },
+                { text: 'Typeform', href: 'https://typeform.com' },
+              ]}
+            />
+          )}
         </AnimatedWrapperInner>
       </AnimatedWrapperOuter>
     </Wrapper>

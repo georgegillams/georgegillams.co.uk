@@ -19,7 +19,7 @@ const environment = {
 const projectName = 'GEORGEGILLAMS';
 const projectTitle = 'George Gillams';
 // eslint-disable-next-line max-len
-const projectDescription = `Personal website of George Gillams - Expert Software Engineer and Obstacle Race Athlete`;
+const projectDescription = `Personal website of George Gillams - Senior Software Engineer and Obstacle Race Athlete`;
 const githubRepo = 'georgegillams/georgegillams.co.uk';
 const githubRepoUrl = `https://github.com/${githubRepo}`;
 const port = PORT || 3000;
