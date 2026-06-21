@@ -35,7 +35,7 @@ const Work = () => {
                   Typeform
                 </TextLink>{' '}
                 I led the development of several features spanning multiple teams. These included a knowledge-quiz form
-                mode, migrating the publish mechanism out of the form builder repo, and Typeform AI - a chat interface
+                mode, migrating the publish mechanism out of the form builder repo, and Typeform AI — a chat interface
                 for interacting with all Typeform products.
               </Paragraph>
             </>
