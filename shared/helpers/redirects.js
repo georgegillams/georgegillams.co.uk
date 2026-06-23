@@ -1,5 +1,5 @@
 import appConfig from './appConfig';
-import { CONTACT_FORM, CONTRASTER_FEEDBACK_FORM } from './typeformConstants';
+import { CHORDER_FEEDBACK_FORM, CONTACT_FORM, CONTRASTER_FEEDBACK_FORM } from './typeformConstants';
 
 const redirects = [
   {
@@ -57,6 +57,7 @@ const redirects = [
   { from: '/medals', to: '/races' },
 
   { from: '/contraster-feedback', to: CONTRASTER_FEEDBACK_FORM },
+  { from: '/chorder-feedback', to: CHORDER_FEEDBACK_FORM },
 ];
 
 export default redirects;
