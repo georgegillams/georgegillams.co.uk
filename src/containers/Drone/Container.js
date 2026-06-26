@@ -17,11 +17,15 @@ import { LOST_FOUND_FORM } from 'helpers/typeformConstants';
 
 const SectionWithScroll = withScrollAnimation(Section);
 
+// Lasts 5 years
 const UK_TRAINING_EXPIRY = '8 March 2028';
 const EASA_TRAINING_EXPIRY = '8 March 2028';
-const UK_OPERATOR_ID_EXPIRY = '8 March 2026';
+
+// Lasts 1 year
+const UK_OPERATOR_ID_EXPIRY = '8 March 2027';
 const EASA_OPERATOR_ID_EXPIRY = '16 August 2026';
-const INSURANCE_EXPIRY = '8 March 2026';
+const INSURANCE_EXPIRY = '8 March 2027';
+
 const UK_FLYER_ID = 'GBR-RP-B88RNYQSNJ62';
 const EASA_FLYER_ID = 'NOR-RP-4zb7de1751cj';
 const UK_OPERATOR_ID = 'GBR-OP-267ZQHMWPYGR';
