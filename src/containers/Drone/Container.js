@@ -23,13 +23,13 @@ const EASA_TRAINING_EXPIRY = '8 March 2028';
 
 // Lasts 1 year
 const UK_OPERATOR_ID_EXPIRY = '8 March 2027';
-const EASA_OPERATOR_ID_EXPIRY = '16 August 2026';
+const EASA_OPERATOR_ID_EXPIRY = '16 August 2027';
 const INSURANCE_EXPIRY = '8 March 2027';
 
 const UK_FLYER_ID = 'GBR-RP-B88RNYQSNJ62';
 const EASA_FLYER_ID = 'NOR-RP-4zb7de1751cj';
 const UK_OPERATOR_ID = 'GBR-OP-267ZQHMWPYGR';
-const EASA_OPERATOR_ID = 'NOR5p8cfumh4phal';
+const EASA_OPERATOR_ID = 'NOR5p8cfumh4phal-23h';
 
 const Drone = () => {
   return (
