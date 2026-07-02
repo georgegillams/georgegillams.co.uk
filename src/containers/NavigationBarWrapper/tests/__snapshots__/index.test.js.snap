@@ -416,14 +416,6 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
   }
 }
 
-@supports (background-clip:text) {
-  .c10 {
-    background-image: linear-gradient( to bottom right,rgb(136,65,136),rgb(136,65,136),rgb(136,65,136),rgb(126,60,173),rgb(56,56,192),rgb(47,177,47),rgb(216,216,0),rgb(209,136,1),rgb(209,28,28),rgb(209,28,28),rgb(209,28,28) );
-    color: transparent;
-    background-clip: text;
-  }
-}
-
 <div>
   <header
     class="c0"
@@ -1049,14 +1041,6 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
 @media (prefers-color-scheme:dark) {
   .c10 {
     color: #ffffff;
-  }
-}
-
-@supports (background-clip:text) {
-  .c10 {
-    background-image: linear-gradient( to bottom right,rgb(136,65,136),rgb(136,65,136),rgb(136,65,136),rgb(126,60,173),rgb(56,56,192),rgb(47,177,47),rgb(216,216,0),rgb(209,136,1),rgb(209,28,28),rgb(209,28,28),rgb(209,28,28) );
-    color: transparent;
-    background-clip: text;
   }
 }
 
@@ -1688,14 +1672,6 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
   }
 }
 
-@supports (background-clip:text) {
-  .c10 {
-    background-image: linear-gradient( to bottom right,rgb(136,65,136),rgb(136,65,136),rgb(136,65,136),rgb(126,60,173),rgb(56,56,192),rgb(47,177,47),rgb(216,216,0),rgb(209,136,1),rgb(209,28,28),rgb(209,28,28),rgb(209,28,28) );
-    color: transparent;
-    background-clip: text;
-  }
-}
-
 <div>
   <header
     class="c0"
@@ -2321,14 +2297,6 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c10 {
     color: #ffffff;
-  }
-}
-
-@supports (background-clip:text) {
-  .c10 {
-    background-image: linear-gradient( to bottom right,rgb(136,65,136),rgb(136,65,136),rgb(136,65,136),rgb(126,60,173),rgb(56,56,192),rgb(47,177,47),rgb(216,216,0),rgb(209,136,1),rgb(209,28,28),rgb(209,28,28),rgb(209,28,28) );
-    color: transparent;
-    background-clip: text;
   }
 }
 
