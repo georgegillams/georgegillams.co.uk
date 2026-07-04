@@ -687,7 +687,7 @@ exports[`<BooksList /> Should render correctly with custom className 1`] = `
 `;
 
 exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
-.c10 {
+.c11 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -707,11 +707,11 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   box-shadow: none;
 }
 
-.c10:focus-visible {
+.c11:focus-visible {
   outline: none !important;
 }
 
-.c10:focus-visible::after {
+.c11:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -724,24 +724,24 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   pointer-events: none;
 }
 
-.c10:focus,
-.c10:hover {
+.c11:focus,
+.c11:hover {
   background-color: #BA2020;
   color: white;
   box-shadow: none;
 }
 
-.c10:active {
+.c11:active {
   background-color: #9F1717;
   color: white;
 }
 
-.c10:disabled {
+.c11:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c15 {
+.c16 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -762,11 +762,11 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   cursor: default;
 }
 
-.c15:focus-visible {
+.c16:focus-visible {
   outline: none !important;
 }
 
-.c15:focus-visible::after {
+.c16:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -779,24 +779,24 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   pointer-events: none;
 }
 
-.c15:focus,
-.c15:hover {
+.c16:focus,
+.c16:hover {
   background-color: #BA2020;
   color: white;
   box-shadow: none;
 }
 
-.c15:active {
+.c16:active {
   background-color: #9F1717;
   color: white;
 }
 
-.c15:disabled {
+.c16:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -831,7 +831,7 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   opacity: 0.6;
 }
 
-.c13 {
+.c14 {
   display: grid;
   grid-template-columns: 4rem 1fr;
   min-height: 4rem;
@@ -853,7 +853,7 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   grid-column: 2;
 }
 
-.c14 {
+.c15 {
   color: orange;
   grid-row: 3;
   grid-column: 2;
@@ -866,9 +866,20 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   margin-bottom: 1rem;
 }
 
-.c11 {
-  margin-bottom: 2rem;
+.c12 {
   box-sizing: border-box;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .c0 {
@@ -883,13 +894,13 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:focus-visible::after {
+  .c11:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c11 {
     background-color: #CA2020;
     color: white;
     box-shadow: none;
@@ -897,8 +908,8 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:focus,
-  .c10:hover {
+  .c11:focus,
+  .c11:hover {
     background-color: #891111;
     color: white;
     box-shadow: none;
@@ -906,27 +917,27 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:active {
+  .c11:active {
     background-color: #730D0D;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:disabled {
+  .c11:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus-visible::after {
+  .c16:focus-visible::after {
     border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15 {
+  .c16 {
     background-color: #CA2020;
     color: white;
     box-shadow: none;
@@ -934,8 +945,8 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus,
-  .c15:hover {
+  .c16:focus,
+  .c16:hover {
     background-color: #891111;
     color: white;
     box-shadow: none;
@@ -943,14 +954,14 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:active {
+  .c16:active {
     background-color: #730D0D;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:disabled {
+  .c16:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -971,14 +982,14 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
 }
 
 @media (min-width:32.25rem) {
-  .c13 {
+  .c14 {
     grid-template-columns: 4rem 1fr 10rem;
     grid-template-rows: 3;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c13 {
+  .c14 {
     gap: calc(2 * 0.375rem) 1rem;
     grid-template-columns: 5rem 1fr 10rem;
   }
@@ -1029,20 +1040,24 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
             Want to read
           </span>
         </div>
-        <button
-          class="c10 c11"
-          type="button"
+        <div
+          class="c10"
         >
-          <span
-            class="c12"
+          <button
+            class="c11 c12"
+            type="button"
           >
-            Delete book
-          </span>
-        </button>
+            <span
+              class="c13"
+            >
+              Delete book
+            </span>
+          </button>
+        </div>
       </div>
       <div>
         <div
-          class="c13 c4"
+          class="c14 c4"
           id="asdfh"
         >
           <h1
@@ -1057,26 +1072,30 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
             Author 2
           </span>
           <span
-            class="c7 c14"
+            class="c7 c15"
             color="orange"
           >
             Reading now
           </span>
         </div>
-        <button
-          class="c10 c11"
-          type="button"
+        <div
+          class="c10"
         >
-          <span
-            class="c12"
+          <button
+            class="c11 c12"
+            type="button"
           >
-            Delete book
-          </span>
-        </button>
+            <span
+              class="c13"
+            >
+              Delete book
+            </span>
+          </button>
+        </div>
       </div>
       <div>
         <div
-          class="c13 c4"
+          class="c14 c4"
           id="asdfi"
         >
           <h1
@@ -1091,23 +1110,27 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
             Author 3
           </span>
           <span
-            class="c7 c14"
+            class="c7 c15"
             color="orange"
           >
             Reading now
           </span>
         </div>
-        <button
-          class="c15 c11"
-          disabled=""
-          type="button"
+        <div
+          class="c10"
         >
-          <span
-            class="c12"
+          <button
+            class="c16 c12"
+            disabled=""
+            type="button"
           >
-            Delete book
-          </span>
-        </button>
+            <span
+              class="c13"
+            >
+              Delete book
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
