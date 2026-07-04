@@ -29,8 +29,14 @@ export const StyledBookCard = styled(BookCard)`
 `;
 
 export const StyledButton = styled(Button)`
-  margin-bottom: ${spacingLg};
   box-sizing: border-box;
+`;
+
+export const AdminActions = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: ${spacingBase};
+  margin-bottom: ${spacingLg};
 `;
 
 export const TransformativeCardsGrid = styled.div`
