@@ -1068,10 +1068,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
-"@george-gillams/components@^30.2.0":
-  version "30.2.0"
-  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-30.2.0.tgz#5e9eb5709151a808fbfebf35afa22a22bf29f683"
-  integrity sha512-+BmeEzj6JvOv9we+AIY9TIoh7WlUGgf2XAak2vSB2J9YpWx03ArLnORY/7FpTWbdpxR88UcU/zv4eVVk9+tygg==
+"@george-gillams/components@^30.2.4":
+  version "30.2.4"
+  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-30.2.4.tgz#6e97d5bd851ca30e668162e3f02f96b8e5af83a6"
+  integrity sha512-pWBnLXYi3Uufr7bfQsZW3XUTRppj06J4n2Lwt5MIDicwLVIE1KGxv4vQzhf1wCN3afrRIcYaeyBX0TqnJBPZFA==
   dependencies:
     a11y-focus-scope "^1.1.3"
     date-fns "^2.29.3"
@@ -2592,9 +2592,9 @@ camelize@^1.0.0:
   integrity sha512-dU+Tx2fsypxTgtLoE36npi3UqcjSSMNYfkqgmoEhtZrraP5VWq0K7FkWVTYa8eMPtnU/G2txVsfdCJTn9uzpuQ==
 
 caniuse-lite@^1.0.30001579, caniuse-lite@^1.0.30001759:
-  version "1.0.30001800"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001800.tgz"
-  integrity sha512-MMHtuAz9Ys840zAY5F4k6fV5GaivZ9sPk+nz0mY+GYVzRBnYkN0mpqkSR92oWRQ19yQWo4HvBV/FnC16AJX8MA==
+  version "1.0.30001803"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001803.tgz"
+  integrity sha512-g/uHREV2ZpK9qMalCsWaxmA6ol+DX8GYhuf3T40RKoP+oL7vhRJh8LNt73PCjpnR6l14FzfPrB5Yux4PKm2meg==
 
 caseless@~0.12.0:
   version "0.12.0"

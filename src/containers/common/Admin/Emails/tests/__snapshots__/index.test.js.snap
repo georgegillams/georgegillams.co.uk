@@ -646,7 +646,6 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -655,6 +654,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c15:focus-visible {
@@ -673,10 +673,6 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c15:disabled {
-  cursor: not-allowed;
 }
 
 .c15:not(:disabled):focus,

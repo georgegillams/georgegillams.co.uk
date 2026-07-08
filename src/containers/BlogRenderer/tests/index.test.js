@@ -17,7 +17,6 @@ const testBlog = {
   timestamp: 1595000996720,
   authorId: 'direct_API_invocator',
   blogImage: 'https://i.imgur.com/ppPEuDs.jpg',
-  blogCardDate: '23-30',
   published: true,
   showInBlogsList: true,
   blogBannerColor: '#01579b',

@@ -13,8 +13,9 @@ const BlogCard = props => {
     title += ' (DELETED)';
   }
 
-  const day = blog.blogCardDate ? blog.blogCardDate : '' + new Date(1000 * blog.publishedTimestamp).getDate();
+  const day = '' + new Date(1000 * blog.publishedTimestamp).getDate();
   const month = '' + new Date(1000 * blog.publishedTimestamp).toLocaleString('default', { month: 'short' });
+  const year = '' + new Date(1000 * blog.publishedTimestamp).getFullYear();
 
   let blogTags = null;
 
@@ -26,8 +27,8 @@ const BlogCard = props => {
   }
 
   let ariaLabel = title;
-  if (day && month) {
-    ariaLabel = `${ariaLabel}, ${day.split('-').join('to')} ${month}`;
+  if (day && month && year) {
+    ariaLabel = `${ariaLabel}, ${day} ${month} ${year}`;
   }
   if (blogTags) {
     ariaLabel = `${ariaLabel}, Tagged ${blogTags.join(', ')}`;
@@ -36,7 +37,7 @@ const BlogCard = props => {
   return (
     <FeatureCard
       ariaLabel={ariaLabel}
-      annotations={[day, month]}
+      annotations={[`${day} ${month}`, year]}
       fillImageSrc={blog.blogHeroImage}
       imageSrc={blog.blogImage}
       href={`${linkPrefix}/${blog.id}`}

@@ -41,11 +41,6 @@ const BlogForm = props => {
           validationRegex: ANYTHING_REGEX,
         },
         {
-          id: 'blogCardDate',
-          name: 'Blog card date override',
-          validationRegex: ANYTHING_REGEX,
-        },
-        {
           id: 'light',
           name: 'Light',
           validationRegex: null,

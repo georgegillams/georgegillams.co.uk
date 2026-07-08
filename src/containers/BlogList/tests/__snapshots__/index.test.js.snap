@@ -544,7 +544,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
           </a>
           <div>
             <a
-              aria-label="Blog 1 , NaN Invalid Date"
+              aria-label="Blog 1 , NaN Invalid Date NaN"
               class=""
               href="/blog/asdfg"
             >
@@ -570,6 +570,15 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                         <span
                           class="c1"
                         >
+                          NaN Invalid Date NaN
+                        </span>
+                      </div>
+                      <div
+                        class=""
+                      >
+                        <span
+                          class="c1"
+                        >
                           NaN Invalid Date
                         </span>
                       </div>
@@ -580,15 +589,6 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                           class="c1"
                         >
                           NaN
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          Invalid Date
                         </span>
                       </div>
                     </div>
@@ -618,7 +618,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
           </div>
           <div>
             <a
-              aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+              aria-label="St Ives  2018, 27 Dec 2019, Tagged travel"
               class=""
               href="/blog/zxywvuts"
             >
@@ -644,7 +644,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                         <span
                           class="c1"
                         >
-                          23-30 Dec
+                          27 Dec 2019
                         </span>
                       </div>
                       <div
@@ -653,7 +653,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                         <span
                           class="c1"
                         >
-                          23-30
+                          27 Dec
                         </span>
                       </div>
                       <div
@@ -662,7 +662,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                         <span
                           class="c1"
                         >
-                          Dec
+                          2019
                         </span>
                       </div>
                     </div>
@@ -765,7 +765,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
           </div>
           <div>
             <a
-              aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+              aria-label="Untitled blog (DELETED), 27 Dec 2019, Tagged travel"
               class=""
               href="/blog/mndyd8"
             >
@@ -791,7 +791,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                         <span
                           class="c1"
                         >
-                          23-30 Dec
+                          27 Dec 2019
                         </span>
                       </div>
                       <div
@@ -800,7 +800,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                         <span
                           class="c1"
                         >
-                          23-30
+                          27 Dec
                         </span>
                       </div>
                       <div
@@ -809,7 +809,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                         <span
                           class="c1"
                         >
-                          Dec
+                          2019
                         </span>
                       </div>
                     </div>
@@ -1515,7 +1515,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
         <div>
           <div>
             <a
-              aria-label="Blog 1 , NaN Invalid Date"
+              aria-label="Blog 1 , NaN Invalid Date NaN"
               class=""
               href="/blog/asdfg"
             >
@@ -1541,6 +1541,15 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                         <span
                           class="c0"
                         >
+                          NaN Invalid Date NaN
+                        </span>
+                      </div>
+                      <div
+                        class=""
+                      >
+                        <span
+                          class="c0"
+                        >
                           NaN Invalid Date
                         </span>
                       </div>
@@ -1551,15 +1560,6 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                           class="c0"
                         >
                           NaN
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          Invalid Date
                         </span>
                       </div>
                     </div>
@@ -1579,7 +1579,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
           </div>
           <div>
             <a
-              aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+              aria-label="St Ives  2018, 27 Dec 2019, Tagged travel"
               class=""
               href="/blog/zxywvuts"
             >
@@ -1605,7 +1605,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                         <span
                           class="c0"
                         >
-                          23-30 Dec
+                          27 Dec 2019
                         </span>
                       </div>
                       <div
@@ -1614,7 +1614,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                         <span
                           class="c0"
                         >
-                          23-30
+                          27 Dec
                         </span>
                       </div>
                       <div
@@ -1623,7 +1623,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                         <span
                           class="c0"
                         >
-                          Dec
+                          2019
                         </span>
                       </div>
                     </div>
@@ -1716,7 +1716,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
           </div>
           <div>
             <a
-              aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+              aria-label="Untitled blog (DELETED), 27 Dec 2019, Tagged travel"
               class=""
               href="/blog/mndyd8"
             >
@@ -1742,7 +1742,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                         <span
                           class="c0"
                         >
-                          23-30 Dec
+                          27 Dec 2019
                         </span>
                       </div>
                       <div
@@ -1751,7 +1751,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                         <span
                           class="c0"
                         >
-                          23-30
+                          27 Dec
                         </span>
                       </div>
                       <div
@@ -1760,7 +1760,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                         <span
                           class="c0"
                         >
-                          Dec
+                          2019
                         </span>
                       </div>
                     </div>
@@ -2441,7 +2441,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
         <div>
           <div>
             <a
-              aria-label="Blog 1 , NaN Invalid Date"
+              aria-label="Blog 1 , NaN Invalid Date NaN"
               class=""
               href="/blog/asdfg"
             >
@@ -2467,6 +2467,15 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                         <span
                           class="c0"
                         >
+                          NaN Invalid Date NaN
+                        </span>
+                      </div>
+                      <div
+                        class=""
+                      >
+                        <span
+                          class="c0"
+                        >
                           NaN Invalid Date
                         </span>
                       </div>
@@ -2477,15 +2486,6 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                           class="c0"
                         >
                           NaN
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          Invalid Date
                         </span>
                       </div>
                     </div>
@@ -2505,7 +2505,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
           </div>
           <div>
             <a
-              aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+              aria-label="St Ives  2018, 27 Dec 2019, Tagged travel"
               class=""
               href="/blog/zxywvuts"
             >
@@ -2531,7 +2531,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                         <span
                           class="c0"
                         >
-                          23-30 Dec
+                          27 Dec 2019
                         </span>
                       </div>
                       <div
@@ -2540,7 +2540,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                         <span
                           class="c0"
                         >
-                          23-30
+                          27 Dec
                         </span>
                       </div>
                       <div
@@ -2549,7 +2549,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                         <span
                           class="c0"
                         >
-                          Dec
+                          2019
                         </span>
                       </div>
                     </div>
@@ -2642,7 +2642,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
           </div>
           <div>
             <a
-              aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+              aria-label="Untitled blog (DELETED), 27 Dec 2019, Tagged travel"
               class=""
               href="/blog/mndyd8"
             >
@@ -2668,7 +2668,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                         <span
                           class="c0"
                         >
-                          23-30 Dec
+                          27 Dec 2019
                         </span>
                       </div>
                       <div
@@ -2677,7 +2677,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                         <span
                           class="c0"
                         >
-                          23-30
+                          27 Dec
                         </span>
                       </div>
                       <div
@@ -2686,7 +2686,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                         <span
                           class="c0"
                         >
-                          Dec
+                          2019
                         </span>
                       </div>
                     </div>
