@@ -8,7 +8,7 @@ db key: `blogs`
 | --------------------- | ------------- | ------ | --------------- |
 | title                 | string        | stored |                 |
 | tags                  | array<string> | stored |                 |
-| blogCardDate          | string        | stored |                 |
+| blogCardDate          | string        | stored | deprecated      |
 | blogBannerColor       | string        | stored | valid css color |
 | blogImage             | string        | stored | url to image    |
 | light                 | bool          | stored |                 |

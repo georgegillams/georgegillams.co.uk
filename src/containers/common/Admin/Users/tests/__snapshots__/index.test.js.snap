@@ -357,7 +357,6 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -366,6 +365,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c13:focus-visible {
@@ -384,10 +384,6 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
 }
 
 .c13:not(:disabled):focus,
@@ -830,7 +826,6 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -839,6 +834,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c13:focus-visible {
@@ -857,10 +853,6 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
 }
 
 .c13:not(:disabled):focus,
@@ -1303,7 +1295,6 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -1312,6 +1303,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c13:focus-visible {
@@ -1330,10 +1322,6 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
 }
 
 .c13:not(:disabled):focus,
@@ -1903,7 +1891,6 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -1912,6 +1899,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c14:focus-visible {
@@ -1930,10 +1918,6 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c14:disabled {
-  cursor: not-allowed;
 }
 
 .c14:not(:disabled):focus,
@@ -2657,7 +2641,6 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -2666,6 +2649,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c25:focus-visible {
@@ -2684,10 +2668,6 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c25:disabled {
-  cursor: not-allowed;
 }
 
 .c25:not(:disabled):focus,
@@ -3207,7 +3187,6 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -3216,6 +3195,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c13:focus-visible {
@@ -3234,10 +3214,6 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
 }
 
 .c13:not(:disabled):focus,
@@ -3680,7 +3656,6 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -3689,6 +3664,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c13:focus-visible {
@@ -3707,10 +3683,6 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
 }
 
 .c13:not(:disabled):focus,
@@ -4153,7 +4125,6 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -4162,6 +4133,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c13:focus-visible {
@@ -4180,10 +4152,6 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
 }
 
 .c13:not(:disabled):focus,
@@ -4626,7 +4594,6 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -4635,6 +4602,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c13:focus-visible {
@@ -4653,10 +4621,6 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
 }
 
 .c13:not(:disabled):focus,
@@ -5099,7 +5063,6 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -5108,6 +5071,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c13:focus-visible {
@@ -5126,10 +5090,6 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
 }
 
 .c13:not(:disabled):focus,
@@ -5572,7 +5532,6 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -5581,6 +5540,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c13:focus-visible {
@@ -5599,10 +5559,6 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
 }
 
 .c13:not(:disabled):focus,
@@ -6172,7 +6128,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -6181,6 +6136,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c14:focus-visible {
@@ -6199,10 +6155,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c14:disabled {
-  cursor: not-allowed;
 }
 
 .c14:not(:disabled):focus,

@@ -9,7 +9,6 @@ exports[`<BlogCard /> Should render correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -18,6 +17,7 @@ exports[`<BlogCard /> Should render correctly 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c0:focus-visible {
@@ -36,10 +36,6 @@ exports[`<BlogCard /> Should render correctly 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0:not(:disabled):focus,
@@ -245,7 +241,7 @@ exports[`<BlogCard /> Should render correctly 1`] = `
 
 <div>
   <a
-    aria-label="Blog 1 , NaN Invalid Date"
+    aria-label="Blog 1 , NaN Invalid Date NaN"
     class="c0 c1"
     href="/blog/asdfg"
   >
@@ -271,6 +267,15 @@ exports[`<BlogCard /> Should render correctly 1`] = `
               <span
                 class="c8"
               >
+                NaN Invalid Date NaN
+              </span>
+            </div>
+            <div
+              class="c9"
+            >
+              <span
+                class="c8"
+              >
                 NaN Invalid Date
               </span>
             </div>
@@ -281,15 +286,6 @@ exports[`<BlogCard /> Should render correctly 1`] = `
                 class="c8"
               >
                 NaN
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                Invalid Date
               </span>
             </div>
           </div>
@@ -318,7 +314,6 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -327,6 +322,7 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c0:focus-visible {
@@ -345,10 +341,6 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0:not(:disabled):focus,
@@ -755,7 +747,7 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
 
 <div>
   <a
-    aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+    aria-label="Untitled blog (DELETED), 27 Dec 2019, Tagged travel"
     class="c0 c1"
     href="/blog/mndyd8"
   >
@@ -781,7 +773,7 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
               <span
                 class="c8"
               >
-                23-30 Dec
+                27 Dec 2019
               </span>
             </div>
             <div
@@ -790,7 +782,7 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
               <span
                 class="c8"
               >
-                23-30
+                27 Dec
               </span>
             </div>
             <div
@@ -799,7 +791,7 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
               <span
                 class="c8"
               >
-                Dec
+                2019
               </span>
             </div>
           </div>
@@ -901,7 +893,6 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -910,6 +901,7 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c0:focus-visible {
@@ -928,10 +920,6 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0:not(:disabled):focus,
@@ -1338,7 +1326,7 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
 
 <div>
   <a
-    aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+    aria-label="St Ives  2018, 27 Dec 2019, Tagged travel"
     class="c0 c1"
     href="/blog/zxywvuts"
   >
@@ -1364,7 +1352,7 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
               <span
                 class="c8"
               >
-                23-30 Dec
+                27 Dec 2019
               </span>
             </div>
             <div
@@ -1373,7 +1361,7 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
               <span
                 class="c8"
               >
-                23-30
+                27 Dec
               </span>
             </div>
             <div
@@ -1382,7 +1370,7 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
               <span
                 class="c8"
               >
-                Dec
+                2019
               </span>
             </div>
           </div>
@@ -1484,7 +1472,6 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -1493,6 +1480,7 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c0:focus-visible {
@@ -1511,10 +1499,6 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0:not(:disabled):focus,
@@ -1720,7 +1704,7 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
 
 <div>
   <a
-    aria-label="Blog 1 , NaN Invalid Date"
+    aria-label="Blog 1 , NaN Invalid Date NaN"
     class="c0 c1 test-custom-classname"
     href="/blog/asdfg"
   >
@@ -1746,6 +1730,15 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
               <span
                 class="c8"
               >
+                NaN Invalid Date NaN
+              </span>
+            </div>
+            <div
+              class="c9"
+            >
+              <span
+                class="c8"
+              >
                 NaN Invalid Date
               </span>
             </div>
@@ -1756,15 +1749,6 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
                 class="c8"
               >
                 NaN
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                Invalid Date
               </span>
             </div>
           </div>
@@ -1793,7 +1777,6 @@ exports[`<BlogsList /> Should render correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -1802,6 +1785,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c0:focus-visible {
@@ -1820,10 +1804,6 @@ exports[`<BlogsList /> Should render correctly 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0:not(:disabled):focus,
@@ -2239,7 +2219,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
   <div>
     <div>
       <a
-        aria-label="Blog 1 , NaN Invalid Date"
+        aria-label="Blog 1 , NaN Invalid Date NaN"
         class="c0 c1 c2"
         href="/blog/asdfg"
       >
@@ -2265,6 +2245,15 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                   <span
                     class="c9"
                   >
+                    NaN Invalid Date NaN
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
                     NaN Invalid Date
                   </span>
                 </div>
@@ -2275,15 +2264,6 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                     class="c9"
                   >
                     NaN
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Invalid Date
                   </span>
                 </div>
               </div>
@@ -2303,7 +2283,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
     </div>
     <div>
       <a
-        aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+        aria-label="St Ives  2018, 27 Dec 2019, Tagged travel"
         class="c0 c1 c2"
         href="/blog/zxywvuts"
       >
@@ -2329,7 +2309,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30 Dec
+                    27 Dec 2019
                   </span>
                 </div>
                 <div
@@ -2338,7 +2318,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30
+                    27 Dec
                   </span>
                 </div>
                 <div
@@ -2347,7 +2327,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                   <span
                     class="c9"
                   >
-                    Dec
+                    2019
                   </span>
                 </div>
               </div>
@@ -2440,7 +2420,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
     </div>
     <div>
       <a
-        aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+        aria-label="Untitled blog (DELETED), 27 Dec 2019, Tagged travel"
         class="c0 c1 c2"
         href="/blog/mndyd8"
       >
@@ -2466,7 +2446,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30 Dec
+                    27 Dec 2019
                   </span>
                 </div>
                 <div
@@ -2475,7 +2455,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30
+                    27 Dec
                   </span>
                 </div>
                 <div
@@ -2484,7 +2464,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                   <span
                     class="c9"
                   >
-                    Dec
+                    2019
                   </span>
                 </div>
               </div>
@@ -2588,7 +2568,6 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -2597,6 +2576,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c0:focus-visible {
@@ -2615,10 +2595,6 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0:not(:disabled):focus,
@@ -3036,7 +3012,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   >
     <div>
       <a
-        aria-label="Blog 1 , NaN Invalid Date"
+        aria-label="Blog 1 , NaN Invalid Date NaN"
         class="c0 c1 c2"
         href="/blog/asdfg"
       >
@@ -3062,6 +3038,15 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                   <span
                     class="c9"
                   >
+                    NaN Invalid Date NaN
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
                     NaN Invalid Date
                   </span>
                 </div>
@@ -3072,15 +3057,6 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                     class="c9"
                   >
                     NaN
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Invalid Date
                   </span>
                 </div>
               </div>
@@ -3100,7 +3076,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
     </div>
     <div>
       <a
-        aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+        aria-label="St Ives  2018, 27 Dec 2019, Tagged travel"
         class="c0 c1 c2"
         href="/blog/zxywvuts"
       >
@@ -3126,7 +3102,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30 Dec
+                    27 Dec 2019
                   </span>
                 </div>
                 <div
@@ -3135,7 +3111,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30
+                    27 Dec
                   </span>
                 </div>
                 <div
@@ -3144,7 +3120,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                   <span
                     class="c9"
                   >
-                    Dec
+                    2019
                   </span>
                 </div>
               </div>
@@ -3237,7 +3213,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
     </div>
     <div>
       <a
-        aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+        aria-label="Untitled blog (DELETED), 27 Dec 2019, Tagged travel"
         class="c0 c1 c2"
         href="/blog/mndyd8"
       >
@@ -3263,7 +3239,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30 Dec
+                    27 Dec 2019
                   </span>
                 </div>
                 <div
@@ -3272,7 +3248,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30
+                    27 Dec
                   </span>
                 </div>
                 <div
@@ -3281,7 +3257,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                   <span
                     class="c9"
                   >
-                    Dec
+                    2019
                   </span>
                 </div>
               </div>
@@ -3505,7 +3481,6 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
@@ -3514,6 +3489,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   border-radius: 0.75rem;
   background: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .c0:focus-visible {
@@ -3532,10 +3508,6 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   border: solid #44aeff 0.2rem;
   border-radius: 0.75rem;
   pointer-events: none;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0:not(:disabled):focus,
@@ -4031,7 +4003,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   <div>
     <div>
       <a
-        aria-label="Blog 1 , NaN Invalid Date"
+        aria-label="Blog 1 , NaN Invalid Date NaN"
         class="c0 c1 c2"
         href="/blog/asdfg"
       >
@@ -4057,6 +4029,15 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                   <span
                     class="c9"
                   >
+                    NaN Invalid Date NaN
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
                     NaN Invalid Date
                   </span>
                 </div>
@@ -4067,15 +4048,6 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                     class="c9"
                   >
                     NaN
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Invalid Date
                   </span>
                 </div>
               </div>
@@ -4105,7 +4077,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
     </div>
     <div>
       <a
-        aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+        aria-label="St Ives  2018, 27 Dec 2019, Tagged travel"
         class="c0 c1 c2"
         href="/blog/zxywvuts"
       >
@@ -4131,7 +4103,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30 Dec
+                    27 Dec 2019
                   </span>
                 </div>
                 <div
@@ -4140,7 +4112,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30
+                    27 Dec
                   </span>
                 </div>
                 <div
@@ -4149,7 +4121,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                   <span
                     class="c9"
                   >
-                    Dec
+                    2019
                   </span>
                 </div>
               </div>
@@ -4252,7 +4224,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
     </div>
     <div>
       <a
-        aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+        aria-label="Untitled blog (DELETED), 27 Dec 2019, Tagged travel"
         class="c0 c1 c2"
         href="/blog/mndyd8"
       >
@@ -4278,7 +4250,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30 Dec
+                    27 Dec 2019
                   </span>
                 </div>
                 <div
@@ -4287,7 +4259,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                   <span
                     class="c9"
                   >
-                    23-30
+                    27 Dec
                   </span>
                 </div>
                 <div
@@ -4296,7 +4268,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                   <span
                     class="c9"
                   >
-                    Dec
+                    2019
                   </span>
                 </div>
               </div>
