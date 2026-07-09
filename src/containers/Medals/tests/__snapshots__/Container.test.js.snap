@@ -545,7 +545,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #44aeff;
 }
 
-.c134 {
+.c135 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -556,12 +556,12 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #ffed00;
 }
 
-.c134:focus-visible {
+.c135:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c134:focus-visible::after {
+.c135:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -574,12 +574,12 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c134:hover {
+.c135:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c137 {
+.c138 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -590,12 +590,12 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #1e1e1e;
 }
 
-.c137:focus-visible {
+.c138:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c137:focus-visible::after {
+.c138:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -608,12 +608,12 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c137:hover {
+.c138:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c141 {
+.c142 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -624,12 +624,12 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #CE9708;
 }
 
-.c141:focus-visible {
+.c142:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c141:focus-visible::after {
+.c142:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -642,12 +642,12 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c141:hover {
+.c142:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c145 {
+.c146 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -658,12 +658,12 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #E66000;
 }
 
-.c145:focus-visible {
+.c146:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c145:focus-visible::after {
+.c146:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -676,7 +676,7 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c145:hover {
+.c146:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -928,12 +928,37 @@ exports[`<Medals /> should render correctly 1`] = `
   min-width: calc(8 * 2rem);
   border-radius: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
+  background: #D90700;
+  color: white;
+  fill: white;
+}
+
+.c134 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: calc(3 * 1rem);
+  min-width: calc(8 * 2rem);
+  border-radius: 0.75rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #000000;
   color: #ffed00;
   fill: #ffed00;
 }
 
-.c135 {
+.c136 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -958,7 +983,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #FFF200;
 }
 
-.c136 {
+.c137 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -983,7 +1008,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #1e1e1e;
 }
 
-.c138 {
+.c139 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1008,7 +1033,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: white;
 }
 
-.c139 {
+.c140 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1033,7 +1058,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: white;
 }
 
-.c140 {
+.c141 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1058,7 +1083,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #CE9708;
 }
 
-.c142 {
+.c143 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1083,7 +1108,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: white;
 }
 
-.c143 {
+.c144 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1108,7 +1133,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #1e1e1e;
 }
 
-.c144 {
+.c145 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1973,72 +1998,72 @@ exports[`<Medals /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c134:focus-visible::after {
+  .c135:focus-visible::after {
     border-color: #ffed00;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c134 {
+  .c135 {
     color: #ffed00;
     fill: #ffed00;
   }
 
-  .c134:hover {
+  .c135:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c137:focus-visible::after {
+  .c138:focus-visible::after {
     border-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c137 {
+  .c138 {
     color: #1e1e1e;
     fill: #1e1e1e;
   }
 
-  .c137:hover {
+  .c138:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c141:focus-visible::after {
+  .c142:focus-visible::after {
     border-color: #CE9708;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c141 {
+  .c142 {
     color: #CE9708;
     fill: #CE9708;
   }
 
-  .c141:hover {
+  .c142:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c145:focus-visible::after {
+  .c146:focus-visible::after {
     border-color: #E66000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c145 {
+  .c146 {
     color: #E66000;
     fill: #E66000;
   }
 
-  .c145:hover {
+  .c146:hover {
     color: #44aeff;
     fill: #44aeff;
   }
@@ -2147,19 +2172,19 @@ exports[`<Medals /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c133 {
-    box-shadow: inset 0px 0px 0px 2px white;
-  }
+
 }
 
 @media (prefers-color-scheme:dark) {
-  .c135 {
+  .c134 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c134 {
+    box-shadow: inset 0px 0px 0px 2px white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -2173,7 +2198,7 @@ exports[`<Medals /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c138 {
+  .c137 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
@@ -2203,7 +2228,7 @@ exports[`<Medals /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c142 {
+  .c141 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
@@ -2224,6 +2249,16 @@ exports[`<Medals /> should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c144 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c145 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
@@ -6547,6 +6582,94 @@ exports[`<Medals /> should render correctly 1`] = `
                   </a>
                 </div>
               </div>
+              <div
+                class="c133"
+              >
+                <span
+                  class="c113 c114"
+                >
+                  Tors Trophy 3km
+                </span>
+                <span
+                  class="c24 c115"
+                >
+                  2026
+                </span>
+                <div
+                  class="c116"
+                >
+                  <a
+                    class="c126 "
+                    href="https://www.strava.com/activities/19166029793"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="c24"
+                    >
+                      <svg
+                        class="c118"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        width="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.5714 1.2381L4.28571 13.5238H8L10.5714 8.66667L13.1429 13.5238H16.9524L10.5714 1.2381Z"
+                        />
+                        <path
+                          d="M15.0476 22.7619L10.381 13.5238H13.2381L15.0476 17.2381L16.9524 13.5238H19.7143L15.0476 22.7619Z"
+                          fill-opacity="0.5"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="c133"
+              >
+                <span
+                  class="c113 c114"
+                >
+                  Tors Trophy 12km
+                </span>
+                <span
+                  class="c24 c115"
+                >
+                  2026
+                </span>
+                <div
+                  class="c116"
+                >
+                  <a
+                    class="c126 "
+                    href="https://www.strava.com/activities/19174850707"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="c24"
+                    >
+                      <svg
+                        class="c118"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        width="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.5714 1.2381L4.28571 13.5238H8L10.5714 8.66667L13.1429 13.5238H16.9524L10.5714 1.2381Z"
+                        />
+                        <path
+                          d="M15.0476 22.7619L10.381 13.5238H13.2381L15.0476 17.2381L16.9524 13.5238H19.7143L15.0476 22.7619Z"
+                          fill-opacity="0.5"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -6578,7 +6701,7 @@ exports[`<Medals /> should render correctly 1`] = `
               class="c8 c9"
             >
               <div
-                class="c133"
+                class="c134"
               >
                 <span
                   class="c113 c114"
@@ -6594,7 +6717,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c134 "
+                    class="c135 "
                     href="https://www.strava.com/activities/10281041890"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -6622,7 +6745,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c133"
+                class="c134"
               >
                 <span
                   class="c113 c114"
@@ -6638,7 +6761,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c134 "
+                    class="c135 "
                     href="https://www.strava.com/activities/10824673603"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -6666,7 +6789,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c133"
+                class="c134"
               >
                 <span
                   class="c113 c114"
@@ -6682,7 +6805,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c134 "
+                    class="c135 "
                     href="https://www.strava.com/activities/10829008206"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -6710,7 +6833,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c133"
+                class="c134"
               >
                 <span
                   class="c113 c114"
@@ -6726,7 +6849,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c134 "
+                    class="c135 "
                     href="https://www.strava.com/activities/13063999212"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -6754,7 +6877,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c133"
+                class="c134"
               >
                 <span
                   class="c113 c114"
@@ -6770,7 +6893,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c134 "
+                    class="c135 "
                     href="https://www.strava.com/activities/18303521512"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -6828,7 +6951,7 @@ exports[`<Medals /> should render correctly 1`] = `
               class="c8 c9"
             >
               <div
-                class="c135"
+                class="c136"
               >
                 <span
                   class="c113 c114"
@@ -6902,7 +7025,7 @@ exports[`<Medals /> should render correctly 1`] = `
               class="c8 c9"
             >
               <div
-                class="c136"
+                class="c137"
               >
                 <span
                   class="c113 c114"
@@ -6918,7 +7041,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c137 "
+                    class="c138 "
                     href="https://www.strava.com/activities/7790895383"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -6946,7 +7069,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c138"
+                class="c139"
               >
                 <span
                   class="c113 c114"
@@ -6990,7 +7113,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c136"
+                class="c137"
               >
                 <span
                   class="c113 c114"
@@ -7006,7 +7129,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c137 "
+                    class="c138 "
                     href="https://www.strava.com/activities/9821124828"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -7034,7 +7157,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c139"
+                class="c140"
               >
                 <span
                   class="c113 c114"
@@ -7108,7 +7231,7 @@ exports[`<Medals /> should render correctly 1`] = `
               class="c8 c9"
             >
               <div
-                class="c140"
+                class="c141"
               >
                 <span
                   class="c113 c114"
@@ -7124,7 +7247,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c141 "
+                    class="c142 "
                     href="https://www.strava.com/activities/1019627751"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -7152,7 +7275,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c142"
+                class="c143"
               >
                 <span
                   class="c113 c114"
@@ -7226,7 +7349,7 @@ exports[`<Medals /> should render correctly 1`] = `
               class="c8 c9"
             >
               <div
-                class="c143"
+                class="c144"
               >
                 <span
                   class="c113 c114"
@@ -7242,8 +7365,52 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c137 "
+                    class="c138 "
                     href="https://www.strava.com/activities/787876867"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="c24"
+                    >
+                      <svg
+                        class="c118"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        width="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.5714 1.2381L4.28571 13.5238H8L10.5714 8.66667L13.1429 13.5238H16.9524L10.5714 1.2381Z"
+                        />
+                        <path
+                          d="M15.0476 22.7619L10.381 13.5238H13.2381L15.0476 17.2381L16.9524 13.5238H19.7143L15.0476 22.7619Z"
+                          fill-opacity="0.5"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="c145"
+              >
+                <span
+                  class="c113 c114"
+                >
+                  HALF
+                </span>
+                <span
+                  class="c24 c115"
+                >
+                  2016
+                </span>
+                <div
+                  class="c116"
+                >
+                  <a
+                    class="c146 "
+                    href="https://www.strava.com/activities/787876472"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -7275,50 +7442,6 @@ exports[`<Medals /> should render correctly 1`] = `
                 <span
                   class="c113 c114"
                 >
-                  HALF
-                </span>
-                <span
-                  class="c24 c115"
-                >
-                  2016
-                </span>
-                <div
-                  class="c116"
-                >
-                  <a
-                    class="c145 "
-                    href="https://www.strava.com/activities/787876472"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <span
-                      class="c24"
-                    >
-                      <svg
-                        class="c118"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.5714 1.2381L4.28571 13.5238H8L10.5714 8.66667L13.1429 13.5238H16.9524L10.5714 1.2381Z"
-                        />
-                        <path
-                          d="M15.0476 22.7619L10.381 13.5238H13.2381L15.0476 17.2381L16.9524 13.5238H19.7143L15.0476 22.7619Z"
-                          fill-opacity="0.5"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="c143"
-              >
-                <span
-                  class="c113 c114"
-                >
                   FULL
                 </span>
                 <span
@@ -7330,7 +7453,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c137 "
+                    class="c138 "
                     href="https://www.strava.com/activities/973508848"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -7358,7 +7481,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c143"
+                class="c144"
               >
                 <span
                   class="c113 c114"
@@ -7374,7 +7497,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c137 "
+                    class="c138 "
                     href="https://www.strava.com/activities/998731470"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -7402,7 +7525,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c143"
+                class="c144"
               >
                 <span
                   class="c113 c114"
@@ -7418,7 +7541,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   class="c116"
                 >
                   <a
-                    class="c137 "
+                    class="c138 "
                     href="https://www.strava.com/activities/1551224197"
                     rel="noopener noreferrer"
                     target="_blank"

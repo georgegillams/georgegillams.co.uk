@@ -288,6 +288,20 @@ const OtherOcrMedals = [
     stravaId: '18716870842',
     showDarkModeOutline: true,
   },
+  {
+    background: '#D90700',
+    foreground: 'white',
+    title: 'Tors Trophy 3km',
+    year: '2026',
+    stravaId: '19166029793',
+  },
+  {
+    background: '#D90700',
+    foreground: 'white',
+    title: 'Tors Trophy 12km',
+    year: '2026',
+    stravaId: '19174850707',
+  },
 ];
 
 const HyroxMedals = [
