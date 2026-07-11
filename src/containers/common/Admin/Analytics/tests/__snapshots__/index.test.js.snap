@@ -197,7 +197,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
@@ -221,13 +221,13 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 .c6:focus,
 .c6:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c6:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c6:disabled {
@@ -295,7 +295,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -304,7 +304,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   .c6:focus,
   .c6:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -312,7 +312,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -456,7 +456,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
@@ -480,13 +480,13 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 .c6:focus,
 .c6:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c6:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c6:disabled {
@@ -554,7 +554,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -563,7 +563,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   .c6:focus,
   .c6:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -571,7 +571,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1173,7 +1173,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
   cursor: default;
 }
@@ -1198,13 +1198,13 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 .c6:focus,
 .c6:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c6:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c6:disabled {
@@ -1228,7 +1228,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
@@ -1252,13 +1252,13 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 .c19:focus,
 .c19:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c19:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c19:disabled {
@@ -1364,7 +1364,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -1373,7 +1373,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   .c6:focus,
   .c6:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -1381,7 +1381,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1401,7 +1401,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c19 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -1410,7 +1410,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   .c19:focus,
   .c19:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -1418,7 +1418,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c19:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 

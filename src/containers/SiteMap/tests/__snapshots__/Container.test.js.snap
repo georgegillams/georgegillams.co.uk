@@ -21,7 +21,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   overflow: hidden;
   height: 0.5rem;
   margin-bottom: 1rem;
-  border-radius: 10rem;
+  border-radius: 5rem;
 }
 
 .c13 {
@@ -443,6 +443,17 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
                 class="c11"
               >
                 Overview
+              </span>
+            </a>
+            <br />
+            <a
+              class="c10"
+              href="/work/projects"
+            >
+              <span
+                class="c11"
+              >
+                Projects
               </span>
             </a>
             <br />
@@ -1351,7 +1362,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
                 <span
                   class="c11"
                 >
-                  /work/side-projects ⇒ /work
+                  /work/side-projects ⇒ /work/projects
                 </span>
               </a>
               <br />
@@ -1619,7 +1630,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   overflow: hidden;
   height: 0.5rem;
   margin-bottom: 1rem;
-  border-radius: 10rem;
+  border-radius: 5rem;
 }
 
 .c13 {
@@ -2041,6 +2052,17 @@ exports[`<SiteMap /> should render correctly 1`] = `
                 class="c11"
               >
                 Overview
+              </span>
+            </a>
+            <br />
+            <a
+              class="c10"
+              href="/work/projects"
+            >
+              <span
+                class="c11"
+              >
+                Projects
               </span>
             </a>
             <br />
@@ -2949,7 +2971,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
                 <span
                   class="c11"
                 >
-                  /work/side-projects ⇒ /work
+                  /work/side-projects ⇒ /work/projects
                 </span>
               </a>
               <br />
@@ -3572,6 +3594,17 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             <br />
             <a
               class="c10"
+              href="/work/projects"
+            >
+              <span
+                class="c11"
+              >
+                Projects
+              </span>
+            </a>
+            <br />
+            <a
+              class="c10"
               href="/work/qualifications"
             >
               <span
@@ -4475,7 +4508,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
                 <span
                   class="c11"
                 >
-                  /work/side-projects ⇒ /work
+                  /work/side-projects ⇒ /work/projects
                 </span>
               </a>
               <br />
@@ -5169,6 +5202,17 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             <br />
             <a
               class="c10"
+              href="/work/projects"
+            >
+              <span
+                class="c11"
+              >
+                Projects
+              </span>
+            </a>
+            <br />
+            <a
+              class="c10"
               href="/work/qualifications"
             >
               <span
@@ -6072,7 +6116,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
                 <span
                   class="c11"
                 >
-                  /work/side-projects ⇒ /work
+                  /work/side-projects ⇒ /work/projects
                 </span>
               </a>
               <br />
@@ -6695,6 +6739,17 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             <br />
             <a
               class="c10"
+              href="/work/projects"
+            >
+              <span
+                class="c11"
+              >
+                Projects
+              </span>
+            </a>
+            <br />
+            <a
+              class="c10"
               href="/work/qualifications"
             >
               <span
@@ -7598,7 +7653,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
                 <span
                   class="c11"
                 >
-                  /work/side-projects ⇒ /work
+                  /work/side-projects ⇒ /work/projects
                 </span>
               </a>
               <br />

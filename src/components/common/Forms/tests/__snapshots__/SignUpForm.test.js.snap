@@ -17,7 +17,7 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
   cursor: default;
 }
@@ -42,13 +42,13 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
 .c12:focus,
 .c12:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c12:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c12:disabled {
@@ -231,7 +231,7 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -240,7 +240,7 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
   .c12:focus,
   .c12:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -248,7 +248,7 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -268,7 +268,7 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    border-color: white;
+    border-color: #ffffff;
     background-color: #000000;
   }
 }

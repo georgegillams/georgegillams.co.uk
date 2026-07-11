@@ -102,6 +102,8 @@ const SiteMap = props => {
           <Paragraph>
             <TextLink href="/work">Overview</TextLink>
             <br />
+            <TextLink href="/work/projects">Projects</TextLink>
+            <br />
             <TextLink href="/work/qualifications">Qualifications</TextLink>
             <br />
             <TextLink href="/work/backpack">Backpack</TextLink>

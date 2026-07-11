@@ -353,7 +353,7 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14 {
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -362,7 +362,7 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
   .c14:focus,
   .c14:hover {
     background-color: #191a1b;
-    color: white;
+    color: #ffffff;
     box-shadow: 0px 0px 0px 1px #474747 inset;
   }
 }
@@ -370,7 +370,7 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14:active {
     background-color: #242526;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -981,7 +981,7 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
 @media (prefers-color-scheme:dark) {
   .c14 {
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -990,7 +990,7 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
   .c14:focus,
   .c14:hover {
     background-color: #191a1b;
-    color: white;
+    color: #ffffff;
     box-shadow: 0px 0px 0px 1px #474747 inset;
   }
 }
@@ -998,7 +998,7 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
 @media (prefers-color-scheme:dark) {
   .c14:active {
     background-color: #242526;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1609,7 +1609,7 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14 {
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -1618,7 +1618,7 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
   .c14:focus,
   .c14:hover {
     background-color: #191a1b;
-    color: white;
+    color: #ffffff;
     box-shadow: 0px 0px 0px 1px #474747 inset;
   }
 }
@@ -1626,7 +1626,7 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14:active {
     background-color: #242526;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -2237,7 +2237,7 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14 {
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -2246,7 +2246,7 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
   .c14:focus,
   .c14:hover {
     background-color: #191a1b;
-    color: white;
+    color: #ffffff;
     box-shadow: 0px 0px 0px 1px #474747 inset;
   }
 }
@@ -2254,7 +2254,7 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14:active {
     background-color: #242526;
-    color: white;
+    color: #ffffff;
   }
 }
 
