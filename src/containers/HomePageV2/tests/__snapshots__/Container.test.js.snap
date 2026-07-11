@@ -384,7 +384,7 @@ exports[`<Home /> should render correctly 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
   display: inline-block;
 }
@@ -409,13 +409,13 @@ exports[`<Home /> should render correctly 1`] = `
 .c43:focus,
 .c43:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c43:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c43:disabled {
@@ -753,7 +753,7 @@ exports[`<Home /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c43 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -762,7 +762,7 @@ exports[`<Home /> should render correctly 1`] = `
   .c43:focus,
   .c43:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -770,7 +770,7 @@ exports[`<Home /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c43:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -2096,7 +2096,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
   display: inline-block;
 }
@@ -2121,13 +2121,13 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 .c43:focus,
 .c43:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c43:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c43:disabled {
@@ -2465,7 +2465,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c43 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -2474,7 +2474,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   .c43:focus,
   .c43:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -2482,7 +2482,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c43:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -3808,7 +3808,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
   display: inline-block;
 }
@@ -3833,13 +3833,13 @@ exports[`<Home /> should render correctly with no user 1`] = `
 .c43:focus,
 .c43:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c43:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c43:disabled {
@@ -4177,7 +4177,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c43 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -4186,7 +4186,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   .c43:focus,
   .c43:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -4194,7 +4194,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c43:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -5520,7 +5520,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
   display: inline-block;
 }
@@ -5545,13 +5545,13 @@ exports[`<Home /> should render correctly with user 1`] = `
 .c43:focus,
 .c43:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c43:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c43:disabled {
@@ -5889,7 +5889,7 @@ exports[`<Home /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c43 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -5898,7 +5898,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   .c43:focus,
   .c43:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -5906,7 +5906,7 @@ exports[`<Home /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c43:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 

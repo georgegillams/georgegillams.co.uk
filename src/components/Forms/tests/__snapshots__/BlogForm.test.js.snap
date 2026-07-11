@@ -17,7 +17,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
@@ -41,13 +41,13 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 .c13:focus,
 .c13:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c13:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c13:disabled {
@@ -234,7 +234,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c13 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -243,7 +243,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
   .c13:focus,
   .c13:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -251,7 +251,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c13:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -271,7 +271,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    border-color: white;
+    border-color: #ffffff;
     background-color: #000000;
   }
 }
@@ -685,7 +685,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
@@ -709,13 +709,13 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 .c13:focus,
 .c13:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c13:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c13:disabled {
@@ -902,7 +902,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 @media (prefers-color-scheme:dark) {
   .c13 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -911,7 +911,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
   .c13:focus,
   .c13:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -919,7 +919,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 @media (prefers-color-scheme:dark) {
   .c13:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -939,7 +939,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    border-color: white;
+    border-color: #ffffff;
     background-color: #000000;
   }
 }

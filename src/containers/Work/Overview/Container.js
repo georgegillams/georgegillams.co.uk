@@ -20,6 +20,12 @@ const Work = () => {
   return (
     <PageContainer width={WIDTHS.prose} bottomPadding>
       <PageTitle name="Work">
+        <SubsectionWithScroll name="Side projects">
+          <Paragraph>I build personal apps and sites alongside my work.</Paragraph>
+          <br />
+          <StyledButton href="/work/projects">Side projects →</StyledButton>
+        </SubsectionWithScroll>
+
         <SubsectionWithScroll name="Courses and qualifications">
           <Paragraph>I have completed several courses and qualifications alongside my work.</Paragraph>
           <br />

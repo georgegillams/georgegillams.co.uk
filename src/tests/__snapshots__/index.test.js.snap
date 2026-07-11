@@ -418,7 +418,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
   display: inline-block;
 }
@@ -443,13 +443,13 @@ exports[`<HomePage /> should render correctly 1`] = `
 .c45:focus,
 .c45:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c45:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c45:disabled {
@@ -982,7 +982,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c45 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -991,7 +991,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   .c45:focus,
   .c45:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -999,7 +999,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c45:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 

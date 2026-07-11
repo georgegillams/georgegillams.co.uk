@@ -17,7 +17,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   background-color: #0067B7;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
@@ -41,13 +41,13 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 .c7:focus,
 .c7:hover {
   background-color: #004F8C;
-  color: white;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .c7:active {
   background-color: #003E6F;
-  color: white;
+  color: #ffffff;
 }
 
 .c7:disabled {
@@ -162,7 +162,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7 {
     background-color: #025CA2;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -171,7 +171,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
   .c7:focus,
   .c7:hover {
     background-color: #004479;
-    color: white;
+    color: #ffffff;
     box-shadow: none;
   }
 }
@@ -179,7 +179,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -199,7 +199,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    border-color: white;
+    border-color: #ffffff;
     background-color: #000000;
   }
 }
