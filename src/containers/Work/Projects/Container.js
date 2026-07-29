@@ -42,7 +42,7 @@ const WorkProjects = () => (
       </SubsectionWithScroll>
       <SubsectionWithScroll name="Chorder">
         <Paragraph>
-          <TextLink hrefExternal href="https://github.com/georgegillams/software-chording-keyboard#download">
+          <TextLink hrefExternal href="https://github.com/georgegillams/chorder#download">
             Chorder
           </TextLink>{' '}
           — a macOS app for quickly typing chords.
