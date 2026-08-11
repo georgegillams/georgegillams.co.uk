@@ -211,7 +211,9 @@ const setLinePosition = (el, start, end) => {
 };
 
 const prefersReducedMotion = () =>
-  typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  typeof window !== 'undefined' &&
+  typeof window.matchMedia === 'function' &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const SignalGraph = props => {
   const { ...rest } = props;
