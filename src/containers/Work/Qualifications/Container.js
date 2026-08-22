@@ -16,6 +16,7 @@ import TotalTypescriptCertificate3 from './images/total-typescript/3-certificate
 // import TotalTypescriptCertificate4 from './images/total-typescript/4-certificate.png';
 
 import ProductPsychologyMasterclassCertificate from './images/product-psychology-masterclass-certificate.jpg';
+import ClearDesignCertificate from './images/clear-design-certificate.png';
 import DiplomaPhotographyCertificate from './images/diploma-photography-certificate.jpg';
 import QualifiedGuildMember from './images/qualified-guild-member.jpg';
 
@@ -103,13 +104,18 @@ const WorkQualifications = () => (
           darkSrc={TotalTypescriptCertificate4.src}
         /> */}
       </SubsectionWithScroll>
-      <SubsectionWithScroll name="Product Psychology Masterclass">
+      <SubsectionWithScroll name="Growth•Design Courses">
         <Paragraph>
-          I have completed growth.design&#39;s{' '}
+          I have completed Growth•Design&#39;s{' '}
           <TextLink hrefExternal href="https://growth.design/course">
             Product Psychology Masterclass
           </TextLink>
-          , giving me tools to find gaps in products and create effective solutions based on proven psychology.
+          , giving me tools to find gaps in products and create effective solutions based on proven psychology. I have
+          also completed their{' '}
+          <TextLink hrefExternal href="https://growth.design/courses/clear-ui">
+            CLEAR UI Masterclass
+          </TextLink>{' '}
+          giving me the ability to spot UI mistakes and improve the design of products I work on.
         </Paragraph>
         <StyledImage
           imgProps={{
@@ -119,6 +125,15 @@ const WorkQualifications = () => (
           aspectY={1690}
           lightSrc={ProductPsychologyMasterclassCertificate.src}
           darkSrc={ProductPsychologyMasterclassCertificate.src}
+        />
+        <StyledImage
+          imgProps={{
+            alt: "Certificate of Completion of growth.design's CLEAR UI Masterclass.",
+          }}
+          aspectX={2187}
+          aspectY={1690}
+          lightSrc={ClearDesignCertificate.src}
+          darkSrc={ClearDesignCertificate.src}
         />
       </SubsectionWithScroll>
       <SubsectionWithScroll name="Professional Diploma — Institute of Photography">
