@@ -8,15 +8,10 @@ import PageTitle from 'components/common/PageTitle';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 import { StyledButton } from './work-overview.styles';
 import { withScrollAnimation } from '@george-gillams/components/effects';
-import { useRouter } from 'next/router';
-import { isNewJob } from 'client-utils/isNewJob';
 
 const SubsectionWithScroll = withScrollAnimation(Subsection);
 
 const Work = () => {
-  const router = useRouter();
-  const showNewJob = isNewJob(router.query);
-
   return (
     <PageContainer width={WIDTHS.prose} bottomPadding>
       <PageTitle name="Work">
@@ -33,28 +28,17 @@ const Work = () => {
         </SubsectionWithScroll>
 
         <SubsectionWithScroll name="Typeform">
-          {showNewJob ? (
-            <>
-              <Paragraph>
-                At{' '}
-                <TextLink href="https://www.typeform.com/" hrefExternal>
-                  Typeform
-                </TextLink>{' '}
-                I led the development of several features spanning multiple teams. These included a knowledge-quiz form
-                mode, migrating the publish mechanism out of the form builder repo, and Typeform AI — a chat interface
-                for interacting with all Typeform products.
-              </Paragraph>
-            </>
-          ) : (
+          <>
             <Paragraph>
-              I&#39;m an Expert Software Engineer in the Workflows team at{' '}
+              At{' '}
               <TextLink href="https://www.typeform.com/" hrefExternal>
                 Typeform
-              </TextLink>
-              , building features across several ownerships to enable users to fulfil their goals with a
-              self-explanatory experience that delivers the right features when and where they&#39;re needed.
+              </TextLink>{' '}
+              I led the development of several features spanning multiple teams. These included a knowledge-quiz form
+              mode, migrating the publish mechanism out of the form builder repo, and Typeform AI — a chat interface for
+              interacting with all Typeform products.
             </Paragraph>
-          )}
+          </>
           <Paragraph>
             Before that, I helped to maintain{' '}
             <TextLink href="https://www.typeform.com/" hrefExternal>

@@ -7,6 +7,8 @@ import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 import { withScrollAnimation } from '@george-gillams/components/effects';
 import { StyledImage } from './projects.styles';
 
+import gitlabMonitorLight from './images/gitlabMonitorLight.png';
+import gitlabMonitorDark from './images/gitlabMonitorDark.png';
 import contraster from './images/contraster.png';
 import chorder from './images/chorder.png';
 import hyroxRelayPlanner from './images/hyroxRelayPlanner.png';
@@ -23,6 +25,23 @@ const WorkProjects = () => (
         Alongside my day job I build personal apps and sites — small tools that scratch an itch or help with something I
         care about.
       </ParagraphWithScroll>
+      <SubsectionWithScroll name="GitLab Monitor">
+        <Paragraph>
+          <TextLink hrefExternal href="https://apps.apple.com/gb/app/gitlab-monitor/id6820492677?mt=12">
+            GitLab Monitor
+          </TextLink>{' '}
+          — a macOS app to quickly see your GitLab merge request pipelines and reviews in one place.
+        </Paragraph>
+        <StyledImage
+          imgProps={{
+            alt: 'GitLab Monitor showing merge request pipeline and review status beside its settings window.',
+          }}
+          aspectX={1024}
+          aspectY={640}
+          lightSrc={gitlabMonitorLight.src}
+          darkSrc={gitlabMonitorDark.src}
+        />
+      </SubsectionWithScroll>
       <SubsectionWithScroll name="Contraster">
         <Paragraph>
           <TextLink hrefExternal href="https://apps.apple.com/gb/app/contraster/id6464116077?mt=12">
