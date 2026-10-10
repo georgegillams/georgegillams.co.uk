@@ -1,5 +1,10 @@
 import appConfig from './appConfig';
-import { CHORDER_FEEDBACK_FORM, CONTACT_FORM, CONTRASTER_FEEDBACK_FORM } from './typeformConstants';
+import {
+  CHORDER_FEEDBACK_FORM,
+  CONTACT_FORM,
+  CONTRASTER_FEEDBACK_FORM,
+  GITLAB_MONITOR_FEEDBACK_FORM,
+} from './typeformConstants';
 
 const redirects = [
   {
@@ -58,6 +63,7 @@ const redirects = [
 
   { from: '/contraster-feedback', to: CONTRASTER_FEEDBACK_FORM },
   { from: '/chorder-feedback', to: CHORDER_FEEDBACK_FORM },
+  { from: '/gitlab-monitor-feedback', to: GITLAB_MONITOR_FEEDBACK_FORM },
 ];
 
 export default redirects;
