@@ -25,16 +25,16 @@ const WorkProjects = () => (
         Alongside my day job I build personal apps and sites — small tools that scratch an itch or help with something I
         care about.
       </ParagraphWithScroll>
-      <SubsectionWithScroll name="GitLab Monitor">
+      <SubsectionWithScroll name="(GitLab) Merge Request Monitor">
         <Paragraph>
-          <TextLink hrefExternal href="https://apps.apple.com/gb/app/gitlab-monitor/id6820492677?mt=12">
-            GitLab Monitor
+          <TextLink hrefExternal href="https://apps.apple.com/gb/app/merge-request-monitor/id6820492677?mt=12">
+            (GitLab) Merge Request Monitor
           </TextLink>{' '}
           — a macOS app to quickly see your GitLab merge request pipelines and reviews in one place.
         </Paragraph>
         <StyledImage
           imgProps={{
-            alt: 'GitLab Monitor showing merge request pipeline and review status beside its settings window.',
+            alt: 'Merge Request Monitor showing merge request pipeline and review status beside its settings window.',
           }}
           aspectX={1024}
           aspectY={640}
