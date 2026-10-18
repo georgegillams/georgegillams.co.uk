@@ -3,7 +3,7 @@ import {
   CHORDER_FEEDBACK_FORM,
   CONTACT_FORM,
   CONTRASTER_FEEDBACK_FORM,
-  GITLAB_MONITOR_FEEDBACK_FORM,
+  MERGE_REQUEST_MONITOR_FEEDBACK_FORM,
 } from './typeformConstants';
 
 const redirects = [
@@ -63,7 +63,8 @@ const redirects = [
 
   { from: '/contraster-feedback', to: CONTRASTER_FEEDBACK_FORM },
   { from: '/chorder-feedback', to: CHORDER_FEEDBACK_FORM },
-  { from: '/gitlab-monitor-feedback', to: GITLAB_MONITOR_FEEDBACK_FORM },
+  { from: '/gitlab-monitor-feedback', to: MERGE_REQUEST_MONITOR_FEEDBACK_FORM },
+  { from: '/merge-request-monitor-feedback', to: MERGE_REQUEST_MONITOR_FEEDBACK_FORM },
 ];
 
 export default redirects;
